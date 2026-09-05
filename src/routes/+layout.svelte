@@ -2,6 +2,7 @@
 	import './layout.css';
 	import favicon from '$lib/assets/favicon.svg';
 	import BaricodeLogo from '$lib/components/BaricodeLogo.svelte';
+	import { siteConfig } from '$lib/data/site';
 
 	let { children } = $props();
 
@@ -124,7 +125,7 @@
 	<!-- Footer -->
 	<footer class="border-t border-slate-200/80 bg-slate-100/90 dark:border-zinc-800/80 dark:bg-zinc-950/90 text-slate-600 dark:text-zinc-400">
 		<div class="mx-auto max-w-5xl px-6 py-12 text-sm">
-			<div class="flex flex-col gap-8 sm:flex-row sm:items-start sm:justify-between">
+			<div class="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
 				<div class="max-w-md">
 					<a href="/" class="block transition hover:opacity-90">
 						<BaricodeLogo class="size-7" />
@@ -132,6 +133,20 @@
 					<p class="mt-3 text-xs leading-relaxed text-slate-600 dark:text-zinc-400">
 						Akademi dan kursus online IT yang membumi. Kami pun memulai semuanya dari kondisi paling terbatas sekalipun.
 					</p>
+				</div>
+				<div class="flex items-center gap-3">
+					<a
+						href={siteConfig.socials.youtube}
+						target="_blank"
+						rel="noopener noreferrer"
+						class="inline-flex items-center gap-2 rounded-full border border-slate-200/80 bg-white px-3.5 py-1.5 text-xs font-medium text-slate-700 shadow-xs transition hover:border-red-500/40 hover:bg-red-50/50 hover:text-red-600 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:border-red-500/40 dark:hover:bg-red-950/40 dark:hover:text-red-400"
+						aria-label="YouTube Baricode Indonesia"
+					>
+						<svg class="size-4 fill-current text-red-600 dark:text-red-500" viewBox="0 0 24 24" aria-hidden="true">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+						</svg>
+						<span>YouTube</span>
+					</a>
 				</div>
 			</div>
 

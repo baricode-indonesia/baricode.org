@@ -47,7 +47,10 @@ export const siteConfig = {
 	name: 'Baricode Indonesia',
 	contactEmail: 'halo@baricode.org',
 	contactWhatsapp: '6281234567890',
-	description: 'Akademi dan kursus online IT yang membumi. Kami pun memulai semuanya dari kondisi paling terbatas sekalipun.'
+	description: 'Akademi dan kursus online IT yang membumi. Kami pun memulai semuanya dari kondisi paling terbatas sekalipun.',
+	socials: {
+		youtube: 'https://www.youtube.com/@baricode_org'
+	}
 };
 
 export const DEFAULT_POST_IMAGE = '/og-image.jpg';
