@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { Post } from '$lib/data/site';
-	import { getPostUrl } from '$lib/data/site';
+	import { getPostUrl, DEFAULT_POST_IMAGE } from '$lib/data/site';
 
 	let { post, class: className = '' }: { post: Post; class?: string } = $props();
 
@@ -16,18 +16,12 @@
 
 <article class={`group flex flex-col overflow-hidden rounded-2xl border border-slate-200/80 bg-white/80 dark:border-zinc-800/80 dark:bg-zinc-900/60 shadow-md dark:shadow-xl backdrop-blur-md transition hover:-translate-y-1 hover:border-slate-300 dark:hover:border-zinc-700 ${className}`}>
 	<a href={getPostUrl(post.slug)} class="block aspect-video overflow-hidden bg-slate-100 dark:bg-zinc-950">
-		{#if post.featuredImage}
-			<img
-				src={post.featuredImage}
-				alt={post.title}
-				class="h-full w-full object-cover transition duration-300 group-hover:scale-105"
-				loading="lazy"
-			/>
-		{:else}
-			<div class="flex h-full w-full items-center justify-center bg-slate-100 dark:bg-zinc-900/80 text-slate-400 dark:text-zinc-500">
-				<span class="text-xs font-semibold tracking-wider text-rose-600 dark:text-rose-400">Baricode Indonesia</span>
-			</div>
-		{/if}
+		<img
+			src={post.featuredImage || DEFAULT_POST_IMAGE}
+			alt={post.title}
+			class="h-full w-full object-cover transition duration-300 group-hover:scale-105"
+			loading="lazy"
+		/>
 	</a>
 
 	<div class="flex flex-1 flex-col gap-3 p-5">

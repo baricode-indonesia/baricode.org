@@ -2,7 +2,7 @@
 	import { page } from '$app/state';
 	import PostCard from '$lib/components/PostCard.svelte';
 	import CtaBanner from '$lib/components/CtaBanner.svelte';
-	import { samplePosts, renderMarkdown } from '$lib/data/site';
+	import { samplePosts, renderMarkdown, DEFAULT_POST_IMAGE } from '$lib/data/site';
 
 	let postSlug = $derived(page.params.slug);
 	let post = $derived(samplePosts.find((p) => p.slug === postSlug) || samplePosts[0]);
@@ -63,13 +63,11 @@
 		{post.title}
 	</h1>
 
-	{#if post.featuredImage}
-		<img
-			src={post.featuredImage}
-			alt={post.title}
-			class="mt-8 aspect-video w-full rounded-2xl object-cover shadow-md"
-		/>
-	{/if}
+	<img
+		src={post.featuredImage || DEFAULT_POST_IMAGE}
+		alt={post.title}
+		class="mt-8 aspect-video w-full rounded-2xl object-cover shadow-md"
+	/>
 
 	<div
 		class="mt-8 max-w-none space-y-5 text-base leading-relaxed text-slate-800 dark:text-red-50 [&_a:hover]:text-rose-700 dark:[&_a:hover]:text-white [&_a]:text-rose-600 dark:[&_a]:text-red-300 [&_a]:underline [&_blockquote]:border-l-4 [&_blockquote]:border-rose-500/50 [&_blockquote]:pl-4 [&_blockquote]:italic [&_blockquote]:text-slate-600 dark:[&_blockquote]:text-zinc-400 [&_code]:font-mono [&_h2]:mt-8 [&_h2]:text-2xl [&_h2]:font-semibold [&_h2]:text-slate-900 dark:[&_h2]:text-white [&_h3]:mt-6 [&_h3]:text-xl [&_h3]:font-semibold [&_h3]:text-slate-900 dark:[&_h3]:text-white [&_img]:rounded-xl [&_ol]:list-decimal [&_ol]:pl-6 [&_pre]:my-4 [&_pre]:max-w-full [&_pre]:overflow-x-auto [&_pre]:rounded-lg [&_pre]:bg-slate-900 [&_pre]:text-slate-100 dark:[&_pre]:bg-zinc-900/90 dark:[&_pre]:text-zinc-100 [&_pre]:p-4 [&_pre]:text-sm [&_tbody_tr:nth-child(even)]:bg-slate-100/50 dark:[&_tbody_tr:nth-child(even)]:bg-white/5 [&_td]:border [&_td]:border-slate-300 dark:[&_td]:border-white/15 [&_td]:px-3 [&_td]:py-2 [&_td]:align-top [&_th]:border [&_th]:border-slate-300 dark:[&_th]:border-white/15 [&_th]:bg-slate-100 dark:[&_th]:bg-white/10 [&_th]:px-3 [&_th]:py-2 [&_th]:text-left [&_th]:font-semibold [&_th]:text-slate-900 dark:[&_th]:text-white [&_ul]:list-disc [&_ul]:pl-6 [&_:not(pre)>code]:rounded [&_:not(pre)>code]:bg-slate-200 [&_:not(pre)>code]:text-slate-900 dark:[&_:not(pre)>code]:bg-white/10 dark:[&_:not(pre)>code]:text-white [&_:not(pre)>code]:px-1.5 [&_:not(pre)>code]:py-0.5"

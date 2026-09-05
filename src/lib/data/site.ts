@@ -50,6 +50,8 @@ export const siteConfig = {
 	description: 'Akademi dan kursus online IT yang membumi. Kami pun memulai semuanya dari kondisi paling terbatas sekalipun.'
 };
 
+export const DEFAULT_POST_IMAGE = '/og-image.jpg';
+
 export const categories: Category[] = [
 	{
 		name: 'Pemrograman Dasar',
