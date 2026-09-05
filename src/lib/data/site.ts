@@ -137,15 +137,16 @@ function parseFrontmatter(rawContent: string): { metadata: Record<string, any>; 
 	return { metadata, content };
 }
 
-const rawMarkdownFiles = import.meta.glob('/src/content/artikel/*.md', {
+const rawMarkdownFiles = import.meta.glob('/src/content/artikel/**/*.md', {
 	query: '?raw',
 	eager: true,
 	import: 'default'
 }) as Record<string, string>;
 
 export const samplePosts: Post[] = Object.entries(rawMarkdownFiles).map(([filepath, rawContent], index) => {
-	const slug = filepath.split('/').pop()?.replace(/\.md$/, '') || '';
+	const filename = filepath.split('/').pop()?.replace(/\.md$/, '') || '';
 	const { metadata, content } = parseFrontmatter(rawContent);
+	const slug = metadata.slug || filename;
 
 	const categorySlug = metadata.category || 'pemrograman-dasar';
 	const matchedCategory = categories.find((c) => c.slug === categorySlug) || categories[0];
