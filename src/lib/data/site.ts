@@ -79,7 +79,9 @@ export const tags: Tag[] = [
 	{ name: 'HTML & CSS', slug: 'html-css' },
 	{ name: 'Tips Belajar', slug: 'tips-belajar' },
 	{ name: 'Santri Coding', slug: 'santri-coding' },
-	{ name: 'Roadmap', slug: 'roadmap' }
+	{ name: 'Roadmap', slug: 'roadmap' },
+	{ name: 'Vibe Coding', slug: 'vibe-coding' },
+	{ name: 'AI Coding', slug: 'ai-coding' }
 ];
 
 function parseFrontmatter(rawContent: string): { metadata: Record<string, any>; content: string } {
