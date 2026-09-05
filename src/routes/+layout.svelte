@@ -1,9 +1,161 @@
 <script lang="ts">
 	import './layout.css';
 	import favicon from '$lib/assets/favicon.svg';
+	import NewsletterForm from '$lib/components/NewsletterForm.svelte';
+	import BaricodeLogo from '$lib/components/BaricodeLogo.svelte';
 
 	let { children } = $props();
+
+	let mobileMenuOpen = $state(false);
+
+	function toggleMobileMenu() {
+		mobileMenuOpen = !mobileMenuOpen;
+	}
+
+	function closeMobileMenu() {
+		mobileMenuOpen = false;
+	}
 </script>
 
-<svelte:head><link rel="icon" href={favicon} /></svelte:head>
-{@render children()}
+<svelte:head>
+	<link rel="icon" type="image/svg+xml" href={favicon} />
+	<link rel="apple-touch-icon" href="/favicon.svg" />
+	<title>Baricode Indonesia — Akademi dan Kursus Online IT</title>
+	<meta name="description" content="Akademi dan kursus online IT untuk siapa saja. Belajar koding dari mana saja, meski dari kondisi paling terbatas sekalipun." />
+
+	<!-- Open Graph / WhatsApp Sharing Meta Tags -->
+	<meta property="og:site_name" content="Baricode Indonesia" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Baricode Indonesia — Akademi & Kursus Online IT Membumi" />
+	<meta property="og:description" content="Akademi dan kursus online IT untuk siapa saja. Belajar koding dari mana saja, meski dari kondisi paling terbatas sekalipun." />
+	<meta property="og:image" content="https://baricode.org/og-image.jpg" />
+	<meta property="og:image:secure_url" content="https://baricode.org/og-image.jpg" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:image:alt" content="Baricode Indonesia - Akademi & Kursus Online IT Membumi" />
+
+	<!-- Twitter Meta Tags -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Baricode Indonesia — Akademi & Kursus Online IT Membumi" />
+	<meta name="twitter:description" content="Akademi dan kursus online IT untuk siapa saja. Belajar koding dari mana saja, meski dari kondisi paling terbatas sekalipun." />
+	<meta name="twitter:image" content="https://baricode.org/og-image.jpg" />
+</svelte:head>
+
+<div class="relative flex min-h-screen flex-col overflow-x-hidden bg-[#0B0F17] font-sans text-zinc-100 antialiased">
+	<!-- Ambient Background Glow -->
+	<div class="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+		<div class="absolute -top-40 left-1/2 h-[40rem] w-[45rem] -translate-x-1/2 rounded-full bg-gradient-to-b from-red-600/15 via-rose-600/5 to-transparent blur-[140px]"></div>
+		<div class="absolute -right-40 top-1/3 h-[30rem] w-[30rem] rounded-full bg-rose-600/10 blur-[130px]"></div>
+		<div class="absolute -bottom-40 -left-40 h-[30rem] w-[30rem] rounded-full bg-red-600/10 blur-[130px]"></div>
+		<div class="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.04)_1px,transparent_0)] bg-[length:32px_32px]"></div>
+	</div>
+
+	<!-- Top Accent Bar -->
+	<div class="h-0.5 w-full bg-gradient-to-r from-red-600 via-rose-500 to-amber-500"></div>
+
+	<!-- Header -->
+	<header class="sticky top-0 z-30 border-b border-zinc-800/80 bg-[#0B0F17]/85 backdrop-blur-xl">
+		<div class="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
+			<div class="flex items-center gap-3">
+				<a href="/" class="transition hover:opacity-90">
+					<BaricodeLogo class="size-8" />
+				</a>
+			</div>
+
+			<nav class="hidden items-center gap-6 text-sm font-medium text-zinc-300 md:flex">
+				<a href="/" class="transition hover:text-white">Beranda</a>
+				<a href="/blog" class="transition hover:text-white">Blog</a>
+				<a href="/kursus" class="transition hover:text-white">Kursus &amp; Akademi</a>
+				<a href="/tentang" class="transition hover:text-white">Tentang</a>
+				<a href="/faq" class="transition hover:text-white">FAQ</a>
+				<a href="/kontak" class="transition hover:text-white">Kontak</a>
+				<a
+					href="/kursus"
+					class="rounded-full bg-gradient-to-r from-red-600 to-rose-600 px-4 py-2 text-xs font-semibold text-white shadow-md shadow-red-600/25 transition hover:from-red-500 hover:to-rose-500"
+				>
+					Mulai Belajar
+				</a>
+			</nav>
+
+			<button
+				type="button"
+				onclick={toggleMobileMenu}
+				class="text-zinc-300 hover:text-white md:hidden"
+				aria-label="Buka menu"
+				aria-expanded={mobileMenuOpen}
+			>
+				{#if !mobileMenuOpen}
+					<svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5" />
+					</svg>
+				{:else}
+					<svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+					</svg>
+				{/if}
+			</button>
+		</div>
+
+		{#if mobileMenuOpen}
+			<nav class="border-t border-zinc-800/80 bg-[#0B0F17]/95 px-6 py-4 md:hidden">
+				<div class="flex flex-col gap-4 text-sm font-medium text-zinc-300">
+					<a href="/" onclick={closeMobileMenu} class="hover:text-white">Beranda</a>
+					<a href="/blog" onclick={closeMobileMenu} class="hover:text-white">Blog</a>
+					<a href="/kursus" onclick={closeMobileMenu} class="hover:text-white">Kursus &amp; Akademi</a>
+					<a href="/tentang" onclick={closeMobileMenu} class="hover:text-white">Tentang</a>
+					<a href="/faq" onclick={closeMobileMenu} class="hover:text-white">FAQ</a>
+					<a href="/kontak" onclick={closeMobileMenu} class="hover:text-white">Kontak</a>
+					<a
+						href="/kursus"
+						onclick={closeMobileMenu}
+						class="w-fit rounded-full bg-gradient-to-r from-red-600 to-rose-600 px-5 py-2 text-xs font-semibold text-white shadow-md"
+					>
+						Mulai Belajar
+					</a>
+				</div>
+			</nav>
+		{/if}
+	</header>
+
+	<main class="flex-1">
+		{@render children()}
+	</main>
+
+	<!-- Footer -->
+	<footer class="border-t border-zinc-800/80 bg-zinc-950/90 text-zinc-400">
+		<div class="mx-auto max-w-5xl px-6 py-12 text-sm">
+			<div class="flex flex-col gap-8 sm:flex-row sm:items-start sm:justify-between">
+				<div class="max-w-md">
+					<a href="/" class="block transition hover:opacity-90">
+						<BaricodeLogo class="size-7" />
+					</a>
+					<p class="mt-3 text-xs leading-relaxed text-zinc-400">
+						Akademi dan kursus online IT yang membumi. Kami pun memulai semuanya dari kondisi paling terbatas sekalipun.
+					</p>
+				</div>
+
+				<NewsletterForm class="sm:w-80" />
+			</div>
+
+			<div class="mt-8 flex flex-wrap gap-x-6 gap-y-2 border-t border-zinc-800/60 pt-6 text-xs text-zinc-300">
+				<a href="/blog" class="transition hover:text-white">Blog</a>
+				<a href="/blog/kategori" class="transition hover:text-white">Kategori</a>
+				<a href="/kursus" class="transition hover:text-white">Kursus &amp; Akademi</a>
+				<a href="/tentang" class="transition hover:text-white">Tentang Baricode</a>
+				<a href="/untuk-santri" class="transition hover:text-white">Untuk Santri</a>
+				<a href="/testimoni" class="transition hover:text-white">Testimoni</a>
+				<a href="/glosarium" class="transition hover:text-white">Glosarium</a>
+				<a href="/faq" class="transition hover:text-white">FAQ</a>
+				<a href="/kontak" class="transition hover:text-white">Kontak</a>
+			</div>
+
+			<div class="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-xs text-zinc-500">
+				<a href="/syarat-dan-ketentuan" class="transition hover:text-zinc-300">Syarat &amp; Ketentuan</a>
+				<a href="/kebijakan-privasi" class="transition hover:text-zinc-300">Kebijakan Privasi</a>
+			</div>
+
+			<p class="mt-6 text-xs text-zinc-600">&copy; {new Date().getFullYear()} Baricode Indonesia. Seluruh hak cipta dilindungi.</p>
+		</div>
+	</footer>
+</div>
