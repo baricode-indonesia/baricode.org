@@ -183,6 +183,13 @@ export const samplePosts: Post[] = Object.entries(rawMarkdownFiles).map(([filepa
 			name: metadata.author || 'Baricode Team'
 		}
 	};
+}).sort((a, b) => {
+	const timeA = new Date(a.published_at).getTime();
+	const timeB = new Date(b.published_at).getTime();
+	if (timeB !== timeA) {
+		return timeB - timeA;
+	}
+	return b.id - a.id;
 });
 
 export const sampleTestimonials: Testimonial[] = [
