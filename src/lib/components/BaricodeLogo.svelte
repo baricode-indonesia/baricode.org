@@ -56,6 +56,6 @@
 	</svg>
 
 	{#if showText}
-		<span class="text-base font-bold tracking-tight text-white dark:text-white">Baricode Indonesia</span>
+		<span class="text-base font-bold tracking-tight text-slate-900 dark:text-white">Baricode Indonesia</span>
 	{/if}
 </div>

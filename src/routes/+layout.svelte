@@ -1,7 +1,6 @@
 <script lang="ts">
 	import './layout.css';
 	import favicon from '$lib/assets/favicon.svg';
-	import NewsletterForm from '$lib/components/NewsletterForm.svelte';
 	import BaricodeLogo from '$lib/components/BaricodeLogo.svelte';
 
 	let { children } = $props();
@@ -42,20 +41,20 @@
 	<meta name="twitter:image" content="https://baricode.org/og-image.jpg" />
 </svelte:head>
 
-<div class="relative flex min-h-screen flex-col overflow-x-hidden bg-[#0B0F17] font-sans text-zinc-100 antialiased">
+<div class="relative flex min-h-screen flex-col overflow-x-hidden bg-slate-50 dark:bg-[#0B0F17] font-sans text-slate-900 dark:text-zinc-100 antialiased transition-colors duration-200">
 	<!-- Ambient Background Glow -->
 	<div class="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
-		<div class="absolute -top-40 left-1/2 h-[40rem] w-[45rem] -translate-x-1/2 rounded-full bg-gradient-to-b from-red-600/15 via-rose-600/5 to-transparent blur-[140px]"></div>
-		<div class="absolute -right-40 top-1/3 h-[30rem] w-[30rem] rounded-full bg-rose-600/10 blur-[130px]"></div>
-		<div class="absolute -bottom-40 -left-40 h-[30rem] w-[30rem] rounded-full bg-red-600/10 blur-[130px]"></div>
-		<div class="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.04)_1px,transparent_0)] bg-[length:32px_32px]"></div>
+		<div class="absolute -top-40 left-1/2 h-[40rem] w-[45rem] -translate-x-1/2 rounded-full bg-gradient-to-b from-rose-500/10 via-red-500/5 dark:from-red-600/15 dark:via-rose-600/5 to-transparent blur-[140px]"></div>
+		<div class="absolute -right-40 top-1/3 h-[30rem] w-[30rem] rounded-full bg-rose-500/10 dark:bg-rose-600/10 blur-[130px]"></div>
+		<div class="absolute -bottom-40 -left-40 h-[30rem] w-[30rem] rounded-full bg-red-500/10 dark:bg-red-600/10 blur-[130px]"></div>
+		<div class="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(0,0,0,0.03)_1px,transparent_0)] dark:bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.04)_1px,transparent_0)] bg-[length:32px_32px]"></div>
 	</div>
 
 	<!-- Top Accent Bar -->
 	<div class="h-0.5 w-full bg-gradient-to-r from-red-600 via-rose-500 to-amber-500"></div>
 
 	<!-- Header -->
-	<header class="sticky top-0 z-30 border-b border-zinc-800/80 bg-[#0B0F17]/85 backdrop-blur-xl">
+	<header class="sticky top-0 z-30 border-b border-slate-200/80 bg-white/80 dark:border-zinc-800/80 dark:bg-[#0B0F17]/85 backdrop-blur-xl transition-colors">
 		<div class="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
 			<div class="flex items-center gap-3">
 				<a href="/" class="transition hover:opacity-90">
@@ -63,13 +62,13 @@
 				</a>
 			</div>
 
-			<nav class="hidden items-center gap-6 text-sm font-medium text-zinc-300 md:flex">
-				<a href="/" class="transition hover:text-white">Beranda</a>
-				<a href="/blog" class="transition hover:text-white">Blog</a>
-				<a href="/kursus" class="transition hover:text-white">Kursus &amp; Akademi</a>
-				<a href="/tentang" class="transition hover:text-white">Tentang</a>
-				<a href="/faq" class="transition hover:text-white">FAQ</a>
-				<a href="/kontak" class="transition hover:text-white">Kontak</a>
+			<nav class="hidden items-center gap-6 text-sm font-medium text-slate-600 dark:text-zinc-300 md:flex">
+				<a href="/" class="transition hover:text-slate-900 dark:hover:text-white">Beranda</a>
+				<a href="/artikel" class="transition hover:text-slate-900 dark:hover:text-white">Artikel</a>
+				<a href="/kursus" class="transition hover:text-slate-900 dark:hover:text-white">Kursus &amp; Akademi</a>
+				<a href="/tentang" class="transition hover:text-slate-900 dark:hover:text-white">Tentang</a>
+				<a href="/faq" class="transition hover:text-slate-900 dark:hover:text-white">FAQ</a>
+				<a href="/kontak" class="transition hover:text-slate-900 dark:hover:text-white">Kontak</a>
 				<a
 					href="/kursus"
 					class="rounded-full bg-gradient-to-r from-red-600 to-rose-600 px-4 py-2 text-xs font-semibold text-white shadow-md shadow-red-600/25 transition hover:from-red-500 hover:to-rose-500"
@@ -81,7 +80,7 @@
 			<button
 				type="button"
 				onclick={toggleMobileMenu}
-				class="text-zinc-300 hover:text-white md:hidden"
+				class="text-slate-700 hover:text-slate-900 dark:text-zinc-300 dark:hover:text-white md:hidden"
 				aria-label="Buka menu"
 				aria-expanded={mobileMenuOpen}
 			>
@@ -98,14 +97,14 @@
 		</div>
 
 		{#if mobileMenuOpen}
-			<nav class="border-t border-zinc-800/80 bg-[#0B0F17]/95 px-6 py-4 md:hidden">
-				<div class="flex flex-col gap-4 text-sm font-medium text-zinc-300">
-					<a href="/" onclick={closeMobileMenu} class="hover:text-white">Beranda</a>
-					<a href="/blog" onclick={closeMobileMenu} class="hover:text-white">Blog</a>
-					<a href="/kursus" onclick={closeMobileMenu} class="hover:text-white">Kursus &amp; Akademi</a>
-					<a href="/tentang" onclick={closeMobileMenu} class="hover:text-white">Tentang</a>
-					<a href="/faq" onclick={closeMobileMenu} class="hover:text-white">FAQ</a>
-					<a href="/kontak" onclick={closeMobileMenu} class="hover:text-white">Kontak</a>
+			<nav class="border-t border-slate-200/80 bg-white/95 dark:border-zinc-800/80 dark:bg-[#0B0F17]/95 px-6 py-4 md:hidden">
+				<div class="flex flex-col gap-4 text-sm font-medium text-slate-700 dark:text-zinc-300">
+					<a href="/" onclick={closeMobileMenu} class="hover:text-slate-900 dark:hover:text-white">Beranda</a>
+					<a href="/artikel" onclick={closeMobileMenu} class="hover:text-slate-900 dark:hover:text-white">Artikel</a>
+					<a href="/kursus" onclick={closeMobileMenu} class="hover:text-slate-900 dark:hover:text-white">Kursus &amp; Akademi</a>
+					<a href="/tentang" onclick={closeMobileMenu} class="hover:text-slate-900 dark:hover:text-white">Tentang</a>
+					<a href="/faq" onclick={closeMobileMenu} class="hover:text-slate-900 dark:hover:text-white">FAQ</a>
+					<a href="/kontak" onclick={closeMobileMenu} class="hover:text-slate-900 dark:hover:text-white">Kontak</a>
 					<a
 						href="/kursus"
 						onclick={closeMobileMenu}
@@ -123,39 +122,36 @@
 	</main>
 
 	<!-- Footer -->
-	<footer class="border-t border-zinc-800/80 bg-zinc-950/90 text-zinc-400">
+	<footer class="border-t border-slate-200/80 bg-slate-100/90 dark:border-zinc-800/80 dark:bg-zinc-950/90 text-slate-600 dark:text-zinc-400">
 		<div class="mx-auto max-w-5xl px-6 py-12 text-sm">
 			<div class="flex flex-col gap-8 sm:flex-row sm:items-start sm:justify-between">
 				<div class="max-w-md">
 					<a href="/" class="block transition hover:opacity-90">
 						<BaricodeLogo class="size-7" />
 					</a>
-					<p class="mt-3 text-xs leading-relaxed text-zinc-400">
+					<p class="mt-3 text-xs leading-relaxed text-slate-600 dark:text-zinc-400">
 						Akademi dan kursus online IT yang membumi. Kami pun memulai semuanya dari kondisi paling terbatas sekalipun.
 					</p>
 				</div>
-
-				<NewsletterForm class="sm:w-80" />
 			</div>
 
-			<div class="mt-8 flex flex-wrap gap-x-6 gap-y-2 border-t border-zinc-800/60 pt-6 text-xs text-zinc-300">
-				<a href="/blog" class="transition hover:text-white">Blog</a>
-				<a href="/blog/kategori" class="transition hover:text-white">Kategori</a>
-				<a href="/kursus" class="transition hover:text-white">Kursus &amp; Akademi</a>
-				<a href="/tentang" class="transition hover:text-white">Tentang Baricode</a>
-				<a href="/untuk-santri" class="transition hover:text-white">Untuk Santri</a>
-				<a href="/testimoni" class="transition hover:text-white">Testimoni</a>
-				<a href="/glosarium" class="transition hover:text-white">Glosarium</a>
-				<a href="/faq" class="transition hover:text-white">FAQ</a>
-				<a href="/kontak" class="transition hover:text-white">Kontak</a>
+			<div class="mt-8 flex flex-wrap gap-x-6 gap-y-2 border-t border-slate-200 dark:border-zinc-800/60 pt-6 text-xs text-slate-600 dark:text-zinc-300">
+				<a href="/artikel" class="transition hover:text-slate-900 dark:hover:text-white">Artikel</a>
+				<a href="/kursus" class="transition hover:text-slate-900 dark:hover:text-white">Kursus &amp; Akademi</a>
+				<a href="/tentang" class="transition hover:text-slate-900 dark:hover:text-white">Tentang Baricode</a>
+				<a href="/untuk-santri" class="transition hover:text-slate-900 dark:hover:text-white">Untuk Santri</a>
+				<a href="/testimoni" class="transition hover:text-slate-900 dark:hover:text-white">Testimoni</a>
+				<a href="/glosarium" class="transition hover:text-slate-900 dark:hover:text-white">Glosarium</a>
+				<a href="/faq" class="transition hover:text-slate-900 dark:hover:text-white">FAQ</a>
+				<a href="/kontak" class="transition hover:text-slate-900 dark:hover:text-white">Kontak</a>
 			</div>
 
-			<div class="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-xs text-zinc-500">
-				<a href="/syarat-dan-ketentuan" class="transition hover:text-zinc-300">Syarat &amp; Ketentuan</a>
-				<a href="/kebijakan-privasi" class="transition hover:text-zinc-300">Kebijakan Privasi</a>
+			<div class="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-xs text-slate-500 dark:text-zinc-500">
+				<a href="/syarat-dan-ketentuan" class="transition hover:text-slate-800 dark:hover:text-zinc-300">Syarat &amp; Ketentuan</a>
+				<a href="/kebijakan-privasi" class="transition hover:text-slate-800 dark:hover:text-zinc-300">Kebijakan Privasi</a>
 			</div>
 
-			<p class="mt-6 text-xs text-zinc-600">&copy; {new Date().getFullYear()} Baricode Indonesia. Seluruh hak cipta dilindungi.</p>
+			<p class="mt-6 text-xs text-slate-500 dark:text-zinc-600">&copy; {new Date().getFullYear()} Baricode Indonesia. Seluruh hak cipta dilindungi.</p>
 		</div>
 	</footer>
 </div>

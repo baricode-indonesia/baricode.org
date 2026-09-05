@@ -8,12 +8,12 @@
 </svelte:head>
 
 <section class="mx-auto max-w-3xl px-6 py-16">
-	<p class="text-xs font-semibold uppercase tracking-wider text-rose-400">Tentang Kami</p>
-	<h1 class="mt-4 text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+	<p class="text-xs font-semibold uppercase tracking-wider text-rose-600 dark:text-rose-400">Tentang Kami</p>
+	<h1 class="mt-4 text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
 		Kami pun memulai semuanya dari sana.
 	</h1>
 
-	<div class="mt-8 flex max-w-none flex-col gap-5 text-base leading-relaxed text-zinc-300">
+	<div class="mt-8 flex max-w-none flex-col gap-5 text-base leading-relaxed text-slate-600 dark:text-zinc-300">
 		<p>
 			Baricode Indonesia adalah akademi dan kursus online IT yang baru saja memulai langkah pertama. Kami lahir
 			dari kesadaran sederhana: banyak anak muda — santri, remaja, dan pemuda desa — yang sebenarnya

@@ -23,8 +23,8 @@
 <section class="mx-auto max-w-5xl px-6 py-16">
 	<div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
 		<div>
-			<h1 class="text-3xl font-bold tracking-tight text-white">Artikel Baricode Indonesia</h1>
-			<p class="mt-2 text-red-100">Tips belajar, tutorial, dan cerita seputar dunia IT.</p>
+			<h1 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white">Artikel Baricode Indonesia</h1>
+			<p class="mt-2 text-slate-600 dark:text-red-100">Tips belajar, tutorial, dan cerita seputar dunia IT.</p>
 		</div>
 
 		<div class="flex w-full max-w-xs gap-2">
@@ -32,13 +32,13 @@
 				type="search"
 				bind:value={searchQuery}
 				placeholder="Cari artikel..."
-				class="w-full rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm text-white placeholder:text-red-300 backdrop-blur focus:border-red-400 focus:outline-none"
+				class="w-full rounded-full border border-slate-300 bg-white text-slate-900 placeholder:text-slate-400 dark:border-white/15 dark:bg-white/5 dark:text-white dark:placeholder:text-red-300 px-4 py-2 text-sm backdrop-blur focus:border-rose-500 dark:focus:border-red-400 focus:outline-none transition"
 			/>
 		</div>
 	</div>
 
 	{#if filteredPosts.length === 0}
-		<p class="mt-16 text-center text-red-300">
+		<p class="mt-16 text-center text-slate-500 dark:text-red-300">
 			{#if searchQuery}
 				Tidak ada artikel yang cocok dengan pencarian "{searchQuery}".
 			{:else}

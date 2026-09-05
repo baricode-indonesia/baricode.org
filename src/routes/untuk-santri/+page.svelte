@@ -8,12 +8,12 @@
 </svelte:head>
 
 <section class="mx-auto max-w-3xl px-6 py-16">
-	<p class="text-sm font-medium uppercase tracking-wide text-red-300">Untuk Santri</p>
-	<h1 class="mt-4 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+	<p class="text-sm font-medium uppercase tracking-wide text-rose-600 dark:text-red-300">Untuk Santri</p>
+	<h1 class="mt-4 text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
 		Santri juga bisa jago coding.
 	</h1>
 
-	<div class="mt-8 flex max-w-none flex-col gap-5 text-base leading-relaxed text-red-100">
+	<div class="mt-8 flex max-w-none flex-col gap-5 text-base leading-relaxed text-slate-600 dark:text-red-100">
 		<p>
 			Belajar di pondok bukan penghalang untuk mengenal dunia IT. Baricode Indonesia dibangun juga
 			untuk santri yang ingin memanfaatkan waktu luang untuk belajar keterampilan baru yang bermanfaat
