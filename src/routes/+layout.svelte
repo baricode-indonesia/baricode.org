@@ -2,6 +2,7 @@
 	import './layout.css';
 	import favicon from '$lib/assets/favicon.svg';
 	import BaricodeLogo from '$lib/components/BaricodeLogo.svelte';
+	import WhatsAppFloat from '$lib/components/WhatsAppFloat.svelte';
 	import { siteConfig } from '$lib/data/site';
 
 	let { children } = $props();
@@ -170,4 +171,6 @@
 			<p class="mt-6 text-xs text-slate-500 dark:text-zinc-600">&copy; {new Date().getFullYear()} Baricode Indonesia. Seluruh hak cipta dilindungi.</p>
 		</div>
 	</footer>
+
+	<WhatsAppFloat />
 </div>
