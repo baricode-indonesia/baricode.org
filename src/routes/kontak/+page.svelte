@@ -28,7 +28,7 @@
 
 		{#if siteConfig.contactWhatsapp}
 			<a
-				href={`https://wa.me/${siteConfig.contactWhatsapp}`}
+				href={`https://baricode.org/whatsapp`}
 				target="_blank"
 				rel="noopener"
 				class="rounded-2xl border border-slate-200/80 bg-white/80 dark:border-white/10 dark:bg-white/5 p-6 backdrop-blur transition hover:-translate-y-1 hover:border-rose-400/40 hover:bg-white dark:hover:bg-white/10 shadow-sm dark:shadow-none"
