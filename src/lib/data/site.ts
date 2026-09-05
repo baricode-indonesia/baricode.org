@@ -70,6 +70,12 @@ export const categories: Category[] = [
 		slug: 'tips-dan-trik',
 		description: 'Kumpulan tips belajar efisien, efisiensi workflow, dan persiapan karier IT.',
 		posts_count: 2
+	},
+	{
+		name: 'Tentang Baricode',
+		slug: 'tentang-baricode',
+		description: 'Informasi dan pembaruan seputar program serta inisiatif dari Baricode Indonesia.',
+		posts_count: 1
 	}
 ];
 
@@ -83,7 +89,12 @@ export const tags: Tag[] = [
 	{ name: 'Santri Coding', slug: 'santri-coding' },
 	{ name: 'Roadmap', slug: 'roadmap' },
 	{ name: 'Vibe Coding', slug: 'vibe-coding' },
-	{ name: 'AI Coding', slug: 'ai-coding' }
+	{ name: 'AI Coding', slug: 'ai-coding' },
+	{ name: 'Bimbingan', slug: 'bimbingan' },
+	{ name: 'Node.js', slug: 'nodejs' },
+	{ name: 'NVM', slug: 'nvm' },
+	{ name: 'Python', slug: 'python' },
+	{ name: 'PHP', slug: 'php' }
 ];
 
 function parseFrontmatter(rawContent: string): { metadata: Record<string, any>; content: string } {
