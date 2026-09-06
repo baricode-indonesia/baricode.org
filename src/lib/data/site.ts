@@ -29,14 +29,6 @@ export interface Post {
 	};
 }
 
-export interface Testimonial {
-	id: number;
-	name: string;
-	role?: string;
-	content: string;
-	rating?: number;
-	avatarUrl?: string;
-}
 
 export interface FaqItem {
 	question: string;
@@ -98,7 +90,10 @@ export const tags: Tag[] = [
 	{ name: 'Node.js', slug: 'nodejs' },
 	{ name: 'NVM', slug: 'nvm' },
 	{ name: 'Python', slug: 'python' },
-	{ name: 'PHP', slug: 'php' }
+	{ name: 'PHP', slug: 'php' },
+	{ name: 'k6', slug: 'k6' },
+	{ name: 'Automation', slug: 'automation' },
+	{ name: 'Testing', slug: 'testing' }
 ];
 
 function parseFrontmatter(rawContent: string): { metadata: Record<string, any>; content: string } {
@@ -193,22 +188,6 @@ export const samplePosts: Post[] = Object.entries(rawMarkdownFiles).map(([filepa
 	return b.id - a.id;
 });
 
-export const sampleTestimonials: Testimonial[] = [
-	{
-		id: 1,
-		name: 'Ahmad Fauzi',
-		role: 'Pelajar & Pembelajar Mandiri',
-		content: 'Materi Baricode sangat mudah dipahami. Saya yang awalnya tidak mengerti apa-apa tentang koding kini sudah bisa bikin website sederhana sendiri.',
-		rating: 5
-	},
-	{
-		id: 2,
-		name: 'Rian Pratama',
-		role: 'Siswa SMK',
-		content: 'Penjelasannya membumi dan tidak pakai bahasa yang berbelit-belit. Sangat merekomendasikan untuk pemula yang baru mau mulai.',
-		rating: 5
-	}
-];
 
 export const faqs: FaqItem[] = [
 	{

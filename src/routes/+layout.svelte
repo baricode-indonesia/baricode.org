@@ -157,7 +157,6 @@
 				<a href="/tentang" class="transition hover:text-slate-900 dark:hover:text-white">Tentang Baricode</a>
 				<a href="/untuk-pemula" class="transition hover:text-slate-900 dark:hover:text-white">Untuk Pemula</a>
 				<a href="/whatsapp" class="transition hover:text-slate-900 dark:hover:text-white">Grup WhatsApp</a>
-				<a href="/testimoni" class="transition hover:text-slate-900 dark:hover:text-white">Testimoni</a>
 				<a href="/glosarium" class="transition hover:text-slate-900 dark:hover:text-white">Glosarium</a>
 				<a href="/faq" class="transition hover:text-slate-900 dark:hover:text-white">FAQ</a>
 				<a href="/kontak" class="transition hover:text-slate-900 dark:hover:text-white">Kontak</a>
@@ -166,6 +165,7 @@
 			<div class="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-xs text-slate-500 dark:text-zinc-500">
 				<a href="/syarat-dan-ketentuan" class="transition hover:text-slate-800 dark:hover:text-zinc-300">Syarat &amp; Ketentuan</a>
 				<a href="/kebijakan-privasi" class="transition hover:text-slate-800 dark:hover:text-zinc-300">Kebijakan Privasi</a>
+				<a href="/tata-tertib-grub" class="transition hover:text-slate-800 dark:hover:text-zinc-300">Tata Tertib Grup</a>
 			</div>
 
 			<p class="mt-6 text-xs text-slate-500 dark:text-zinc-600">&copy; {new Date().getFullYear()} Baricode Indonesia. Seluruh hak cipta dilindungi.</p>

@@ -24,9 +24,9 @@ export const GET: RequestHandler = async () => {
 		{ loc: '/tentang', priority: 0.7, changefreq: 'monthly', lastmod: today },
 		{ loc: '/faq', priority: 0.7, changefreq: 'monthly', lastmod: today },
 		{ loc: '/glosarium', priority: 0.7, changefreq: 'weekly', lastmod: today },
-		{ loc: '/testimoni', priority: 0.7, changefreq: 'monthly', lastmod: today },
 		{ loc: '/kontak', priority: 0.6, changefreq: 'monthly', lastmod: today },
 		{ loc: '/whatsapp', priority: 0.6, changefreq: 'monthly', lastmod: today },
+		{ loc: '/tata-tertib-grub', priority: 0.6, changefreq: 'monthly', lastmod: today },
 		{ loc: '/cta', priority: 0.9, changefreq: 'weekly', lastmod: today },
 		{ loc: '/kebijakan-privasi', priority: 0.3, changefreq: 'yearly', lastmod: today },
 		{ loc: '/syarat-dan-ketentuan', priority: 0.3, changefreq: 'yearly', lastmod: today }

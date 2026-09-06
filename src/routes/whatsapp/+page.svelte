@@ -90,10 +90,20 @@
 
 	<!-- Aturan / Etika Komunitas -->
 	<div class="mt-12">
-		<h2 class="text-xl font-bold text-slate-900 dark:text-white">Etika &amp; Panduan Komunitas</h2>
-		<p class="mt-1 text-xs text-slate-500 dark:text-zinc-400">
-			Agar grup tetap nyaman dan bermanfaat bagi semua anggota:
-		</p>
+		<div class="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+			<div>
+				<h2 class="text-xl font-bold text-slate-900 dark:text-white">Etika &amp; Panduan Komunitas</h2>
+				<p class="mt-1 text-xs text-slate-500 dark:text-zinc-400">
+					Agar grup tetap nyaman dan bermanfaat bagi semua anggota:
+				</p>
+			</div>
+			<a
+				href="/tata-tertib-grub"
+				class="text-xs font-semibold text-emerald-600 hover:underline dark:text-emerald-400"
+			>
+				Lihat Tata Tertib Grup Lengkap &rarr;
+			</a>
+		</div>
 
 		<div class="mt-6 grid gap-4 sm:grid-cols-3">
 			<div class="rounded-2xl border border-slate-200/80 bg-white/80 p-5 shadow-xs backdrop-blur dark:border-zinc-800/80 dark:bg-zinc-900/60">
