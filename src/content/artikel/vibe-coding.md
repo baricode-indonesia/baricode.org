@@ -26,7 +26,7 @@ Kamu berperan sebagai **sutradara atau arsitek sistem**:
 
 ## Mengapa Vibe Coding Cocok untuk Pemula?
 
-Bagi siapa saja yang baru memulai belajar koding—termasuk santri dan pelajar—sintaksis yang rumit sering kali menjadi hambatan terbesar. *Vibe coding* memotong hambatan tersebut sehingga belajar terasa lebih interaktif dan menyenangkan:
+Bagi siapa saja yang baru memulai belajar koding—termasuk pelajar dan pembelajar otodidak—sintaksis yang rumit sering kali menjadi hambatan terbesar. *Vibe coding* memotong hambatan tersebut sehingga belajar terasa lebih interaktif dan menyenangkan:
 
 - **Eksplorasi Ide Lebih Cepat**: Kamu bisa langsung melihat prototipe ide aplikasimu dalam hitungan menit.
 - **Belajar Sambil Praktek (Learning by Doing)**: Saat AI menghasilkan kode, kamu bisa membaca dan mempelajari bagaimana sebuah fungsi disusun.

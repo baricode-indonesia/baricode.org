@@ -28,7 +28,7 @@ Jika gaya koding tradisional ibarat menjadi seorang **tukang batu** yang menyusu
 
 ## 2. Mengapa Vibe Coding Cocok untuk Pemula?
 
-Bagi pemula—termasuk santri, siswa, dan pembelajar mandiri—hambatan terbesar dalam belajar pemrograman biasanya adalah:
+Bagi pemula—termasuk siswa, mahasiswa, dan pembelajar mandiri—hambatan terbesar dalam belajar pemrograman biasanya adalah:
 - Terlalu banyak titik koma (`;`) atau kurung kurawal (`{}`) yang terlewat sehingga program *error*.
 - Membingungkan dalam memilih dari mana harus mulai menulis kode.
 - Sulit memvisualisasikan bagaimana hasil kode tampil di dunia nyata.

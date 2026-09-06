@@ -1,16 +1,16 @@
 ---
-title: "Mengapa Santri Perlu Mengenal Dunia Pemrograman?"
-excerpt: "Kombinasi antara kedisiplinan ilmu agama dan kecakapan teknologi menciptakan potensi dampak sosial yang sangat besar."
+title: "Mengapa Pemula Perlu Mengenal Dunia Pemrograman?"
+excerpt: "Kombinasi antara semangat belajar dan kecakapan teknologi menciptakan potensi dampak sosial yang sangat besar."
 category: "tips-dan-trik"
-tags: ["santri-coding", "roadmap"]
+tags: ["pemula-coding", "roadmap"]
 author: "Baricode Team"
 ---
 
-Santri memiliki ketelitian, logika pemahaman kitab yang sistematis, serta kedisiplinan tinggi. Kualitas ini sangat sejalan dengan mindset pemikir sistemis di dunia software engineering.
+Pembelajar otodidak dan pemula memiliki ketelitian, logika pemahaman yang sistematis, serta kedisiplinan tinggi. Kualitas ini sangat sejalan dengan mindset pemikir sistemis di dunia software engineering.
 
-### Manfaat Utama bagi Santri:
-- **Kemandirian Digital**: Mampu membuat portal dakwah dan sistem pesantren sendiri.
+### Manfaat Utama bagi Pemula:
+- **Kemandirian Digital**: Mampu membuat portal website dan sistem aplikasi sendiri.
 - **Problem Solving**: Melatih logika berpikir kritis dalam menyelesaikan masalah nyata.
-- **Portofolio Karya**: Membuka peluang karya independen di era digital.
+- **Portofolio Karya**: Membuka peluang karya dan karier independen di era digital.
 
-Dengan menguasai IT, santri tidak hanya bisa membangun portal dakwah yang interaktif, tetapi juga dapat berkontribusi dalam solusi digital bagi pesantren dan masyarakat sekitar.
+Dengan menguasai IT, pemula tidak hanya bisa membangun website yang interaktif, tetapi juga dapat berkontribusi dalam memberikan solusi digital bagi masyarakat sekitar.

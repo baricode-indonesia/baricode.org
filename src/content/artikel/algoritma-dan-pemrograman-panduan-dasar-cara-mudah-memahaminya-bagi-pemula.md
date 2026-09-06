@@ -124,6 +124,6 @@ Perhatikan betapa jernihnya logika di atas:
 
 Memahami algoritma dan pemrograman tidak membutuhkan keahlian matematika tingkat tinggi atau latar belakang pendidikan IT khusus. Yang paling penting adalah **pola pikir logis (*logic mindset*)** dan **kemauan untuk terus mencoba**.
 
-Di **Baricode Indonesia**, kami percaya bahwa siapa saja—termasuk santri, pemuda desa, dan pemula tanpa pengalaman—bisa belajar koding secara membumi dan menyenangkan.
+Di **Baricode Indonesia**, kami percaya bahwa siapa saja—termasuk pelajar, pemuda desa, dan pemula tanpa pengalaman—bisa belajar koding secara membumi dan menyenangkan.
 
 > *"Jangan menyerah di awal. Setiap programmer berpengalaman pernah berada di posisi kamu saat ini."*

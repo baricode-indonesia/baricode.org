@@ -21,7 +21,7 @@
 	<title>Grup WhatsApp Komunitas — Baricode Indonesia</title>
 	<meta
 		name="description"
-		content="Gabung grup WhatsApp General komunitas Baricode Indonesia. Diskusi seputar koding, tempat bertanya bagi pemula dan santri, serta saling berbagi ilmu IT."
+		content="Gabung grup WhatsApp General komunitas Baricode Indonesia. Diskusi seputar koding, tempat bertanya bagi pemula dan pembelajar mandiri, serta saling berbagi ilmu IT."
 	/>
 </svelte:head>
 
@@ -42,7 +42,7 @@
 		</h1>
 
 		<p class="mx-auto mt-4 max-w-xl text-base leading-relaxed text-slate-600 dark:text-zinc-300">
-			Wadah untuk santri, pemula, dan pembelajar IT berkumpul, bertanya seputar kendala koding, serta berbagi tips dan pengalaman belajar secara ramah dan membumi.
+			Wadah untuk pemula, pelajar, dan pembelajar IT berkumpul, bertanya seputar kendala koding, serta berbagi tips dan pengalaman belajar secara ramah dan membumi.
 		</p>
 	</div>
 

@@ -103,7 +103,7 @@
 					name="role"
 					id="testimonial-role"
 					bind:value={role}
-					placeholder="Contoh: Santri, Alumni Bimbingan"
+					placeholder="Contoh: Pelajar, Alumni Bimbingan"
 					class="mt-1 w-full rounded-lg border border-slate-300 bg-white text-slate-900 dark:border-white/15 dark:bg-white/5 dark:text-white placeholder:text-slate-400 dark:placeholder:text-red-300/50 px-3 py-2 text-sm focus:border-rose-500 dark:focus:border-white/30 focus:outline-none"
 				/>
 			</div>

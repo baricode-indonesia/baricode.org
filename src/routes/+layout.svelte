@@ -155,7 +155,7 @@
 				<a href="/artikel" class="transition hover:text-slate-900 dark:hover:text-white">Artikel</a>
 				<a href="/kursus" class="transition hover:text-slate-900 dark:hover:text-white">Kursus &amp; Akademi</a>
 				<a href="/tentang" class="transition hover:text-slate-900 dark:hover:text-white">Tentang Baricode</a>
-				<a href="/untuk-santri" class="transition hover:text-slate-900 dark:hover:text-white">Untuk Santri</a>
+				<a href="/untuk-pemula" class="transition hover:text-slate-900 dark:hover:text-white">Untuk Pemula</a>
 				<a href="/whatsapp" class="transition hover:text-slate-900 dark:hover:text-white">Grup WhatsApp</a>
 				<a href="/testimoni" class="transition hover:text-slate-900 dark:hover:text-white">Testimoni</a>
 				<a href="/glosarium" class="transition hover:text-slate-900 dark:hover:text-white">Glosarium</a>

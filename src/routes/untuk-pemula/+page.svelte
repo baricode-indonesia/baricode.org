@@ -3,20 +3,20 @@
 </script>
 
 <svelte:head>
-	<title>Belajar IT untuk Santri — Baricode Indonesia</title>
-	<meta name="description" content="Panduan belajar coding dan IT khusus untuk santri — belajar dari pondok, tanpa perlu minder soal keterbatasan akses atau fasilitas." />
+	<title>Belajar IT untuk Pemula & Pembelajar Mandiri — Baricode Indonesia</title>
+	<meta name="description" content="Panduan belajar coding dan IT khusus untuk pemula dan pembelajar mandiri — belajar dari nol, tanpa perlu minder soal keterbatasan akses atau fasilitas." />
 </svelte:head>
 
 <section class="mx-auto max-w-3xl px-6 py-16">
-	<p class="text-sm font-medium uppercase tracking-wide text-rose-600 dark:text-red-300">Untuk Santri</p>
+	<p class="text-sm font-medium uppercase tracking-wide text-rose-600 dark:text-red-300">Untuk Pemula & Pembelajar Mandiri</p>
 	<h1 class="mt-4 text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
-		Santri juga bisa jago coding.
+		Siapa saja bisa jago coding.
 	</h1>
 
 	<div class="mt-8 flex max-w-none flex-col gap-5 text-base leading-relaxed text-slate-600 dark:text-red-100">
 		<p>
-			Belajar di pondok bukan penghalang untuk mengenal dunia IT. Baricode Indonesia dibangun juga
-			untuk santri yang ingin memanfaatkan waktu luang untuk belajar keterampilan baru yang bermanfaat
+			Belajar dari mana saja bukan penghalang untuk mengenal dunia IT. Baricode Indonesia dibangun
+			untuk siapa saja yang ingin memanfaatkan waktu luang untuk belajar keterampilan baru yang bermanfaat
 			di masa depan.
 		</p>
 		<p>

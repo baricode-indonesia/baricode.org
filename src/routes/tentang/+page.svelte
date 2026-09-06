@@ -16,7 +16,7 @@
 	<div class="mt-8 flex max-w-none flex-col gap-5 text-base leading-relaxed text-slate-600 dark:text-zinc-300">
 		<p>
 			Baricode Indonesia adalah akademi dan kursus online IT yang baru saja memulai langkah pertama. Kami lahir
-			dari kesadaran sederhana: banyak anak muda — santri, remaja, dan pemuda desa — yang sebenarnya
+			dari kesadaran sederhana: banyak anak muda — pelajar, remaja, pemuda desa, dan pembelajar otodidak — yang sebenarnya
 			ingin belajar coding, tapi minder karena keterbatasan akses, fasilitas, atau latar belakang.
 		</p>
 		<p>

@@ -2,7 +2,7 @@
 title: "Memulai Belajar Coding Dari Kondisi Paling Terbatas"
 excerpt: "Tidak perlu laptop mahal atau spek tinggi untuk mulai belajar koding. Ini langkah-langkah nyata yang bisa kamu ambil hari ini."
 category: "pemrograman-dasar"
-tags: ["pemula", "tips-belajar", "santri-coding"]
+tags: ["pemula", "tips-belajar", "pemula-coding"]
 author: "Ahla"
 ---
 

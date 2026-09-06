@@ -90,7 +90,7 @@ export const tags: Tag[] = [
 	{ name: 'Laravel', slug: 'laravel' },
 	{ name: 'HTML & CSS', slug: 'html-css' },
 	{ name: 'Tips Belajar', slug: 'tips-belajar' },
-	{ name: 'Santri Coding', slug: 'santri-coding' },
+	{ name: 'Pemula Coding', slug: 'pemula-coding' },
 	{ name: 'Roadmap', slug: 'roadmap' },
 	{ name: 'Vibe Coding', slug: 'vibe-coding' },
 	{ name: 'AI Coding', slug: 'ai-coding' },
@@ -197,7 +197,7 @@ export const sampleTestimonials: Testimonial[] = [
 	{
 		id: 1,
 		name: 'Ahmad Fauzi',
-		role: 'Santri & Pembelajar Mandiri',
+		role: 'Pelajar & Pembelajar Mandiri',
 		content: 'Materi Baricode sangat mudah dipahami. Saya yang awalnya tidak mengerti apa-apa tentang koding kini sudah bisa bikin website sederhana sendiri.',
 		rating: 5
 	},
@@ -217,7 +217,7 @@ export const faqs: FaqItem[] = [
 	},
 	{
 		question: 'Saya belum punya pengalaman coding sama sekali, apakah boleh ikut?',
-		answer: 'Boleh sekali. Baricode Indonesia dibangun untuk pemula, termasuk santri, remaja, dan pemuda desa yang baru pertama kali mengenal dunia IT.'
+		answer: 'Boleh sekali. Baricode Indonesia dibangun untuk pemula, termasuk pelajar, remaja, pemuda desa, dan siapapun yang baru pertama kali mengenal dunia IT.'
 	},
 	{
 		question: 'Apakah saya perlu laptop atau perangkat khusus?',

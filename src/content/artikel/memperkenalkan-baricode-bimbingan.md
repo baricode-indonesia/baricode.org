@@ -2,7 +2,7 @@
 title: "Memperkenalkan Baricode Bimbingan: Pendampingan Belajar Koding Gratis via WhatsApp"
 excerpt: "Belajar coding otodidak tanpa harus sendirian. Baricode Bimbingan mendampingi remaja & pemuda desa lewat grup WhatsApp — gratis, tanpa kelas, tanpa meeting."
 category: "tentang-baricode"
-tags: ["pemula", "tips-belajar", "santri-coding", "bimbingan"]
+tags: ["pemula", "tips-belajar", "pemula-coding", "bimbingan"]
 author: "Baricode Team"
 published_at: "2026-07-30"
 ---
@@ -13,7 +13,7 @@ Belajar koding tidak butuh kondisi sempurna. Tidak perlu laptop mahal, tempat ku
 
 ## Apa Itu Baricode Bimbingan?
 
-**Baricode Bimbingan** adalah program pendampingan belajar koding gratis dari **Baricode Indonesia**, ditujukan khusus untuk remaja, pemuda desa, santri, dan siapa pun yang sedang belajar coding secara mandiri (otodidak).
+**Baricode Bimbingan** adalah program pendampingan belajar koding gratis dari **Baricode Indonesia**, ditujukan khusus untuk remaja, pemuda desa, pelajar, dan siapa pun yang sedang belajar coding secara mandiri (otodidak).
 
 Penting untuk dipahami sejak awal: Bimbingan **bukan kelas**, dan **bukan sesi meeting** atau video call. Tidak ada jadwal mengajar, tidak ada kurikulum kaku yang disodorkan. Sebaliknya, peserta tetap belajar dari sumber belajarnya sendiri — entah itu kursus online, dokumentasi resmi, video tutorial, atau buku — sementara mentor Baricode berperan menjaga arah dan akuntabilitas belajar melalui **grup WhatsApp**.
 
