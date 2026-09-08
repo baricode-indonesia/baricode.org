@@ -22,7 +22,7 @@
 		</span>
 	</h1>
 	<p class="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-slate-600 dark:text-zinc-300">
-		Kami adalah akademi dan kursus online IT yang baru saja memulai langkah pertama. Tidak perlu minder
+		Kami adalah komunitas, akademi, dan kursus online IT yang baru saja memulai langkah pertama. Tidak perlu minder
 		kalau kamu belajar dari kamar kecil atau dari kondisi paling terbatas sekalipun, karena kami pun
 		memulai semuanya dari sana.
 	</p>
