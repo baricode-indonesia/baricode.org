@@ -11,14 +11,6 @@
 			class="group relative flex items-center gap-2.5 rounded-full bg-emerald-600 px-3.5 py-3 text-white shadow-xl shadow-emerald-600/30 ring-1 ring-white/20 transition-all duration-300 hover:scale-105 hover:bg-emerald-500 hover:shadow-emerald-500/40 active:scale-95 sm:px-4 sm:py-3.5"
 			aria-label="Bergabung ke Grup WhatsApp Baricode"
 		>
-			<!-- Pulse Badge Indicator -->
-			<span class="relative flex size-3">
-				<span
-					class="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-300 opacity-75"
-				></span>
-				<span class="relative inline-flex size-3 rounded-full bg-emerald-200"></span>
-			</span>
-
 			<!-- WhatsApp SVG Icon -->
 			<svg
 				class="size-5 fill-current transition-transform duration-300 group-hover:rotate-6 sm:size-6"
@@ -32,7 +24,7 @@
 
 			<!-- Label -->
 			<span class="text-xs font-bold tracking-wide sm:text-sm">
-				Grup WA
+				Komunitas Ngoding
 			</span>
 
 			<!-- Hover Tooltip Desktop -->
