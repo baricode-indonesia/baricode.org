@@ -57,4 +57,4 @@ Bagi pemula yang ingin memulai perjalanan di dunia pemrograman, berikut adalah a
 
 Koding dan teknologi bukan sekadar tentang mengetik barisan kode di depan laptop, melainkan sebuah **alat (wasilah)** untuk memperluas jangkauan kebermanfaatan. Dengan memadukan semangat belajar, pemahaman logika, dan kecakapan teknologi, generasi muda siap menjadi pemandu zaman di era digital.
 
-Ayo manfaatkan kesempatan, mulai langkah pertamamu belajar koding bersama [Baricode Indonesia](https://baricode.org)!
+Ayo manfaatkan kesempatan, mulai langkah pertamamu belajar koding bersama [Baricode Indonesia](https://www.baricode.org/)!

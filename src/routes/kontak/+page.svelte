@@ -18,6 +18,7 @@
 	</p>
 
 	<div class="mt-10 grid gap-6 sm:grid-cols-2">
+		<!--email_off-->
 		<a
 			href={`mailto:${siteConfig.contactEmail}`}
 			class="rounded-2xl border border-slate-200/80 bg-white/80 dark:border-white/10 dark:bg-white/5 p-6 backdrop-blur transition hover:-translate-y-1 hover:border-rose-400/40 hover:bg-white dark:hover:bg-white/10 shadow-sm dark:shadow-none"
@@ -25,12 +26,11 @@
 			<h2 class="text-lg font-semibold text-slate-900 dark:text-white">Email</h2>
 			<p class="mt-2 text-sm text-slate-600 dark:text-red-100">{siteConfig.contactEmail}</p>
 		</a>
+		<!--/email_off-->
 
 		{#if siteConfig.contactWhatsapp}
 			<a
-				href={`https://baricode.org/whatsapp`}
-				target="_blank"
-				rel="noopener"
+				href="/whatsapp"
 				class="rounded-2xl border border-slate-200/80 bg-white/80 dark:border-white/10 dark:bg-white/5 p-6 backdrop-blur transition hover:-translate-y-1 hover:border-rose-400/40 hover:bg-white dark:hover:bg-white/10 shadow-sm dark:shadow-none"
 			>
 				<h2 class="text-lg font-semibold text-slate-900 dark:text-white">WhatsApp</h2>

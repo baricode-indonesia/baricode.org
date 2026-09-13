@@ -29,8 +29,8 @@
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="Baricode Indonesia — Akademi & Kursus Online IT Membumi" />
 	<meta property="og:description" content="Akademi dan kursus online IT untuk siapa saja. Belajar koding dari mana saja, meski dari kondisi paling terbatas sekalipun." />
-	<meta property="og:image" content="https://baricode.org/og-image.jpg" />
-	<meta property="og:image:secure_url" content="https://baricode.org/og-image.jpg" />
+	<meta property="og:image" content="https://www.baricode.org/og-image.jpg" />
+	<meta property="og:image:secure_url" content="https://www.baricode.org/og-image.jpg" />
 	<meta property="og:image:type" content="image/jpeg" />
 	<meta property="og:image:width" content="1200" />
 	<meta property="og:image:height" content="630" />
@@ -40,7 +40,7 @@
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content="Baricode Indonesia — Akademi & Kursus Online IT Membumi" />
 	<meta name="twitter:description" content="Akademi dan kursus online IT untuk siapa saja. Belajar koding dari mana saja, meski dari kondisi paling terbatas sekalipun." />
-	<meta name="twitter:image" content="https://baricode.org/og-image.jpg" />
+	<meta name="twitter:image" content="https://www.baricode.org/og-image.jpg" />
 </svelte:head>
 
 <div class="relative flex min-h-screen flex-col overflow-x-hidden bg-slate-50 dark:bg-[#0B0F17] font-sans text-slate-900 dark:text-zinc-100 antialiased transition-colors duration-200">

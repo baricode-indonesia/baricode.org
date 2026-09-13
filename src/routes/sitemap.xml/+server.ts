@@ -3,7 +3,7 @@ import type { RequestHandler } from './$types';
 
 export const prerender = true;
 
-const SITE_URL = 'https://baricode.org';
+const SITE_URL = 'https://www.baricode.org';
 
 interface SitemapUrl {
 	loc: string;
