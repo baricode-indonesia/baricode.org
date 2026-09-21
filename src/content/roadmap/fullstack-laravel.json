@@ -1,0 +1,223 @@
+{
+  "slug": "fullstack-laravel",
+  "order": 4,
+  "title": "Roadmap Fullstack Laravel & Livewire",
+  "badge": "Fullstack",
+  "tagline": "Membangun Web Reaktif & Modern Menggunakan TALL Stack (Tailwind, Alpine, Laravel, Livewire)",
+  "description": "Panduan menguasai fullstack web development modern dengan Laravel Livewire. Ciptakan antarmuka dinamis, reaktif, dan realtime layaknya Single Page App (SPA) tanpa perlu kerumitan setup bundler JavaScript yang berat.",
+  "difficulty": "Menengah",
+  "estimatedWeeks": "8 - 10 Minggu",
+  "category": "Fullstack Laravel",
+  "iconName": "laravel",
+  "updatedAt": "2026-09-21",
+  "phases": [
+    {
+      "id": "fullstack-phase-1",
+      "phaseNumber": 1,
+      "title": "Desain Antarmuka: Tailwind CSS & Blade Components",
+      "subtitle": "Menyusun tampilan antarmuka yang estetis, modular, dan responsif.",
+      "description": "Sebelum menambahkan reaktivitas, pelajari cara menata komponen UI yang rapi dan konsisten dengan Tailwind CSS dan Blade Component.",
+      "topics": [
+        {
+          "id": "tailwind-utility-first",
+          "title": "Tailwind CSS Modern & Tata Letak Responsif",
+          "description": "Pola utilitas Tailwind: flexbox, grid, spacing, tipografi, warna slate/zinc, dan mode gelap (dark mode).",
+          "priority": "wajib",
+          "keyPoints": [
+            "Setup Tailwind via Vite di Laravel",
+            "Breakpoint responsif (sm, md, lg, xl)",
+            "Kustomisasi konfigurasi tema dan warna di CSS"
+          ]
+        },
+        {
+          "id": "blade-anonymous-components",
+          "title": "Modular Blade Components & Slots",
+          "description": "Membuat komponen tombol, modal dialog, kartu, dan dropdown yang dapat digunakan berulang kali.",
+          "priority": "wajib",
+          "keyPoints": [
+            "Komponen berbasis tag <x-button> dan <x-card>",
+            "Penggunaan $attributes dan $attributes->merge()",
+            "Named slots (slot nama kustom) dan default slots"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fullstack-phase-2",
+      "phaseNumber": 2,
+      "title": "Fondasi Laravel Livewire 3",
+      "subtitle": "Kekuatan reaktivitas frontend langsung dari Controller PHP.",
+      "description": "Memahami bagaimana Livewire mengubah perubahan data di browser menjadi pemanggilan AJAX otomatis tanpa menulis satu baris JavaScript.",
+      "topics": [
+        {
+          "id": "livewire-installation-anatomy",
+          "title": "Instalasi & Anatomi Komponen Livewire",
+          "description": "Perintah php artisan make:livewire, class komponen backend, dan view blade pasangannya.",
+          "priority": "wajib",
+          "keyPoints": [
+            "Instalasi via composer require livewire/livewire",
+            "Struktur class App\\Livewire\\NamaKomponen",
+            "Merender method render() dan layout komponen"
+          ]
+        },
+        {
+          "id": "wire-model-data-binding",
+          "title": "Reaktif Data Binding: wire:model",
+          "description": "Menghubungkan input formulir HTML ke properti publik komponen secara dua arah (two-way binding).",
+          "priority": "wajib",
+          "keyPoints": [
+            "wire:model vs wire:model.live (update instan)",
+            "wire:model.blur dan wire:model.debounce.500ms untuk optimasi request",
+            "Tipe data properti publik: string, array, boolean"
+          ]
+        },
+        {
+          "id": "wire-click-actions",
+          "title": "Aksi & Event Handling: wire:click & wire:submit",
+          "description": "Menjalankan fungsi PHP di server saat tombol ditekan atau formulir dikirimkan dari browser.",
+          "priority": "wajib",
+          "keyPoints": [
+            "wire:click=\"tambahData\" dan mengirimkan parameter (wire:click=\"hapus({{ $item->id }})\")",
+            "wire:submit=\"simpan\" pada tag form",
+            "Indikator loading dengan wire:loading dan wire:target"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fullstack-phase-3",
+      "phaseNumber": 3,
+      "title": "Form Handling, Validasi Realtime & Unggah File",
+      "subtitle": "Membuat formulir yang interaktif, aman, dan memandu pengguna secara langsung.",
+      "description": "Validasi form instan saat pengguna mengetik, menampilkan pesan error, dan proses upload gambar dengan progress bar.",
+      "topics": [
+        {
+          "id": "livewire-validation",
+          "title": "Validasi Realtime dengan Atribut #[Validate]",
+          "description": "Menulis aturan validasi deklaratif menggunakan PHP 8 Attribute dan validasi instan via updated() hook.",
+          "priority": "wajib",
+          "keyPoints": [
+            "Sintaks attribute modern #[Validate('required|min:3')]",
+            "$this->validate() dan menampilkan error dengan @error('field')",
+            "Validasi realtime setiap kali pengguna berpindah input"
+          ]
+        },
+        {
+          "id": "livewire-file-uploads",
+          "title": "Unggah File & Preview Gambar Interaktif",
+          "description": "Mengunggah foto profil atau berkas dengan trait WithFileUploads dan menampilkan gambar sementara sebelum disimpan.",
+          "priority": "wajib",
+          "keyPoints": [
+            "Trait Livewire\\WithFileUploads",
+            "Preview sementara: $foto->temporaryUrl()",
+            "Progress bar pengunggahan bawaan Livewire"
+          ]
+        },
+        {
+          "id": "livewire-pagination",
+          "title": "Pencarian & Pagination Tanpa Reload (Live Search)",
+          "description": "Membangun tabel data dengan filter pencarian dan perpindahan halaman instan tanpa refresh browser.",
+          "priority": "wajib",
+          "keyPoints": [
+            "Trait WithPagination",
+            "Query Eloquent dinamis berdasarkan properti $search",
+            "Mengatur queryString URL agar status pencarian bisa di-bookmark"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fullstack-phase-4",
+      "phaseNumber": 4,
+      "title": "Interaktivitas Client-Side Ringan: Alpine.js",
+      "subtitle": "Menangani interaksi murni UI tanpa perlu kirim request ke server.",
+      "description": "Alpine.js sudah terintegrasi bawaan di Livewire 3. Gunakan Alpine untuk dropdown, modal popup, tooltip, dan tab switcher.",
+      "topics": [
+        {
+          "id": "alpine-basics",
+          "title": "Direktif Inti Alpine.js (x-data, x-show, x-on)",
+          "description": "Membuat komponen interaktif langsung di dalam tag HTML tanpa file JS terpisah.",
+          "priority": "wajib",
+          "keyPoints": [
+            "Inisialisasi state lokal: x-data=\"{ open: false }\"",
+            "Menampilkan / menyembunyikan elemen: x-show=\"open\" dan x-transition",
+            "Event listener: @click=\"open = !open\" dan @click.outside"
+          ]
+        },
+        {
+          "id": "alpine-livewire-bridge",
+          "title": "Jembatan Alpine.js dan Livewire ($wire)",
+          "description": "Mengakses dan mengubah properti PHP Livewire langsung dari kode JavaScript Alpine menggunakan variabel $wire.",
+          "priority": "direkomendasikan",
+          "keyPoints": [
+            "$wire.get('namaProperti') dan $wire.set('namaProperti', nilai)",
+            "$wire.panggilMethodServer()",
+            "x-modelable untuk membuat custom input reusable"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fullstack-phase-5",
+      "phaseNumber": 5,
+      "title": "SPA Experience & Fitur Lanjutan Livewire 3",
+      "subtitle": "Perpindahan halaman secepat kilat dan komunikasi antar komponen.",
+      "description": "Membuat aplikasi terasa seperti aplikasi Single Page App (SPA) tanpa reload layar dan koordinasi antar widget.",
+      "topics": [
+        {
+          "id": "wire-navigate",
+          "title": "Navigasi Instan dengan wire:navigate",
+          "description": "Mengubah tag link biasa menjadi perpindahan halaman instan berbasis fetch dan prefetching otomatis.",
+          "priority": "wajib",
+          "keyPoints": [
+            "Menambahkan atribut wire:navigate pada link menu navigasi",
+            "wire:navigate.hover untuk prefetch halaman saat kursor diarahkan",
+            "Persistensi state audio atau elemen antarmuka saat berpindah halaman"
+          ]
+        },
+        {
+          "id": "livewire-events-listeners",
+          "title": "Komunikasi Antar Komponen (Events & Dispatch)",
+          "description": "Mengirimkan sinyal dari satu komponen ke komponen lain (misal: tombol 'Beli' memperbarui counter di ikon keranjang belanja).",
+          "priority": "wajib",
+          "keyPoints": [
+            "$this->dispatch('item-ditambahkan', id: $id)",
+            "Atribut #[On('item-ditambahkan')] pada komponen penerima",
+            "Polling berkala wire:poll.5s untuk dashboard monitoring realtime"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fullstack-phase-6",
+      "phaseNumber": 6,
+      "title": "Admin Panel & Dashboard Cepat dengan Filament PHP",
+      "subtitle": "Alat nomor satu di ekosistem Laravel untuk membuat CRUD admin dalam hitungan menit.",
+      "description": "Filament dibangun 100% di atas TALL Stack. Pelajari cara menghasilkan panel admin yang elegan dan siap pakai.",
+      "topics": [
+        {
+          "id": "filament-resources-tables",
+          "title": "Filament Resources, Form Schema & Tables",
+          "description": "Menghasilkan resource CRUD otomatis untuk Model database lengkap dengan tabel pencarian, sort, dan pagination.",
+          "priority": "wajib",
+          "keyPoints": [
+            "php artisan make:filament-resource NamaModel",
+            "Mendefinisikan skema formulir: TextInput, Select, FileUpload",
+            "Mendefinisikan kolom tabel: TextColumn, BadgeColumn, ImageColumn"
+          ]
+        },
+        {
+          "id": "filament-dashboard-widgets",
+          "title": "Widget Grafik & Statistik Dashboard",
+          "description": "Menampilkan kartu ringkasan omzet penjualan, jumlah user baru, dan grafik analitik dengan Chart.js di panel Filament.",
+          "priority": "direkomendasikan",
+          "keyPoints": [
+            "StatsOverviewWidget untuk kartu metrik angka",
+            "ChartWidget untuk diagram garis dan batang",
+            "Otorisasi akses panel berdasarkan role pengguna"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,316 @@
+{
+  "slug": "wordpress",
+  "order": 2,
+  "title": "Roadmap Belajar WordPress",
+  "badge": "Populer",
+  "tagline": "Dari Pemula Hingga Mahir Bikin Custom Theme, Toko Online & Kustomisasi WordPress",
+  "description": "Panduan langkah demi langkah yang membumi untuk menguasai WordPress: mulai dari setup lokal, anatomi sistem, template hierarchy, pembuatan custom theme dengan PHP, Custom Post Types (CPT), integrasi WooCommerce, hingga optimasi kecepatan dan keamanan.",
+  "difficulty": "Pemula",
+  "estimatedWeeks": "8 - 10 Minggu",
+  "category": "WordPress Development",
+  "iconName": "wordpress",
+  "updatedAt": "2026-09-21",
+  "phases": [
+    {
+      "id": "wp-phase-1",
+      "phaseNumber": 1,
+      "title": "Setup Lingkungan Lokal & Anatomi Direktori WordPress",
+      "subtitle": "Menyiapkan ruang kerja di komputer sendiri dan memahami susunan file WordPress.",
+      "description": "Sebelum menyentuh koding tema atau plugin, kuasai cara menjalankan WordPress di komputer lokal dan pahami peran tiap folder utamanya.",
+      "topics": [
+        {
+          "id": "wp-local-setup",
+          "title": "Instalasi WordPress di Server Lokal (LocalWP / Laragon)",
+          "description": "Menyiapkan server lokal PHP & MySQL di laptop/PC tanpa perlu menyewa hosting terlebih dahulu.",
+          "priority": "wajib",
+          "keyPoints": [
+            "Instalasi LocalWP atau Laragon",
+            "Membuat database MySQL & konfigurasi wp-config.php",
+            "Menjalankan instalasi 5 menit WordPress (Five-Minute Install)"
+          ]
+        },
+        {
+          "id": "wp-directory-structure",
+          "title": "Struktur Folder & File Inti WordPress",
+          "description": "Mengenal perbedaan wp-admin, wp-includes, dan folder wp-content tempat theme & plugin berada.",
+          "priority": "wajib",
+          "keyPoints": [
+            "File wp-config.php, .htaccess, dan index.php",
+            "Folder wp-content: themes, plugins, uploads",
+            "Aturan emas: Jangan pernah mengedit file inti (core files) WordPress"
+          ]
+        },
+        {
+          "id": "wp-dashboard-settings",
+          "title": "Navigasi Dashboard & Konfigurasi Penting",
+          "description": "Memahami pengaturan permalink SEO-friendly, pengelolaan user roles, media uploads, dan reading settings.",
+          "priority": "wajib",
+          "keyPoints": [
+            "Pengaturan Permalink ke format /%postname%/",
+            "Tingkatan peran pengguna: Administrator, Editor, Author, Subscriber",
+            "Pengaturan Beranda Statis vs Daftar Tulisan Terkini"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wp-phase-2",
+      "phaseNumber": 2,
+      "title": "Block Editor (Gutenberg), Full Site Editing & Builder",
+      "subtitle": "Memanfaatkan editor visual modern dan pola tata letak WordPress.",
+      "description": "Pelajari cara menyusun halaman modern menggunakan blok Gutenberg bawaan, Block Pattern, dan pengenalan page builder populer.",
+      "topics": [
+        {
+          "id": "gutenberg-blocks",
+          "title": "Gutenberg Block Editor & Block Patterns",
+          "description": "Menyusun konten dinamis dengan blok teks, gambar, kolom, grup, dan menggunakan reusable block pattern.",
+          "priority": "wajib",
+          "keyPoints": [
+            "Hierarki blok: Group, Row, Column, Cover",
+            "Menyimpan dan menggunakan Block Patterns",
+            "Perbedaan Block Themes (FSE) dengan Classic Themes"
+          ]
+        },
+        {
+          "id": "fse-site-editor",
+          "title": "Full Site Editing (FSE) & theme.json",
+          "description": "Mengatur tipografi global, palet warna, template bagian (header/footer) langsung dari Site Editor WordPress modern.",
+          "priority": "direkomendasikan",
+          "keyPoints": [
+            "Pengenalan file theme.json untuk konfigurasi desain",
+            "Template parts untuk Header dan Footer",
+            "Mengatur Style Book tema blok"
+          ]
+        },
+        {
+          "id": "page-builders-overview",
+          "title": "Pengenalan Ekosistem Page Builder (Elementor / Bricks)",
+          "description": "Memahami cara kerja visual builder yang sering diminta klien untuk pembuatan landing page cepat.",
+          "priority": "direkomendasikan",
+          "keyPoints": [
+            "Kelebihan dan kekurangan page builder dibanding custom code",
+            "Prinsip pembuatan section, container flexbox, dan widget",
+            "Best practice agar website tidak lambat akibat builder bloat"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wp-phase-3",
+      "phaseNumber": 3,
+      "title": "Template Hierarchy & Anatomi Tema WordPress",
+      "subtitle": "Kunci utama untuk memahami bagaimana WordPress menentukan file mana yang dirender.",
+      "description": "Setiap URL di WordPress (halaman beranda, single post, archive, kategori, pencarian) memiliki aturan file template tertentu.",
+      "topics": [
+        {
+          "id": "template-hierarchy-tree",
+          "title": "Memahami Template Hierarchy WordPress",
+          "description": "Pohon hierarki file: index.php, single.php, page.php, archive.php, category.php, 404.php, dan search.php.",
+          "priority": "wajib",
+          "keyPoints": [
+            "Bagaimana WordPress mencari file template yang paling spesifik",
+            "Fallback utama ke file index.php jika template spesifik tidak ada",
+            "Penamaan template kustom seperti page-tentang-kami.php"
+          ]
+        },
+        {
+          "id": "starter-classic-theme",
+          "title": "File Esensial Tema Klasik (style.css & functions.php)",
+          "description": "Dua file wajib untuk mengaktifkan tema: header metadata di style.css dan file inisialisasi functions.php.",
+          "priority": "wajib",
+          "keyPoints": [
+            "Komentar metadata tema di baris teratas style.css",
+            "Fungsi file functions.php sebagai 'mesin' tema",
+            "Screenshot tema: screenshot.png"
+          ]
+        },
+        {
+          "id": "enqueue-scripts-styles",
+          "title": "Enqueue CSS & JavaScript (wp_enqueue_scripts)",
+          "description": "Cara resmi dan benar memuat file stylesheet CSS dan script JavaScript tanpa merusak dependensi WordPress.",
+          "priority": "wajib",
+          "keyPoints": [
+            "Fungsi wp_enqueue_style dan wp_enqueue_script",
+            "Mengatur dependensi script dan pemuatan di footer",
+            "Menyambungkan Tailwind CSS atau Bootstrap ke tema"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wp-phase-4",
+      "phaseNumber": 4,
+      "title": "Membuat Custom Theme dari Nol dengan PHP & HTML",
+      "subtitle": "Membuat tema kustom yang ringan, cepat, dan 100% sesuai desain sendiri.",
+      "description": "Mengubah template HTML statis menjadi tema dinamis WordPress menggunakan potongan template modular.",
+      "topics": [
+        {
+          "id": "modular-template-parts",
+          "title": "Memecah Template: get_header, get_footer & get_sidebar",
+          "description": "Membuat layout DRY (Don't Repeat Yourself) dengan memecah kode ke header.php, footer.php, dan modular parts.",
+          "priority": "wajib",
+          "keyPoints": [
+            "Fungsi get_header(), get_footer(), dan get_sidebar()",
+            "Titik wajib wp_head() sebelum </head> dan wp_footer() sebelum </body>",
+            "Menggunakan get_template_part('template-parts/content', 'card')"
+          ]
+        },
+        {
+          "id": "theme-supports-menus",
+          "title": "Theme Support: Navigasi Menu & Featured Image",
+          "description": "Mendaftarkan fitur WordPress bawaan seperti menu navigasi dinamis, logo kustom, dan thumbnail tulisan.",
+          "priority": "wajib",
+          "keyPoints": [
+            "add_theme_support('post-thumbnails')",
+            "add_theme_support('title-tag') dan add_theme_support('custom-logo')",
+            "register_nav_menus() dan wp_nav_menu()"
+          ]
+        },
+        {
+          "id": "the-wordpress-loop",
+          "title": "The Loop WordPress & Template Tags",
+          "description": "Struktur perulangan utama WordPress untuk mengambil dan menampilkan data tulisan dari database.",
+          "priority": "wajib",
+          "keyPoints": [
+            "Sintaks if (have_posts()) : while (have_posts()) : the_post();",
+            "Fungsi template: the_title(), the_content(), the_permalink(), the_time()",
+            "the_post_thumbnail() dan get_the_author()"
+          ],
+          "resources": [
+            {
+              "title": "Panduan Lengkap Memahami HTML dan CSS untuk Pemula",
+              "url": "/artikel/panduan-lengkap-memahami-html-dan-css-untuk-pemula",
+              "isInternal": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wp-phase-5",
+      "phaseNumber": 5,
+      "title": "WP_Query, Custom Post Types (CPT) & Custom Fields (ACF)",
+      "subtitle": "Mengubah WordPress dari sekadar blog menjadi sistem web kompleks apa saja.",
+      "description": "Membuat tipe data baru (misal: Portofolio, Lowongan Kerja, Properti) dan custom field dinamis tanpa menyentuh core.",
+      "topics": [
+        {
+          "id": "wp-custom-query",
+          "title": "WP_Query & Custom Loops",
+          "description": "Mengambil postingan spesifik dari kategori tertentu, membatasi jumlah, dan mengurutkan secara kustom.",
+          "priority": "wajib",
+          "keyPoints": [
+            "Inisialisasi class $query = new WP_Query($args)",
+            "Argumen query: post_type, posts_per_page, orderby, tax_query",
+            "Penting: selalu panggil wp_reset_postdata() setelah custom loop"
+          ]
+        },
+        {
+          "id": "cpt-and-taxonomies",
+          "title": "Custom Post Types (CPT) & Custom Taxonomy",
+          "description": "Mendaftarkan tipe konten kustom dengan register_post_type dan kategori kustom dengan register_taxonomy.",
+          "priority": "wajib",
+          "keyPoints": [
+            "register_post_type() pada action init",
+            "Mendefinisikan icon, slug, dan dukungan editor (supports)",
+            "Hierarchical taxonomy (seperti Kategori) vs Non-hierarchical (seperti Tag)"
+          ]
+        },
+        {
+          "id": "acf-custom-fields",
+          "title": "Advanced Custom Fields (ACF) Integration",
+          "description": "Menambahkan input kustom (gambar banner, harga, tanggal event, galeri foto) dan merendernya di tema.",
+          "priority": "wajib",
+          "keyPoints": [
+            "Membuat Field Group di dashboard ACF",
+            "Mengambil nilai field dengan get_field() dan the_field()",
+            "Repeater Fields dan Flexible Content untuk layout fleksibel"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wp-phase-6",
+      "phaseNumber": 6,
+      "title": "Toko Online Modern dengan WooCommerce",
+      "subtitle": "Membangun toko online lengkap dengan katalog produk, keranjang, dan payment gateway.",
+      "description": "WooCommerce adalah platform e-commerce nomor satu di WordPress. Pelajari cara mengonfigurasi dan mengkustomisasi tampilannya.",
+      "topics": [
+        {
+          "id": "woocommerce-setup",
+          "title": "Setup & Konfigurasi Inti WooCommerce",
+          "description": "Instalasi wizard WooCommerce, mata uang IDR, pengaturan zona pengiriman, dan pajak.",
+          "priority": "wajib",
+          "keyPoints": [
+            "Jenis produk: Simple Product, Variable Product, Downloadable Product",
+            "Struktur halaman WooCommerce (Shop, Cart, Checkout, My Account)",
+            "Konfigurasi shipping flat rate dan free shipping"
+          ]
+        },
+        {
+          "id": "woocommerce-theme-override",
+          "title": "Kustomisasi Template WooCommerce (Theme Overrides)",
+          "description": "Menimpa (override) file template bawaan WooCommerce di dalam tema kustom tanpa mengubah plugin aslinya.",
+          "priority": "direkomendasikan",
+          "keyPoints": [
+            "Menambahkan add_theme_support('woocommerce') di functions.php",
+            "Menduplikasi template WooCommerce ke folder /themes/namatema/woocommerce/",
+            "Menggunakan WooCommerce Action Hooks untuk menyisipkan elemen kustom"
+          ]
+        },
+        {
+          "id": "payment-gateways-indo",
+          "title": "Integrasi Payment Gateway Indonesia & Ongkos Kirim",
+          "description": "Menghubungkan Midtrans / Xendit / Tripay untuk pembayaran QRIS, Virtual Account, dan plugin ongkir RajaOngkir.",
+          "priority": "wajib",
+          "keyPoints": [
+            "Setup API Key & Sandbox Payment Gateway",
+            "Notifikasi webhook dan update otomatis status order",
+            "Plugin kurir pengiriman (JNE, J&T, SiCepat)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wp-phase-7",
+      "phaseNumber": 7,
+      "title": "Keamanan, Optimasi Kecepatan & Deployment",
+      "subtitle": "Menjaga website tetap aman dari malware, berkecepatan tinggi, dan online di hosting/VPS.",
+      "description": "Langkah penting sebelum merilis website klien: hardening keamanan, optimasi Core Web Vitals, dan proses migrasi hosting.",
+      "topics": [
+        {
+          "id": "wp-security-hardening",
+          "title": "Hardening Keamanan WordPress",
+          "description": "Mencegah serangan brute force, menyembunyikan versi WordPress, dan proteksi file konfigurasi.",
+          "priority": "wajib",
+          "keyPoints": [
+            "Mengganti URL default wp-login.php dan Two-Factor Authentication (2FA)",
+            "Proteksi file wp-config.php via .htaccess",
+            "Menonaktifkan file editing dari dashboard (DISALLOW_FILE_EDIT)"
+          ]
+        },
+        {
+          "id": "wp-speed-optimization",
+          "title": "Optimasi Kecepatan & Cache (Core Web Vitals)",
+          "description": "Membuat skor Google PageSpeed hijau dengan kompresi WebP, caching halaman, dan optimasi CSS/JS.",
+          "priority": "wajib",
+          "keyPoints": [
+            "Implementasi caching (LiteSpeed Cache / WP Rocket)",
+            "Kompresi gambar otomatis ke format WebP",
+            "Menghapus plugin berlebih dan query database yang tidak efisien"
+          ]
+        },
+        {
+          "id": "wp-migration-launch",
+          "title": "Migrasi Website & Go-Live ke CPanel / VPS",
+          "description": "Memindahkan website dari komputer lokal ke server online tanpa broken links menggunakan WP-CLI atau All-in-One WP Migration.",
+          "priority": "wajib",
+          "keyPoints": [
+            "Search and replace URL database dari localhost ke domain asli",
+            "Konfigurasi SSL gratis (HTTPS)",
+            "Setup backup berkala otomatis"
+          ]
+        }
+      ]
+    }
+  ]
+}

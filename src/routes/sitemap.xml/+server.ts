@@ -1,4 +1,5 @@
 import { samplePosts } from '$lib/data/site';
+import { roadmaps } from '$lib/data/roadmaps';
 import type { RequestHandler } from './$types';
 
 export const prerender = true;
@@ -18,6 +19,7 @@ export const GET: RequestHandler = async () => {
 	// Static routes list with priorities and change frequencies
 	const staticPages: SitemapUrl[] = [
 		{ loc: '/', priority: 1.0, changefreq: 'daily', lastmod: today },
+		{ loc: '/roadmap', priority: 0.9, changefreq: 'weekly', lastmod: today },
 		{ loc: '/artikel', priority: 0.9, changefreq: 'daily', lastmod: today },
 		{ loc: '/kursus', priority: 0.9, changefreq: 'weekly', lastmod: today },
 		{ loc: '/untuk-pemula', priority: 0.8, changefreq: 'weekly', lastmod: today },
@@ -40,7 +42,15 @@ export const GET: RequestHandler = async () => {
 		lastmod: post.published_at || today
 	}));
 
-	const allPages = [...staticPages, ...articlePages];
+	// Roadmap routes
+	const roadmapPages: SitemapUrl[] = roadmaps.map((r) => ({
+		loc: `/roadmap/${r.slug}`,
+		priority: 0.9,
+		changefreq: 'weekly',
+		lastmod: r.updatedAt || today
+	}));
+
+	const allPages = [...staticPages, ...articlePages, ...roadmapPages];
 
 	const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

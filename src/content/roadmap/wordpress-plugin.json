@@ -1,0 +1,234 @@
+{
+  "slug": "wordpress-plugin",
+  "order": 5,
+  "title": "Roadmap WordPress Plugin & REST API",
+  "badge": "Lanjutan",
+  "tagline": "Membangun Ekstensi Modular, Custom Gutenberg Block, dan Integrasi API di WordPress",
+  "description": "Panduan teknis bagi developer yang ingin melangkah lebih jauh dari sekadar membuat tema: membangun plugin modular dari nol, menguasai Action & Filter Hooks, Settings API, query database dengan $wpdb, hingga endpoint kustom WordPress REST API.",
+  "difficulty": "Menengah",
+  "estimatedWeeks": "8 - 10 Minggu",
+  "category": "WordPress Development",
+  "iconName": "wordpress",
+  "updatedAt": "2026-09-21",
+  "phases": [
+    {
+      "id": "plugin-phase-1",
+      "phaseNumber": 1,
+      "title": "Anatomi, Siklus Hidup & Struktur Folder Plugin",
+      "subtitle": "Standar penamaan file dan aturan pembuatan plugin yang rapi.",
+      "description": "Bagaimana WordPress mendeteksi plugin baru, membaca header metadata, dan mengelola status aktif atau nonaktif.",
+      "topics": [
+        {
+          "id": "plugin-header-metadata",
+          "title": "File Utama Plugin & Header Komentar",
+          "description": "Membuat folder di wp-content/plugins/ dan mendefinisikan informasi nama plugin, versi, lisensi, dan author.",
+          "priority": "wajib",
+          "keyPoints": [
+            "Komentar standar /* Plugin Name: ... */",
+            "Mencegah eksekusi file langsung: defined('ABSPATH') || exit;",
+            "Konstanta path plugin: plugin_dir_path() dan plugin_dir_url()"
+          ]
+        },
+        {
+          "id": "plugin-lifecycle-hooks",
+          "title": "Siklus Hidup: Activation, Deactivation & Uninstall",
+          "description": "Menjalankan tugas khusus saat plugin pertama kali diaktifkan (seperti membuat tabel atau set opsi default) dan pembersihan saat dihapus.",
+          "priority": "wajib",
+          "keyPoints": [
+            "register_activation_hook() dan flush_rewrite_rules()",
+            "register_deactivation_hook() untuk membersihkan cache",
+            "File uninstall.php untuk menghapus data jika pengguna mencopot plugin"
+          ]
+        },
+        {
+          "id": "plugin-architecture-oop",
+          "title": "Struktur Arsitektur Berbasis OOP",
+          "description": "Mengorganisir kode plugin dengan class, autoloading PSR-4 atau class loader sederhana agar tidak menumpuk di satu file raksasa.",
+          "priority": "direkomendasikan",
+          "keyPoints": [
+            "Pola Singleton untuk class inti plugin",
+            "Pemisahan folder /includes, /admin, dan /public",
+            "Prefixing nama fungsi atau namespace untuk mencegah konflik nama"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plugin-phase-2",
+      "phaseNumber": 2,
+      "title": "Menguasai WordPress Hooks (Actions & Filters)",
+      "subtitle": "Jantung dari seluruh ekosistem WordPress yang membuatnya dapat dimodifikasi tanpa mengubah core.",
+      "description": "Pelajari kapan harus memakai Action untuk menyisipkan proses, dan kapan memakai Filter untuk memodifikasi nilai data.",
+      "topics": [
+        {
+          "id": "action-hooks-deep-dive",
+          "title": "Action Hooks: Menyisipkan Eksekusi Kode",
+          "description": "Menjalankan fungsi kustom di titik-titik krusial WordPress seperti init, wp_head, admin_menu, atau save_post.",
+          "priority": "wajib",
+          "keyPoints": [
+            "add_action($tag, $fungsi, $prioritas, $jumlahArgumen)",
+            "do_action() untuk membuat hook kustom di plugin sendiri",
+            "Urutan prioritas eksekusi hook (default 10)"
+          ]
+        },
+        {
+          "id": "filter-hooks-deep-dive",
+          "title": "Filter Hooks: Memodifikasi Konten & Nilai",
+          "description": "Menangkap data yang akan ditampilkan, mengubahnya, dan mengembalikannya (wajib ada return value).",
+          "priority": "wajib",
+          "keyPoints": [
+            "add_filter('the_content', ...), add_filter('the_title', ...)",
+            "Aturan emas filter: Selalu kembalikan nilai variabel (return $konten)",
+            "apply_filters() untuk mengizinkan plugin lain memodifikasi nilai di pluginmu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plugin-phase-3",
+      "phaseNumber": 3,
+      "title": "Halaman Admin, Menu & Settings API",
+      "subtitle": "Menyediakan panel konfigurasi yang rapi di Dashboard wp-admin.",
+      "description": "Menggunakan Settings API resmi WordPress untuk menyimpan pengaturan konfigurasi ke tabel wp_options secara otomatis dan aman.",
+      "topics": [
+        {
+          "id": "admin-menus-submenus",
+          "title": "Menambahkan Menu Navigasi di Dashboard Admin",
+          "description": "Mendaftarkan menu baru di sidebar admin dengan add_menu_page() dan add_submenu_page().",
+          "priority": "wajib",
+          "keyPoints": [
+            "add_menu_page() pada action admin_menu",
+            "Ikon dashicons dan posisi urutan menu di sidebar",
+            "Pengecekan kapabilitas hak akses: manage_options"
+          ]
+        },
+        {
+          "id": "wordpress-settings-api",
+          "title": "WordPress Settings API & Validasi Opsi",
+          "description": "Sistem resmi WordPress untuk membuat formulir pengaturan, sanitasi otomatis, dan proteksi form submission.",
+          "priority": "wajib",
+          "keyPoints": [
+            "register_setting(), add_settings_section(), add_settings_field()",
+            "Fungsi settings_fields(), do_settings_sections(), dan submit_button()",
+            "Menyimpan dan membaca nilai dengan get_option() dan update_option()"
+          ]
+        },
+        {
+          "id": "admin-notices",
+          "title": "Pesan Notifikasi Admin (Admin Notices)",
+          "description": "Menampilkan banner sukses, peringatan, atau error di bagian atas dashboard admin WordPress.",
+          "priority": "direkomendasikan",
+          "keyPoints": [
+            "Hook admin_notices",
+            "Class CSS bawaan: notice notice-success is-dismissible",
+            "Menyimpan status banner yang sudah ditutup user via Ajax transient"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plugin-phase-4",
+      "phaseNumber": 4,
+      "title": "Tabel Database Kustom & Kelas $wpdb",
+      "subtitle": "Kapan dan bagaimana membuat tabel database sendiri di MySQL WordPress.",
+      "description": "Jika data aplikasi terlalu besar dan tidak cocok disimpan di wp_posts/wp_postmeta, buat tabel kustom khusus untuk performa maksimal.",
+      "topics": [
+        {
+          "id": "custom-database-tables",
+          "title": "Membuat Tabel Baru dengan dbDelta()",
+          "description": "Sintaks pembuatan tabel MySQL baru di WordPress yang dieksekusi secara aman saat aktivasi plugin.",
+          "priority": "wajib",
+          "keyPoints": [
+            "Aturan ketat fungsi dbDelta() dari wp-admin/includes/upgrade.php",
+            "Menyesuaikan prefix tabel ($wpdb->prefix . 'nama_tabel')",
+            "Menentukan charset dan collate database ($wpdb->get_charset_collate())"
+          ]
+        },
+        {
+          "id": "wpdb-queries-crud",
+          "title": "Query Database dengan Objek Global $wpdb",
+          "description": "Menjalankan operasi insert, update, delete, dan custom query secara aman menggunakan objek $wpdb.",
+          "priority": "wajib",
+          "keyPoints": [
+            "$wpdb->insert() dan $wpdb->update() dengan format data (%s, %d)",
+            "$wpdb->get_results(), $wpdb->get_row(), $wpdb->get_var()",
+            "Wajib gunakan $wpdb->prepare() untuk mencegah SQL Injection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plugin-phase-5",
+      "phaseNumber": 5,
+      "title": "WordPress REST API Kustom",
+      "subtitle": "Menyediakan endpoint data JSON untuk aplikasi mobile atau frontend modern.",
+      "description": "Membuat rute API kustom (/wp-json/namaplugin/v1/...) untuk menerima atau mengembalikan data berformat JSON.",
+      "topics": [
+        {
+          "id": "rest-api-endpoints",
+          "title": "Mendaftarkan Custom REST Routes",
+          "description": "Fungsi register_rest_route() pada action rest_api_init untuk membuat endpoint GET, POST, DELETE.",
+          "priority": "wajib",
+          "keyPoints": [
+            "Namespace dan format versi API (misal: baricode/v1)",
+            "Callback fungsi pemroses request (WP_REST_Request)",
+            "Permission callback untuk validasi izin akses pengguna"
+          ]
+        },
+        {
+          "id": "rest-api-responses",
+          "title": "Mengembalikan Data JSON & Error Handling",
+          "description": "Mengembalikan data dengan class new WP_REST_Response() atau memicu error dengan WP_Error.",
+          "priority": "wajib",
+          "keyPoints": [
+            "Format status HTTP (200, 201, 404, 401)",
+            "Penggunaan class WP_Error('kode_error', 'pesan', ['status' => 400])",
+            "Sanitasi dan validasi argumen input parameter API"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plugin-phase-6",
+      "phaseNumber": 6,
+      "title": "Keamanan Plugin, Nonces & Distribusi Resmi",
+      "subtitle": "Standar keamanan wajib agar plugin tidak menjadi celah peretasan website.",
+      "description": "Pelajari tiga pilar keamanan WordPress: Sanitasi input, Escaping output, dan verifikasi token keamanan Nonces.",
+      "topics": [
+        {
+          "id": "security-nonces",
+          "title": "Nonces (Number Used Once) & Anti-CSRF",
+          "description": "Membuat dan memverifikasi token unik untuk memastikan request berasal dari formulir resmi dan bukan serangan pemalsuan request.",
+          "priority": "wajib",
+          "keyPoints": [
+            "wp_nonce_field() di dalam form HTML",
+            "wp_create_nonce() untuk request Ajax / REST API",
+            "Pemeriksaan wp_verify_nonce() dan check_admin_referer()"
+          ]
+        },
+        {
+          "id": "sanitization-and-escaping",
+          "title": "Sanitasi Input & Escaping Output",
+          "description": "Membersihkan data sebelum masuk ke database, dan mengamankan data sebelum dicetak ke layar browser.",
+          "priority": "wajib",
+          "keyPoints": [
+            "Sanitasi: sanitize_text_field(), sanitize_email(), absint()",
+            "Escaping: esc_html(), esc_attr(), esc_url(), wp_kses_post()",
+            "Membedakan kapan harus sanitize vs kapan harus escape"
+          ]
+        },
+        {
+          "id": "wporg-guidelines-release",
+          "title": "Standar Plugin Handbook & Rilis ke Direktori Resmi",
+          "description": "Panduan checklist rilis jika ingin mempublikasikan plugin gratis ke repository resmi WordPress.org.",
+          "priority": "direkomendasikan",
+          "keyPoints": [
+            "File readme.txt standar WordPress",
+            "Pemeriksaan plugin dengan Plugin Check (PCP)",
+            "Akses SVN repository untuk upload versi rilis"
+          ]
+        }
+      ]
+    }
+  ]
+}

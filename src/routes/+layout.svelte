@@ -2,20 +2,11 @@
 	import './layout.css';
 	import favicon from '$lib/assets/favicon.svg';
 	import BaricodeLogo from '$lib/components/BaricodeLogo.svelte';
+	import Navbar from '$lib/components/Navbar.svelte';
 	import WhatsAppFloat from '$lib/components/WhatsAppFloat.svelte';
 	import { siteConfig } from '$lib/data/site';
 
 	let { children } = $props();
-
-	let mobileMenuOpen = $state(false);
-
-	function toggleMobileMenu() {
-		mobileMenuOpen = !mobileMenuOpen;
-	}
-
-	function closeMobileMenu() {
-		mobileMenuOpen = false;
-	}
 </script>
 
 <svelte:head>
@@ -55,69 +46,7 @@
 	<!-- Top Accent Bar -->
 	<div class="h-0.5 w-full bg-gradient-to-r from-red-600 via-rose-500 to-amber-500"></div>
 
-	<!-- Header -->
-	<header class="sticky top-0 z-30 border-b border-slate-200/80 bg-white/80 dark:border-zinc-800/80 dark:bg-[#0B0F17]/85 backdrop-blur-xl transition-colors">
-		<div class="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-			<div class="flex items-center gap-3">
-				<a href="/" class="transition hover:opacity-90">
-					<BaricodeLogo class="size-8" />
-				</a>
-			</div>
-
-			<nav class="hidden items-center gap-6 text-sm font-medium text-slate-600 dark:text-zinc-300 md:flex">
-				<a href="/" class="transition hover:text-slate-900 dark:hover:text-white">Beranda</a>
-				<a href="/artikel" class="transition hover:text-slate-900 dark:hover:text-white">Artikel</a>
-				<a href="/kursus" class="transition hover:text-slate-900 dark:hover:text-white">Kursus &amp; Akademi</a>
-				<a href="/tentang" class="transition hover:text-slate-900 dark:hover:text-white">Tentang</a>
-				<a href="/faq" class="transition hover:text-slate-900 dark:hover:text-white">FAQ</a>
-				<a href="/kontak" class="transition hover:text-slate-900 dark:hover:text-white">Kontak</a>
-				<a
-					href="/kursus"
-					class="rounded-full bg-gradient-to-r from-red-600 to-rose-600 px-4 py-2 text-xs font-semibold text-white shadow-md shadow-red-600/25 transition hover:from-red-500 hover:to-rose-500"
-				>
-					Mulai Belajar
-				</a>
-			</nav>
-
-			<button
-				type="button"
-				onclick={toggleMobileMenu}
-				class="text-slate-700 hover:text-slate-900 dark:text-zinc-300 dark:hover:text-white md:hidden"
-				aria-label="Buka menu"
-				aria-expanded={mobileMenuOpen}
-			>
-				{#if !mobileMenuOpen}
-					<svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-						<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5" />
-					</svg>
-				{:else}
-					<svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-						<path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-					</svg>
-				{/if}
-			</button>
-		</div>
-
-		{#if mobileMenuOpen}
-			<nav class="border-t border-slate-200/80 bg-white/95 dark:border-zinc-800/80 dark:bg-[#0B0F17]/95 px-6 py-4 md:hidden">
-				<div class="flex flex-col gap-4 text-sm font-medium text-slate-700 dark:text-zinc-300">
-					<a href="/" onclick={closeMobileMenu} class="hover:text-slate-900 dark:hover:text-white">Beranda</a>
-					<a href="/artikel" onclick={closeMobileMenu} class="hover:text-slate-900 dark:hover:text-white">Artikel</a>
-					<a href="/kursus" onclick={closeMobileMenu} class="hover:text-slate-900 dark:hover:text-white">Kursus &amp; Akademi</a>
-					<a href="/tentang" onclick={closeMobileMenu} class="hover:text-slate-900 dark:hover:text-white">Tentang</a>
-					<a href="/faq" onclick={closeMobileMenu} class="hover:text-slate-900 dark:hover:text-white">FAQ</a>
-					<a href="/kontak" onclick={closeMobileMenu} class="hover:text-slate-900 dark:hover:text-white">Kontak</a>
-					<a
-						href="/kursus"
-						onclick={closeMobileMenu}
-						class="w-fit rounded-full bg-gradient-to-r from-red-600 to-rose-600 px-5 py-2 text-xs font-semibold text-white shadow-md"
-					>
-						Mulai Belajar
-					</a>
-				</div>
-			</nav>
-		{/if}
-	</header>
+	<Navbar />
 
 	<main class="flex-1">
 		{@render children()}
@@ -153,6 +82,7 @@
 
 			<div class="mt-8 flex flex-wrap gap-x-6 gap-y-2 border-t border-slate-200 dark:border-zinc-800/60 pt-6 text-xs text-slate-600 dark:text-zinc-300">
 				<a href="/artikel" class="transition hover:text-slate-900 dark:hover:text-white">Artikel</a>
+				<a href="/roadmap" class="transition hover:text-slate-900 dark:hover:text-white">Roadmap</a>
 				<a href="/kursus" class="transition hover:text-slate-900 dark:hover:text-white">Kursus &amp; Akademi</a>
 				<a href="/tentang" class="transition hover:text-slate-900 dark:hover:text-white">Tentang Baricode</a>
 				<a href="/untuk-pemula" class="transition hover:text-slate-900 dark:hover:text-white">Untuk Pemula</a>

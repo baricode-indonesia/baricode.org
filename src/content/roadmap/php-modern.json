@@ -1,0 +1,266 @@
+{
+  "slug": "php-modern",
+  "order": 3,
+  "title": "Roadmap PHP Modern & OOP",
+  "badge": "Fondasi",
+  "tagline": "Fondasi Wajib Bahasa Pemrograman Sebelum Menguasai Laravel & Arsitektur WordPress",
+  "description": "Panduan belajar bahasa PHP modern dari dasar untuk pemula. Memahami logika algoritma, sintaks modern PHP 8+, Object-Oriented Programming (OOP) mendalam, database PDO & MySQL, Composer, hingga membangun arsitektur MVC sederhana.",
+  "difficulty": "Pemula",
+  "estimatedWeeks": "6 - 8 Minggu",
+  "category": "Bahasa Pemrograman",
+  "iconName": "php",
+  "updatedAt": "2026-09-21",
+  "phases": [
+    {
+      "id": "php-phase-1",
+      "phaseNumber": 1,
+      "title": "Dasar Sintaks, Tipe Data & Alur Kendali PHP 8+",
+      "subtitle": "Membangun cara berpikir komputasional dan mengenal sintaks PHP modern.",
+      "description": "Kuasai bagaimana komputer mengeksekusi kode baris per baris, cara menyimpan nilai ke dalam variabel, serta percabangan logika.",
+      "topics": [
+        {
+          "id": "php-intro-syntax",
+          "title": "Anatomi Skrip PHP & Tipe Data Primitif",
+          "description": "Tag pembuka <?php, echo, statement dan expression, tipe data string, integer, float, boolean, dan null.",
+          "priority": "wajib",
+          "keyPoints": [
+            "Aturan penulisan variabel ($namaVariabel)",
+            "Tipe data skalar dan pemeriksaan gettype() / var_dump()",
+            "Konkatenasi string dan String Interpolation (\"Halo {$nama}\")"
+          ],
+          "resources": [
+            {
+              "title": "Mengenal Perbedaan Statement dan Expression",
+              "url": "/artikel/mengenal-perbedaan-statement-dan-expression-dalam-pemrograman",
+              "isInternal": true
+            }
+          ]
+        },
+        {
+          "id": "php-control-flow",
+          "title": "Struktur Percabangan: if-else & Match Expression",
+          "description": "Membuat keputusan dalam program berdasarkan kondisi tertentu menggunakan sintaks if-elseif-else atau match expression PHP 8.",
+          "priority": "wajib",
+          "keyPoints": [
+            "Operator perbandingan (== vs ===) dan operator logika (&&, ||, !)",
+            "Ternary operator ($kondisi ? $benar : $salah) dan Null Coalescing (??)",
+            "Fitur modern match ($nilai) { ... } pengganti switch case"
+          ]
+        },
+        {
+          "id": "php-loops",
+          "title": "Perulangan (Looping) & Algoritma Sederhana",
+          "description": "Menjalankan instruksi berulang kali dengan for, while, do-while, dan foreach.",
+          "priority": "wajib",
+          "keyPoints": [
+            "Loop for dengan counter",
+            "Loop while dan pencegahan infinite loop",
+            "Break dan continue untuk mengendalikan alur loop"
+          ],
+          "resources": [
+            {
+              "title": "Algoritma dan Pemrograman: Panduan Dasar bagi Pemula",
+              "url": "/artikel/algoritma-dan-pemrograman-panduan-dasar-cara-mudah-memahaminya-bagi-pemula",
+              "isInternal": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "php-phase-2",
+      "phaseNumber": 2,
+      "title": "Array Kompleks, Manipulasi String & Fungsi Modular",
+      "subtitle": "Mengorganisir kumpulan data dan membungkus kode agar reusable.",
+      "description": "Array dan Function adalah dua pondasi terpenting dalam memproses data di PHP sebelum masuk ke database.",
+      "topics": [
+        {
+          "id": "php-functions",
+          "title": "Fungsi Buatan Sendiri (Functions) & Type Hinting",
+          "description": "Mendefinisikan fungsi, argumen parameter, return value, default value, dan tipe data ketat (strict types).",
+          "priority": "wajib",
+          "keyPoints": [
+            "Sintaks function namaFungsi(string $parameter): int",
+            "declare(strict_types=1); untuk kode yang minim bug",
+            "Anonymous functions & Arrow functions (fn($x) => $x * 2)"
+          ],
+          "resources": [
+            {
+              "title": "Function Artinya dalam Bahasa Sederhana",
+              "url": "/artikel/function-artinya-dalam-bahasa-bayi",
+              "isInternal": true
+            }
+          ]
+        },
+        {
+          "id": "php-arrays-advanced",
+          "title": "Indexed Array, Associative Array & Fungsi Array",
+          "description": "Mengelola data tabular, array bersarang (multidimensional), serta fungsi bawaan array_map, array_filter, in_array.",
+          "priority": "wajib",
+          "keyPoints": [
+            "Perbedaan Indexed Array vs Associative Array (key => value)",
+            "Perulangan foreach ($daftar as $kunci => $nilai)",
+            "Operasi array: array_merge, array_push, array_column"
+          ]
+        },
+        {
+          "id": "php-forms-superglobals",
+          "title": "Variabel Superglobal ($_GET, $_POST, $_SESSION)",
+          "description": "Menangkap data kiriman formulir web, mengelola status login dengan Session, dan cookie browser.",
+          "priority": "wajib",
+          "keyPoints": [
+            "Menangkap input form via $_POST dan parameter URL via $_GET",
+            "Sanitasi input dengan htmlspecialchars() untuk mencegah XSS",
+            "session_start(), menyimpan data $_SESSION, dan session_destroy()"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "php-phase-3",
+      "phaseNumber": 3,
+      "title": "Object-Oriented Programming (OOP) PHP Mendalam",
+      "subtitle": "Pondasi mutlak yang digunakan oleh Laravel Framework dan WordPress modern.",
+      "description": "Berpindah dari gaya pemrograman prosedural ke arsitektur berorientasi objek yang rapi, modular, dan terstruktur.",
+      "topics": [
+        {
+          "id": "oop-classes-objects",
+          "title": "Class, Object, Properties & Methods",
+          "description": "Merancang cetak biru (class) dan membuat wujud nyatanya (object), serta visibility (public, protected, private).",
+          "priority": "wajib",
+          "keyPoints": [
+            "Kata kunci class, $this, dan operator panah ->",
+            "Constructor (__construct) & Constructor Promotion di PHP 8",
+            "Destructor dan method magis"
+          ]
+        },
+        {
+          "id": "oop-inheritance-polymorphism",
+          "title": "Inheritance (Pewarisan) & Polymorphism",
+          "description": "Menurunkan sifat class induk ke class anak (extends), method overriding, dan parent::__construct().",
+          "priority": "wajib",
+          "keyPoints": [
+            "Penggunaan kata kunci extends",
+            "Akses protected pada properti yang diwariskan",
+            "Kata kunci final untuk mencegah overriding"
+          ]
+        },
+        {
+          "id": "oop-interfaces-traits-namespaces",
+          "title": "Interface, Abstract Class, Traits & Namespaces",
+          "description": "Mendefinisikan kontrak kode dengan Interface, berbagi method dengan Trait, dan mengorganisir kode dengan Namespace.",
+          "priority": "wajib",
+          "keyPoints": [
+            "Perbedaan interface (implements) dengan abstract class",
+            "Trait untuk mengatasi keterbatasan single inheritance di PHP",
+            "Namespace dan keyword use untuk menghindari konflik nama class"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "php-phase-4",
+      "phaseNumber": 4,
+      "title": "Database MySQL dengan PDO & Keamanan Query",
+      "subtitle": "Menyimpan, mengambil, dan memperbarui data secara aman tanpa celah SQL Injection.",
+      "description": "Tinggalkan ekstensi jadul mysql_query. Kuasai PHP Data Objects (PDO) yang menjadi standar industri koneksi database PHP.",
+      "topics": [
+        {
+          "id": "pdo-connection",
+          "title": "Koneksi Database dengan PDO & Penanganan Error (Try-Catch)",
+          "description": "Menghubungkan PHP ke MySQL menggunakan Data Source Name (DSN) dan konfigurasi mode exception error.",
+          "priority": "wajib",
+          "keyPoints": [
+            "Inisialisasi new PDO(\"mysql:host=localhost;dbname=...\", $user, $pass)",
+            "Menangkap PDOException dalam blok try-catch",
+            "Pengaturan PDO::ATTR_ERRMODE dan PDO::ATTR_DEFAULT_FETCH_MODE"
+          ]
+        },
+        {
+          "id": "pdo-prepared-statements",
+          "title": "Prepared Statements & Anti SQL Injection",
+          "description": "Menjalankan query SQL dengan parameter terikat (bound parameters) agar data input pengguna tidak bisa membobol database.",
+          "priority": "wajib",
+          "keyPoints": [
+            "Perbedaan $pdo->query() vs $pdo->prepare()",
+            "Placeholder tanda tanya (?) dan named parameter (:id, :nama)",
+            "Eksekusi execute() dan mengambil data fetch() / fetchAll()"
+          ]
+        },
+        {
+          "id": "pdo-crud-project",
+          "title": "Membangun Aplikasi CRUD Lengkap dengan PDO",
+          "description": "Mempraktikkan operasi Create, Read, Update, Delete data barang atau pengguna dari database.",
+          "priority": "wajib",
+          "keyPoints": [
+            "Membuat tabel MySQL dengan primary key auto-increment",
+            "Formulir tambah dan edit dengan validasi server-side",
+            "Hapus data dengan konfirmasi aman via POST"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "php-phase-5",
+      "phaseNumber": 5,
+      "title": "Composer, Standar PSR & Autoloading",
+      "subtitle": "Alat modern pengelola dependensi dan aturan standar komunitas PHP dunia.",
+      "description": "Pelajari cara menginstal library pihak ketiga (seperti pengirim email, generator PDF) dan autoload class otomatis tanpa ratusan baris require.",
+      "topics": [
+        {
+          "id": "composer-init-require",
+          "title": "Composer Dasar & Manajemen Dependensi",
+          "description": "Inisialisasi composer.json, mengunduh library via terminal, dan peran file composer.lock.",
+          "priority": "wajib",
+          "keyPoints": [
+            "composer init dan composer require vendor/package",
+            "Peran direktori vendor/ dan file vendor/autoload.php",
+            "composer update vs composer install"
+          ]
+        },
+        {
+          "id": "psr-standards-autoload",
+          "title": "Standar PSR (PSR-4, PSR-12) & Autoloading Class",
+          "description": "Menata struktur folder dan nama file sesuai standar internasional PSR-4 agar class otomatis terbaca.",
+          "priority": "wajib",
+          "keyPoints": [
+            "Konfigurasi \"autoload\": { \"psr-4\": { \"App\\\\\": \"src/\" } } di composer.json",
+            "Perintah composer dump-autoload",
+            "Standar gaya penulisan kode PHP (PSR-12)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "php-phase-6",
+      "phaseNumber": 6,
+      "title": "Membuat Mini Framework MVC Sendiri dari Nol",
+      "subtitle": "Langkah pamungkas yang membuatmu paham 100% cara kerja Laravel di balik layar.",
+      "description": "Sebelum memakai framework besar, buatlah router URL sederhana, Controller, dan Model dengan tanganmu sendiri.",
+      "topics": [
+        {
+          "id": "mvc-router-from-scratch",
+          "title": "Front Controller & Simple URL Router",
+          "description": "Mengarahkan semua request web ke satu pintu public/index.php menggunakan .htaccess dan mencocokkan rute URI.",
+          "priority": "wajib",
+          "keyPoints": [
+            "Mod_rewrite .htaccess untuk meneruskan URL ke index.php",
+            "Membaca $_SERVER['REQUEST_URI'] dan memecahnya menjadi segmen",
+            "Mendefinisikan class Router sederhana yang memanggil Controller"
+          ]
+        },
+        {
+          "id": "mvc-controller-views",
+          "title": "Pemisahan Controller, Model Data & View Template",
+          "description": "Menyusun struktur folder MVC: app/Controllers, app/Models, dan app/Views.",
+          "priority": "wajib",
+          "keyPoints": [
+            "Model bertugas mengambil data dari PDO",
+            "Controller memproses logika bisnis dan memilih tampilan",
+            "Fungsi helper view('home', $data) untuk merender HTML"
+          ]
+        }
+      ]
+    }
+  ]
+}
