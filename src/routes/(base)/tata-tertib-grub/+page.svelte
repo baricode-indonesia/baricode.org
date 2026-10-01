@@ -73,7 +73,8 @@
 			</div>
 			<ul class="mt-4 space-y-2 text-sm leading-relaxed text-slate-600 dark:text-zinc-300 list-disc list-inside">
 				<li><strong>Iklan &amp; promosi diperbolehkan pada hari Rabu dan Minggu:</strong> Promosi produk, jualan, jasa IT/pembuatan aplikasi, portofolio, link referral/affiliate, atau info grup lain hanya diperbolehkan pada hari <strong>Rabu</strong> dan <strong>Minggu</strong>.</li>
-				<li><strong>Larangan iklan di luar jadwal:</strong> Pada hari Senin, Selasa, Kamis, Jumat, dan Sabtu, anggota dilarang mengirimkan pesan iklan/promosi tanpa izin tertulis dari Admin.</li>
+				<li><strong>Pengecualian info lomba &amp; event:</strong> Pembagian informasi lomba koding/IT, hackathon, webinar, atau kegiatan edukatif lainnya <strong>diperbolehkan kapan saja (tanpa terbatas hari)</strong>, asalkan murni bersifat informatif/edukatif serta <strong>tidak ada unsur transaksi komersial maupun tautan referral/afiliasi</strong>.</li>
+				<li><strong>Larangan iklan di luar jadwal:</strong> Pada hari Senin, Selasa, Kamis, Jumat, dan Sabtu, anggota dilarang mengirimkan pesan iklan/promosi komersial tanpa izin dari Admin.</li>
 				<li><strong>Etika beriklan:</strong> Saat beriklan di hari yang ditentukan, kirimkan pesan secukupnya (tidak <em>flooding</em> atau berkali-kali), serta dilarang mempromosikan jasa yang melanggar etika seperti joki tugas/skripsi atau layanan terlarang.</li>
 				<li><strong>Bebas spam:</strong> Dilarang melakukan spam pesan beruntun (flood chat) atau stiker secara berlebihan setiap saat.</li>
 			</ul>
