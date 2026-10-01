@@ -124,9 +124,9 @@
 
 			<div class="rounded-2xl border border-slate-200/80 bg-white/80 p-5 shadow-xs backdrop-blur dark:border-zinc-800/80 dark:bg-zinc-900/60">
 				<span class="text-2xl">🚫</span>
-				<h3 class="mt-3 text-sm font-semibold text-slate-900 dark:text-white">Bebas Spam</h3>
+				<h3 class="mt-3 text-sm font-semibold text-slate-900 dark:text-white">Bebas Spam &amp; Aturan Iklan</h3>
 				<p class="mt-1 text-xs leading-relaxed text-slate-600 dark:text-zinc-400">
-					Hindari promosi yang tidak relevan, pesan berantai, rumor, serta isu SARA demi kenyamanan bersama.
+					Promosi/iklan diperbolehkan khusus hari Rabu &amp; Minggu. Hindari spam, pesan berantai, serta isu SARA.
 				</p>
 			</div>
 		</div>

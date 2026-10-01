@@ -65,15 +65,17 @@
 			</ul>
 		</div>
 
-		<!-- 4. Bebas Spam & Promosi Komersial -->
+		<!-- 4. Ketentuan Iklan & Bebas Spam -->
 		<div class="rounded-2xl border border-slate-200/80 bg-white/80 p-6 shadow-xs backdrop-blur dark:border-zinc-800/80 dark:bg-zinc-900/60">
 			<div class="flex items-center gap-3">
 				<span class="flex size-9 items-center justify-center rounded-xl bg-purple-500/10 text-lg text-purple-600 dark:bg-purple-500/20 dark:text-purple-400 font-bold">4</span>
-				<h2 class="text-xl font-semibold text-slate-900 dark:text-white">Dilarang Spam &amp; Iklan Tanpa Izin</h2>
+				<h2 class="text-xl font-semibold text-slate-900 dark:text-white">Ketentuan Iklan/Promosi &amp; Bebas Spam</h2>
 			</div>
 			<ul class="mt-4 space-y-2 text-sm leading-relaxed text-slate-600 dark:text-zinc-300 list-disc list-inside">
-				<li>Dilarang promosi produk, jualan, jasa joki tugas, jasa pembuatan aplikasi, link referral/affiliate, atau grup lain tanpa izin tertulis dari Admin.</li>
-				<li>Dilarang melakukan spam pesan beruntun (flood chat) atau stiker secara berlebihan.</li>
+				<li><strong>Iklan &amp; promosi diperbolehkan pada hari Rabu dan Minggu:</strong> Promosi produk, jualan, jasa IT/pembuatan aplikasi, portofolio, link referral/affiliate, atau info grup lain hanya diperbolehkan pada hari <strong>Rabu</strong> dan <strong>Minggu</strong>.</li>
+				<li><strong>Larangan iklan di luar jadwal:</strong> Pada hari Senin, Selasa, Kamis, Jumat, dan Sabtu, anggota dilarang mengirimkan pesan iklan/promosi tanpa izin tertulis dari Admin.</li>
+				<li><strong>Etika beriklan:</strong> Saat beriklan di hari yang ditentukan, kirimkan pesan secukupnya (tidak <em>flooding</em> atau berkali-kali), serta dilarang mempromosikan jasa yang melanggar etika seperti joki tugas/skripsi atau layanan terlarang.</li>
+				<li><strong>Bebas spam:</strong> Dilarang melakukan spam pesan beruntun (flood chat) atau stiker secara berlebihan setiap saat.</li>
 			</ul>
 		</div>
 
