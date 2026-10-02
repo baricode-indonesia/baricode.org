@@ -5,10 +5,10 @@
 </script>
 
 {#if !isWhatsAppPage}
-	<div class="fixed bottom-4 right-4 z-50 sm:bottom-6 sm:right-6">
+	<div class="fixed right-4 bottom-4 z-50 sm:right-6 sm:bottom-6">
 		<a
 			href="/whatsapp"
-			class="group relative flex items-center gap-2.5 rounded-full bg-emerald-600 px-3.5 py-3 text-white shadow-xl shadow-emerald-600/30 ring-1 ring-white/20 transition-all duration-300 hover:scale-105 hover:bg-emerald-500 hover:shadow-emerald-500/40 active:scale-95 sm:px-4 sm:py-3.5"
+			class="group relative flex items-center gap-2.5 rounded-full bg-emerald-600 px-3.5 py-3 text-white shadow-xl ring-1 shadow-emerald-600/30 ring-white/20 transition-all duration-300 hover:scale-105 hover:bg-emerald-500 hover:shadow-emerald-500/40 active:scale-95 sm:px-4 sm:py-3.5"
 			aria-label="Bergabung ke Grup WhatsApp Baricode"
 		>
 			<!-- WhatsApp SVG Icon -->
@@ -23,13 +23,11 @@
 			</svg>
 
 			<!-- Label -->
-			<span class="text-xs font-bold tracking-wide sm:text-sm">
-				Komunitas Ngoding
-			</span>
+			<span class="text-xs font-bold tracking-wide sm:text-sm"> Komunitas Ngoding </span>
 
 			<!-- Hover Tooltip Desktop -->
 			<span
-				class="pointer-events-none absolute right-0 bottom-full mb-3 whitespace-nowrap rounded-lg bg-slate-900 px-3 py-1.5 text-xs font-medium text-white opacity-0 shadow-lg transition-opacity duration-200 group-hover:opacity-100 dark:bg-zinc-800 hidden sm:block"
+				class="pointer-events-none absolute right-0 bottom-full mb-3 hidden rounded-lg bg-slate-900 px-3 py-1.5 text-xs font-medium whitespace-nowrap text-white opacity-0 shadow-lg transition-opacity duration-200 group-hover:opacity-100 sm:block dark:bg-zinc-800"
 			>
 				Gabung Komunitas WhatsApp
 				<span

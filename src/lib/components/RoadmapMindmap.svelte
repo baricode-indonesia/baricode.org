@@ -40,7 +40,7 @@
 <div class="space-y-8">
 	<!-- Control Bar & Filter -->
 	<div
-		class="flex flex-col gap-4 rounded-2xl border border-slate-200/90 bg-white/90 p-4 shadow-sm backdrop-blur dark:border-zinc-800 dark:bg-zinc-900/90 sm:flex-row sm:items-center sm:justify-between"
+		class="flex flex-col gap-4 rounded-2xl border border-slate-200/90 bg-white/90 p-4 shadow-sm backdrop-blur sm:flex-row sm:items-center sm:justify-between dark:border-zinc-800 dark:bg-zinc-900/90"
 	>
 		<!-- View Mode Switcher -->
 		<div class="flex items-center gap-1 rounded-xl bg-slate-100 p-1 dark:bg-zinc-800">
@@ -102,11 +102,11 @@
 		<div class="space-y-12">
 			{#each phases as phase}
 				<div
-					class="relative rounded-3xl border border-slate-200/80 bg-white/70 p-6 shadow-sm backdrop-blur dark:border-zinc-800/80 dark:bg-zinc-900/60 lg:p-8"
+					class="relative rounded-3xl border border-slate-200/80 bg-white/70 p-6 shadow-sm backdrop-blur lg:p-8 dark:border-zinc-800/80 dark:bg-zinc-900/60"
 				>
 					<!-- Phase Header Node -->
 					<div
-						class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between border-b border-slate-200/70 pb-5 dark:border-zinc-800/70"
+						class="flex flex-col gap-3 border-b border-slate-200/70 pb-5 sm:flex-row sm:items-center sm:justify-between dark:border-zinc-800/70"
 					>
 						<div class="flex items-center gap-3">
 							<span
@@ -116,16 +116,18 @@
 							</span>
 							<div>
 								<div class="flex items-center gap-2">
-									<span class="text-[11px] font-semibold uppercase tracking-wider text-rose-600 dark:text-rose-400">
+									<span
+										class="text-[11px] font-semibold tracking-wider text-rose-600 uppercase dark:text-rose-400"
+									>
 										Fase {phase.phaseNumber}
 									</span>
 								</div>
-								<h2 class="text-lg font-bold text-slate-900 dark:text-white sm:text-xl">
+								<h2 class="text-lg font-bold text-slate-900 sm:text-xl dark:text-white">
 									{phase.title}
 								</h2>
 							</div>
 						</div>
-						<p class="text-xs text-slate-500 dark:text-zinc-400 sm:max-w-xs sm:text-right">
+						<p class="text-xs text-slate-500 sm:max-w-xs sm:text-right dark:text-zinc-400">
 							{phase.subtitle}
 						</p>
 					</div>
@@ -147,7 +149,7 @@
 											openTopicModal(topic);
 										}
 									}}
-									class="group relative flex flex-col justify-between rounded-2xl border border-slate-200/80 bg-white p-4 text-left shadow-xs transition-all duration-200 hover:-translate-y-1 hover:border-rose-500/50 hover:shadow-md cursor-pointer dark:border-zinc-800 dark:bg-zinc-800/60 dark:hover:border-rose-500/40"
+									class="group relative flex cursor-pointer flex-col justify-between rounded-2xl border border-slate-200/80 bg-white p-4 text-left shadow-xs transition-all duration-200 hover:-translate-y-1 hover:border-rose-500/50 hover:shadow-md dark:border-zinc-800 dark:bg-zinc-800/60 dark:hover:border-rose-500/40"
 								>
 									<div>
 										<!-- Top item meta -->
@@ -158,35 +160,54 @@
 												{badge.text}
 											</span>
 
-											<span class="text-[11px] text-slate-400 group-hover:text-rose-500 dark:text-zinc-500 transition-colors">
+											<span
+												class="text-[11px] text-slate-400 transition-colors group-hover:text-rose-500 dark:text-zinc-500"
+											>
 												<svg class="size-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-													<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+													<path
+														stroke-linecap="round"
+														stroke-linejoin="round"
+														stroke-width="2"
+														d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+													/>
 												</svg>
 											</span>
 										</div>
 
 										<h3
-											class="mt-3 text-sm font-semibold leading-snug text-slate-900 group-hover:text-rose-600 dark:text-zinc-100 dark:group-hover:text-rose-400 transition-colors"
+											class="mt-3 text-sm leading-snug font-semibold text-slate-900 transition-colors group-hover:text-rose-600 dark:text-zinc-100 dark:group-hover:text-rose-400"
 										>
 											{topic.title}
 										</h3>
 
-										<p class="mt-1.5 text-xs text-slate-600 dark:text-zinc-400 line-clamp-2">
+										<p class="mt-1.5 line-clamp-2 text-xs text-slate-600 dark:text-zinc-400">
 											{topic.description}
 										</p>
 									</div>
 
 									<!-- Bottom Hint -->
-									<div class="mt-4 flex items-center justify-between border-t border-slate-100 pt-2.5 text-[11px] text-slate-500 dark:border-zinc-800 dark:text-zinc-500">
-										<span class="inline-flex items-center gap-1 font-medium group-hover:text-rose-600 dark:group-hover:text-rose-400">
+									<div
+										class="mt-4 flex items-center justify-between border-t border-slate-100 pt-2.5 text-[11px] text-slate-500 dark:border-zinc-800 dark:text-zinc-500"
+									>
+										<span
+											class="inline-flex items-center gap-1 font-medium group-hover:text-rose-600 dark:group-hover:text-rose-400"
+										>
 											Lihat materi
-											<svg class="size-3 transition-transform group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+											<svg
+												class="size-3 transition-transform group-hover:translate-x-0.5"
+												fill="none"
+												viewBox="0 0 24 24"
+												stroke="currentColor"
+												stroke-width="2"
+											>
 												<path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
 											</svg>
 										</span>
 
 										{#if topic.resources && topic.resources.length > 0}
-											<span class="rounded bg-rose-50 px-1.5 py-0.5 text-[10px] text-rose-600 dark:bg-rose-950/50 dark:text-rose-400">
+											<span
+												class="rounded bg-rose-50 px-1.5 py-0.5 text-[10px] text-rose-600 dark:bg-rose-950/50 dark:text-rose-400"
+											>
 												{topic.resources.length} Bacaan
 											</span>
 										{/if}
@@ -199,23 +220,29 @@
 			{/each}
 		</div>
 
-	<!-- VIEW MODE 2: STEP-BY-STEP TIMELINE -->
+		<!-- VIEW MODE 2: STEP-BY-STEP TIMELINE -->
 	{:else}
-		<div class="relative pl-6 sm:pl-8 space-y-12 before:absolute before:left-3 before:top-3 before:bottom-3 before:w-0.5 before:bg-gradient-to-b before:from-red-500 before:via-rose-500/50 before:to-amber-500 sm:before:left-4">
+		<div
+			class="relative space-y-12 pl-6 before:absolute before:top-3 before:bottom-3 before:left-3 before:w-0.5 before:bg-gradient-to-b before:from-red-500 before:via-rose-500/50 before:to-amber-500 sm:pl-8 sm:before:left-4"
+		>
 			{#each phases as phase}
 				<div class="relative">
 					<!-- Timeline Marker -->
 					<div
-						class="absolute -left-[30px] sm:-left-[34px] top-0 flex size-8 sm:size-9 items-center justify-center rounded-full border-4 border-slate-50 bg-gradient-to-tr from-red-600 to-rose-600 text-xs font-bold text-white shadow-md dark:border-[#0B0F17]"
+						class="absolute top-0 -left-[30px] flex size-8 items-center justify-center rounded-full border-4 border-slate-50 bg-gradient-to-tr from-red-600 to-rose-600 text-xs font-bold text-white shadow-md sm:-left-[34px] sm:size-9 dark:border-[#0B0F17]"
 					>
 						{phase.phaseNumber}
 					</div>
 
-					<div class="rounded-2xl border border-slate-200/80 bg-white/80 p-6 shadow-sm dark:border-zinc-800/80 dark:bg-zinc-900/70">
-						<span class="text-[11px] font-bold uppercase tracking-wider text-rose-600 dark:text-rose-400">
+					<div
+						class="rounded-2xl border border-slate-200/80 bg-white/80 p-6 shadow-sm dark:border-zinc-800/80 dark:bg-zinc-900/70"
+					>
+						<span
+							class="text-[11px] font-bold tracking-wider text-rose-600 uppercase dark:text-rose-400"
+						>
 							Langkah {phase.phaseNumber}
 						</span>
-						<h2 class="mt-1 text-lg font-bold text-slate-900 dark:text-white sm:text-xl">
+						<h2 class="mt-1 text-lg font-bold text-slate-900 sm:text-xl dark:text-white">
 							{phase.title}
 						</h2>
 						<p class="mt-1 text-xs text-slate-600 dark:text-zinc-400">
@@ -237,11 +264,13 @@
 												<button
 													type="button"
 													onclick={() => openTopicModal(topic)}
-													class="text-left text-sm font-semibold text-slate-900 hover:text-rose-600 dark:text-zinc-100 dark:hover:text-rose-400 transition-colors"
+													class="text-left text-sm font-semibold text-slate-900 transition-colors hover:text-rose-600 dark:text-zinc-100 dark:hover:text-rose-400"
 												>
 													{topic.title}
 												</button>
-												<span class="rounded border px-1.5 py-0.2 text-[9px] font-medium {badge.bg}">
+												<span
+													class="py-0.2 rounded border px-1.5 text-[9px] font-medium {badge.bg}"
+												>
 													{badge.text}
 												</span>
 											</div>
@@ -286,13 +315,13 @@
 		></button>
 
 		<div
-			class="relative w-full max-w-lg rounded-3xl border border-slate-200 bg-white p-6 shadow-2xl dark:border-zinc-800 dark:bg-zinc-900 sm:p-8"
+			class="relative w-full max-w-lg rounded-3xl border border-slate-200 bg-white p-6 shadow-2xl sm:p-8 dark:border-zinc-800 dark:bg-zinc-900"
 		>
 			<!-- Close button -->
 			<button
 				type="button"
 				onclick={closeTopicModal}
-				class="absolute right-5 top-5 rounded-full p-1.5 text-slate-400 hover:bg-slate-100 hover:text-slate-600 dark:text-zinc-500 dark:hover:bg-zinc-800 dark:hover:text-zinc-300"
+				class="absolute top-5 right-5 rounded-full p-1.5 text-slate-400 hover:bg-slate-100 hover:text-slate-600 dark:text-zinc-500 dark:hover:bg-zinc-800 dark:hover:text-zinc-300"
 				aria-label="Tutup"
 			>
 				<svg class="size-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -316,13 +345,13 @@
 
 			{#if selectedTopic.keyPoints && selectedTopic.keyPoints.length > 0}
 				<div class="mt-5 rounded-2xl bg-slate-50 p-4 dark:bg-zinc-800/50">
-					<h4 class="text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-zinc-300">
+					<h4 class="text-xs font-bold tracking-wider text-slate-700 uppercase dark:text-zinc-300">
 						Poin Kunci yang Perlu Dikuasai:
 					</h4>
 					<ul class="mt-2.5 space-y-2 text-xs text-slate-600 dark:text-zinc-400">
 						{#each selectedTopic.keyPoints as point}
 							<li class="flex items-start gap-2">
-								<span class="text-rose-500 font-bold">•</span>
+								<span class="font-bold text-rose-500">•</span>
 								<span>{point}</span>
 							</li>
 						{/each}
@@ -332,7 +361,7 @@
 
 			{#if selectedTopic.resources && selectedTopic.resources.length > 0}
 				<div class="mt-5">
-					<h4 class="text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-zinc-300">
+					<h4 class="text-xs font-bold tracking-wider text-slate-700 uppercase dark:text-zinc-300">
 						Bacaan Terkait di Baricode:
 					</h4>
 					<div class="mt-2 space-y-2">
@@ -342,7 +371,12 @@
 								class="flex items-center justify-between rounded-xl border border-rose-200/80 bg-rose-50/50 p-3 text-xs font-medium text-rose-700 transition hover:bg-rose-100/70 dark:border-rose-900/40 dark:bg-rose-950/30 dark:text-rose-300 dark:hover:bg-rose-950/50"
 							>
 								<div class="flex items-center gap-2">
-									<svg class="size-4 shrink-0 text-rose-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+									<svg
+										class="size-4 shrink-0 text-rose-500"
+										fill="none"
+										viewBox="0 0 24 24"
+										stroke="currentColor"
+									>
 										<path
 											stroke-linecap="round"
 											stroke-linejoin="round"

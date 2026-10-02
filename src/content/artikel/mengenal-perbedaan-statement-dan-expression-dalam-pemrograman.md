@@ -1,10 +1,10 @@
 ---
-title: "Mengenal Perbedaan Statement dan Expression dalam Pemrograman"
-excerpt: "Secara umum, program komputer dapat dipahami sebagai kumpulan instruksi yang disusun untuk menyelesaikan tugas tertentu. Instruksi-instruksi tersebut dibentuk melalui kombinasi statement dan expression. Artikel ini akan mengupas perbedaan keduanya secara sistematis, lengkap dengan contoh penerapan pada beberapa bahasa pemrograman."
-category: "pemrograman-dasar"
-tags: ["pemula", "javascript", "python", "php", "tips-belajar"]
-author: "Baricode Team"
-published_at: "2026-08-03"
+title: 'Mengenal Perbedaan Statement dan Expression dalam Pemrograman'
+excerpt: 'Secara umum, program komputer dapat dipahami sebagai kumpulan instruksi yang disusun untuk menyelesaikan tugas tertentu. Instruksi-instruksi tersebut dibentuk melalui kombinasi statement dan expression. Artikel ini akan mengupas perbedaan keduanya secara sistematis, lengkap dengan contoh penerapan pada beberapa bahasa pemrograman.'
+category: 'pemrograman-dasar'
+tags: ['pemula', 'javascript', 'python', 'php', 'tips-belajar']
+author: 'Baricode Team'
+published_at: '2026-08-03'
 ---
 
 Bagi siapa pun yang baru memulai perjalanan belajar koding, ada dua istilah dasar yang sering membingungkan pada tahap awal, yaitu **statement** dan **expression** (dalam Bahasa Indonesia: pernyataan dan ekspresi). Kedua konsep ini merupakan fondasi penting karena keduanya menyusun setiap instruksi yang dijalankan oleh komputer.
@@ -18,24 +18,24 @@ Secara umum, program komputer dapat dipahami sebagai kumpulan instruksi yang dis
 **Statement** adalah unit sintaks dalam bahasa pemrograman yang berfungsi untuk **menjalankan suatu aksi atau tugas tertentu**. Contohnya:
 
 ```javascript
-var x = 1;              // statement pembuatan variabel
-print("Hello World");   // statement menampilkan teks
+var x = 1; // statement pembuatan variabel
+print('Hello World'); // statement menampilkan teks
 ```
 
 **Expression**, di sisi lain, adalah unit sintaks yang **selalu menghasilkan sebuah nilai**. Expression umumnya tersusun dari konstanta, variabel, fungsi, atau operator. Contohnya:
 
 ```javascript
-x + 1;      // menghasilkan nilai penjumlahan
-3 * 3;      // menghasilkan nilai 9
-sqrt(25);   // menghasilkan nilai akar kuadrat
+x + 1; // menghasilkan nilai penjumlahan
+3 * 3; // menghasilkan nilai 9
+sqrt(25); // menghasilkan nilai akar kuadrat
 ```
 
 Sebagai patokan sederhana:
 
-| Konsep | Fungsi Utama |
-| :--- | :--- |
-| **Statement** | Menjalankan suatu tugas / aksi |
-| **Expression** | Menghasilkan suatu nilai |
+| Konsep         | Fungsi Utama                   |
+| :------------- | :----------------------------- |
+| **Statement**  | Menjalankan suatu tugas / aksi |
+| **Expression** | Menghasilkan suatu nilai       |
 
 ---
 
@@ -47,7 +47,7 @@ Perhatikan contoh kode berikut:
 var x = 4 + 2;
 ```
 
-Kode ini sebenarnya mengandung **keduanya sekaligus**. Secara keseluruhan, baris ini adalah sebuah *statement* karena tugasnya adalah membuat dan mengisi variabel `x`. Namun, bagian `4 + 2` di dalamnya adalah *expression* karena menghasilkan nilai `6` yang kemudian disimpan ke dalam variabel tersebut.
+Kode ini sebenarnya mengandung **keduanya sekaligus**. Secara keseluruhan, baris ini adalah sebuah _statement_ karena tugasnya adalah membuat dan mengisi variabel `x`. Namun, bagian `4 + 2` di dalamnya adalah _expression_ karena menghasilkan nilai `6` yang kemudian disimpan ke dalam variabel tersebut.
 
 ---
 
@@ -75,13 +75,14 @@ Blok `if (x > 10) { z = 10 }` tidak dapat disimpan ke dalam variabel sehingga te
 Status perintah `print()` sebagai statement atau expression sebenarnya bergantung pada bahasa pemrograman yang digunakan.
 
 ### Pada Python
+
 `print()` dapat disimpan ke dalam variabel meskipun nilainya kosong (`None`):
 
 ```python
 >>> x = print("Hello World!")
 Hello World!
 >>> x
->>> 
+>>>
 ```
 
 Karena tetap dapat disimpan ke variabel, `print()` pada Python dikategorikan sebagai expression, walau tidak menghasilkan nilai yang berarti.
@@ -96,6 +97,7 @@ SyntaxError: invalid syntax
 ```
 
 ### Pada PHP
+
 `print()` justru menghasilkan nilai `1` sehingga secara jelas tergolong expression:
 
 ```php
@@ -113,10 +115,10 @@ $y = echo "Hello"; // Syntax Error!
 
 ## Expression dalam String Interpolation
 
-*String interpolation* adalah teknik memformat teks dengan menyisipkan ekspresi di dalamnya. Karena hanya expression yang dapat menghasilkan nilai, hanya expression pula yang dapat disisipkan pada teknik ini.
+_String interpolation_ adalah teknik memformat teks dengan menyisipkan ekspresi di dalamnya. Karena hanya expression yang dapat menghasilkan nilai, hanya expression pula yang dapat disisipkan pada teknik ini.
 
 ```javascript
-console.log(`Sebuah string ${1 + 2}`);   // JavaScript
+console.log(`Sebuah string ${1 + 2}`); // JavaScript
 ```
 
 ```python
@@ -133,19 +135,19 @@ Bentuk konvensional `if/else` merupakan statement:
 
 ```javascript
 if (answer == 3) {
-   // benar
+	// benar
 } else {
-   // salah
+	// salah
 }
 ```
 
 Namun terdapat bentuk lain yang tergolong expression, yaitu melalui **operator ternary**:
 
 ```javascript
-var result = (answer == 3) ? 'benar' : 'salah';
+var result = answer == 3 ? 'benar' : 'salah';
 ```
 
-Python memiliki pendekatan serupa melalui *conditional expression*:
+Python memiliki pendekatan serupa melalui _conditional expression_:
 
 ```python
 result = 'benar' if answer == 3 else 'salah'
@@ -159,7 +161,7 @@ Perulangan konvensional seperti `for`, `while`, dan `do/while` tergolong stateme
 
 ```javascript
 for (i = 0; i < 10; i++) {
-    // do something
+	// do something
 }
 ```
 
@@ -174,14 +176,14 @@ Pola ini juga umum dijumpai pada JSX di React, di mana perulangan hanya diperbol
 
 ```javascript
 function Hello() {
-  const data = [1, 2, 3, 4, 5, 6];
-  return (
-    <>
-      {data.map((value, index) => (
-        <a key={index}>{value}</a>
-      ))}
-    </>
-  );
+	const data = [1, 2, 3, 4, 5, 6];
+	return (
+		<>
+			{data.map((value, index) => (
+				<a key={index}>{value}</a>
+			))}
+		</>
+	);
 }
 ```
 
@@ -210,19 +212,19 @@ add(1, 2)
 ```javascript
 // fungsi statement
 function add(a, b) {
-  return a + b;
+	return a + b;
 }
 
 // fungsi expression
 const jumlahkan = function (a, b) {
-  return a + b;
+	return a + b;
 };
 
 // arrow function, juga tergolong expression
 const kali = (a, b) => a * b;
 ```
 
-Hal ini dimungkinkan karena pada JavaScript, fungsi diperlakukan sebagai *first-class citizen*, artinya fungsi dapat disimpan ke variabel, dijadikan parameter, maupun dioperasikan layaknya expression pada umumnya.
+Hal ini dimungkinkan karena pada JavaScript, fungsi diperlakukan sebagai _first-class citizen_, artinya fungsi dapat disimpan ke variabel, dijadikan parameter, maupun dioperasikan layaknya expression pada umumnya.
 
 ---
 
@@ -231,6 +233,7 @@ Hal ini dimungkinkan karena pada JavaScript, fungsi diperlakukan sebagai *first-
 Untuk menguji pemahaman, coba identifikasi statement dan expression pada kode berikut:
 
 **Soal 1 (C)**
+
 ```c
 int x = 4 + 1;
 while (x < 10) {
@@ -240,19 +243,21 @@ while (x < 10) {
 ```
 
 **Soal 2 (JavaScript)**
+
 ```javascript
 var score = 0;
-const jawab = input.answer == "4" ? "benar" : "salah";
-if (jawab == "benar") {
-    console.log("Jawaban benar");
-    score = score + 10;
+const jawab = input.answer == '4' ? 'benar' : 'salah';
+if (jawab == 'benar') {
+	console.log('Jawaban benar');
+	score = score + 10;
 }
 ```
 
 **Soal 3 (JavaScript)**
+
 ```javascript
 const handleClick = function (event) {
-  console.log("Button diklik");
+	console.log('Button diklik');
 };
 ```
 

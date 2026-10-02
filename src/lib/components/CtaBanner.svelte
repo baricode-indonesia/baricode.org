@@ -2,11 +2,13 @@
 	let { class: className = '' }: { class?: string } = $props();
 </script>
 
-<div class={`rounded-2xl border border-slate-200 bg-white/80 dark:border-zinc-800 dark:bg-zinc-900/80 p-8 text-center shadow-lg dark:shadow-xl backdrop-blur-md ${className}`}>
+<div
+	class={`rounded-2xl border border-slate-200 bg-white/80 p-8 text-center shadow-lg backdrop-blur-md dark:border-zinc-800 dark:bg-zinc-900/80 dark:shadow-xl ${className}`}
+>
 	<h2 class="text-xl font-bold text-slate-900 dark:text-white">Siap melangkah lebih jauh?</h2>
 	<p class="mx-auto mt-2 max-w-lg text-sm leading-relaxed text-slate-600 dark:text-zinc-400">
-		Tidak perlu minder kalau kamu belajar dari kamar kecil atau dari kondisi paling terbatas sekalipun —
-		kami pun memulai semuanya dari sana.
+		Tidak perlu minder kalau kamu belajar dari kamar kecil atau dari kondisi paling terbatas
+		sekalipun — kami pun memulai semuanya dari sana.
 	</p>
 	<div class="mt-6 flex flex-wrap justify-center gap-3">
 		<a

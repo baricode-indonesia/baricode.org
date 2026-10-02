@@ -1,10 +1,10 @@
 ---
-title: "NVM Artinya Apa? Ini Penjelasan Lengkap untuk Pemula"
-excerpt: "NVM artinya Node Version Manager, tool untuk mengelola banyak versi Node.js di satu komputer. Simak penjelasan lengkap, fungsi, dan cara pakainya."
-category: "pemrograman-dasar"
-tags: ["pemula", "javascript", "nodejs", "nvm"]
-author: "Baricode Team"
-published_at: "2026-08-03"
+title: 'NVM Artinya Apa? Ini Penjelasan Lengkap untuk Pemula'
+excerpt: 'NVM artinya Node Version Manager, tool untuk mengelola banyak versi Node.js di satu komputer. Simak penjelasan lengkap, fungsi, dan cara pakainya.'
+category: 'pemrograman-dasar'
+tags: ['pemula', 'javascript', 'nodejs', 'nvm']
+author: 'Baricode Team'
+published_at: '2026-08-03'
 ---
 
 Kalau kamu baru belajar JavaScript atau Node.js, kemungkinan besar kamu pernah menemukan istilah **NVM** di tutorial, dokumentasi, atau saat instalasi project. Lalu, **nvm artinya apa** sebenarnya? Yuk, kita bahas tuntas di artikel ini. 🚀
@@ -13,9 +13,9 @@ Kalau kamu baru belajar JavaScript atau Node.js, kemungkinan besar kamu pernah m
 
 ## Apa Itu NVM?
 
-**NVM** adalah singkatan dari **Node Version Manager**. Sesuai namanya, NVM merupakan sebuah tool (*command-line*) yang berfungsi untuk **mengelola berbagai versi Node.js** dalam satu komputer secara bersamaan.
+**NVM** adalah singkatan dari **Node Version Manager**. Sesuai namanya, NVM merupakan sebuah tool (_command-line_) yang berfungsi untuk **mengelola berbagai versi Node.js** dalam satu komputer secara bersamaan.
 
-Jadi, NVM bukanlah bahasa pemrograman atau framework, melainkan sebuah *utility* (alat bantu) yang memudahkan developer untuk berpindah-pindah versi Node.js tanpa harus menginstal ulang atau menghapus (*uninstall*) versi sebelumnya.
+Jadi, NVM bukanlah bahasa pemrograman atau framework, melainkan sebuah _utility_ (alat bantu) yang memudahkan developer untuk berpindah-pindah versi Node.js tanpa harus menginstal ulang atau menghapus (_uninstall_) versi sebelumnya.
 
 ---
 
@@ -27,7 +27,7 @@ Dalam dunia pengembangan JavaScript / Node.js, setiap project bisa saja membutuh
 - **Project B**: Menggunakan Node.js versi 20 (LTS terbaru).
 - **Project C**: Sedang menguji fitur eksperimental di Node.js versi 22.
 
-Tanpa NVM, kamu harus menginstal ulang Node.js setiap kali berpindah project — sangat merepotkan dan berisiko merusak konfigurasi *environment* yang sudah berjalan. Dengan NVM, kamu cukup menjalankan satu baris perintah terminal untuk berpindah versi sesuai kebutuhan project.
+Tanpa NVM, kamu harus menginstal ulang Node.js setiap kali berpindah project — sangat merepotkan dan berisiko merusak konfigurasi _environment_ yang sudah berjalan. Dengan NVM, kamu cukup menjalankan satu baris perintah terminal untuk berpindah versi sesuai kebutuhan project.
 
 ---
 
@@ -48,6 +48,7 @@ Berikut beberapa fungsi utama NVM yang membuatnya sangat penting bagi developer:
 Instalasi NVM berbeda tergantung sistem operasi yang kamu gunakan:
 
 ### Di Linux / macOS
+
 Jalankan perintah berikut di terminal:
 
 ```bash
@@ -63,6 +64,7 @@ source ~/.zshrc
 ```
 
 ### Di Windows
+
 Untuk pengguna Windows, disarankan menggunakan **nvm-windows** (dikembangkan oleh Corey Butler). Proyek ini dirancang khusus untuk sistem operasi Windows karena skrip NVM asli berbasis shell script POSIX.
 
 ---
@@ -72,26 +74,31 @@ Untuk pengguna Windows, disarankan menggunakan **nvm-windows** (dikembangkan ole
 Setelah NVM berhasil terinstal, berikut beberapa perintah dasar yang sering digunakan sehari-hari:
 
 - **Mengecek versi NVM yang terinstal:**
+
   ```bash
   nvm --version
   ```
 
 - **Melihat daftar versi Node.js yang tersedia untuk diinstal:**
+
   ```bash
   nvm list-remote
   ```
 
 - **Menginstal versi Node.js tertentu (misal versi 20):**
+
   ```bash
   nvm install 20
   ```
 
 - **Menggunakan versi Node.js yang sudah terinstal:**
+
   ```bash
   nvm use 20
   ```
 
 - **Melihat versi Node.js yang sedang aktif:**
+
   ```bash
   nvm current
   ```
@@ -105,12 +112,12 @@ Setelah NVM berhasil terinstal, berikut beberapa perintah dasar yang sering digu
 
 ## Tabel Perbandingan: NVM vs Install Node.js Langsung
 
-| Aspek | Install Langsung | Pakai NVM |
-| :--- | :--- | :--- |
-| **Jumlah versi Node.js** | Hanya satu versi | Banyak versi sekaligus |
-| **Berpindah versi** | Harus uninstall & install ulang | Cukup satu baris perintah (`nvm use`) |
-| **Fleksibilitas multi-project** | ❌ Kurang fleksibel | ✅ Sangat fleksibel |
-| **Setup awal** | Sangat simpel | Perlu instalasi NVM di awal |
+| Aspek                           | Install Langsung                | Pakai NVM                             |
+| :------------------------------ | :------------------------------ | :------------------------------------ |
+| **Jumlah versi Node.js**        | Hanya satu versi                | Banyak versi sekaligus                |
+| **Berpindah versi**             | Harus uninstall & install ulang | Cukup satu baris perintah (`nvm use`) |
+| **Fleksibilitas multi-project** | ❌ Kurang fleksibel             | ✅ Sangat fleksibel                   |
+| **Setup awal**                  | Sangat simpel                   | Perlu instalasi NVM di awal           |
 
 ---
 

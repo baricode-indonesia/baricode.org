@@ -1,5 +1,9 @@
 <script lang="ts">
-	const todayStr = new Date().toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' });
+	const todayStr = new Date().toLocaleDateString('id-ID', {
+		day: 'numeric',
+		month: 'long',
+		year: 'numeric'
+	});
 </script>
 
 <svelte:head>
@@ -8,13 +12,15 @@
 </svelte:head>
 
 <section class="mx-auto max-w-3xl px-6 py-16">
-	<p class="text-sm font-medium uppercase tracking-wide text-rose-600 dark:text-red-300">Legal</p>
-	<h1 class="mt-4 text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
+	<p class="text-sm font-medium tracking-wide text-rose-600 uppercase dark:text-red-300">Legal</p>
+	<h1 class="mt-4 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl dark:text-white">
 		Syarat dan Ketentuan
 	</h1>
 	<p class="mt-2 text-sm text-slate-500 dark:text-red-300">Terakhir diperbarui: {todayStr}</p>
 
-	<div class="mt-8 flex max-w-none flex-col gap-6 text-base leading-relaxed text-slate-600 dark:text-red-100">
+	<div
+		class="mt-8 flex max-w-none flex-col gap-6 text-base leading-relaxed text-slate-600 dark:text-red-100"
+	>
 		<div>
 			<h2 class="text-lg font-semibold text-slate-900 dark:text-white">1. Penggunaan Layanan</h2>
 			<p class="mt-2">
@@ -48,7 +54,7 @@
 			<h2 class="text-lg font-semibold text-slate-900 dark:text-white">5. Kontak</h2>
 			<p class="mt-2">
 				Pertanyaan seputar ketentuan ini dapat disampaikan melalui
-				<a href="/kontak" class="text-rose-600 dark:text-red-300 hover:underline">halaman kontak</a>
+				<a href="/kontak" class="text-rose-600 hover:underline dark:text-red-300">halaman kontak</a>
 				kami.
 			</p>
 		</div>

@@ -1,10 +1,10 @@
 ---
-title: "Memperkenalkan Baricode Bimbingan: Pendampingan Belajar Koding Gratis via WhatsApp"
-excerpt: "Belajar coding otodidak tanpa harus sendirian. Baricode Bimbingan mendampingi remaja & pemuda desa lewat grup WhatsApp — gratis, tanpa kelas, tanpa meeting."
-category: "tentang-baricode"
-tags: ["pemula", "tips-belajar", "pemula-coding", "bimbingan"]
-author: "Baricode Team"
-published_at: "2026-07-30"
+title: 'Memperkenalkan Baricode Bimbingan: Pendampingan Belajar Koding Gratis via WhatsApp'
+excerpt: 'Belajar coding otodidak tanpa harus sendirian. Baricode Bimbingan mendampingi remaja & pemuda desa lewat grup WhatsApp — gratis, tanpa kelas, tanpa meeting.'
+category: 'tentang-baricode'
+tags: ['pemula', 'tips-belajar', 'pemula-coding', 'bimbingan']
+author: 'Baricode Team'
+published_at: '2026-07-30'
 ---
 
 Belajar koding tidak butuh kondisi sempurna. Tidak perlu laptop mahal, tempat kursus bergengsi, atau lingkungan yang serba mendukung. Yang dibutuhkan hanyalah niat yang konsisten dan arah yang jelas — dan di sinilah **Baricode Bimbingan** hadir.
@@ -17,7 +17,7 @@ Belajar koding tidak butuh kondisi sempurna. Tidak perlu laptop mahal, tempat ku
 
 Penting untuk dipahami sejak awal: Bimbingan **bukan kelas**, dan **bukan sesi meeting** atau video call. Tidak ada jadwal mengajar, tidak ada kurikulum kaku yang disodorkan. Sebaliknya, peserta tetap belajar dari sumber belajarnya sendiri — entah itu kursus online, dokumentasi resmi, video tutorial, atau buku — sementara mentor Baricode berperan menjaga arah dan akuntabilitas belajar melalui **grup WhatsApp**.
 
-Dengan kata lain, Bimbingan menjawab masalah klasik para pembelajar mandiri: *semangat membara di awal, lalu perlahan kendor di tengah jalan karena tidak ada yang menagih progres.*
+Dengan kata lain, Bimbingan menjawab masalah klasik para pembelajar mandiri: _semangat membara di awal, lalu perlahan kendor di tengah jalan karena tidak ada yang menagih progres._
 
 ---
 
@@ -30,7 +30,7 @@ Banyak remaja dan pemuda desa punya keinginan besar untuk belajar coding, tapi t
 - 😔 **Mudah menyerah** karena belajar sendirian tanpa ada yang mengingatkan.
 - 🤔 **Stuck saat menemui error**, tapi tidak tahu harus bertanya kepada siapa.
 
-**Baricode Bimbingan** dirancang untuk mengisi celah tersebut — bukan dengan mengajarkan materi dari nol seperti pengajar sekolah, melainkan dengan menjadi teman perjalanan (*learning partner*) yang menjaga arah dan semangat peserta tetap menyala.
+**Baricode Bimbingan** dirancang untuk mengisi celah tersebut — bukan dengan mengajarkan materi dari nol seperti pengajar sekolah, melainkan dengan menjadi teman perjalanan (_learning partner_) yang menjaga arah dan semangat peserta tetap menyala.
 
 ---
 
@@ -46,7 +46,7 @@ Banyak remaja dan pemuda desa punya keinginan besar untuk belajar coding, tapi t
    Diarahkan kembali saat merasa tersesat, serta diingatkan kembali saat fokus dan semangat mulai menurun.
 
 4. **Bantuan Debugging Ringan**
-   Peserta dapat bertanya saat mengalami kebuntuan (*stuck*). Mentor membantu menemukan arah solusi dan cara berpikir pemecahan masalah, bukan mengerjakan tugas untuk peserta.
+   Peserta dapat bertanya saat mengalami kebuntuan (_stuck_). Mentor membantu menemukan arah solusi dan cara berpikir pemecahan masalah, bukan mengerjakan tugas untuk peserta.
 
 ---
 

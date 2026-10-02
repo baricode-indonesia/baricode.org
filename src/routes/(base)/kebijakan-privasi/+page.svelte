@@ -1,22 +1,33 @@
 <script lang="ts">
-	const todayStr = new Date().toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' });
+	const todayStr = new Date().toLocaleDateString('id-ID', {
+		day: 'numeric',
+		month: 'long',
+		year: 'numeric'
+	});
 </script>
 
 <svelte:head>
 	<title>Kebijakan Privasi — Baricode Indonesia</title>
-	<meta name="description" content="Kebijakan privasi Baricode Indonesia mengenai pengumpulan dan penggunaan data pengunjung." />
+	<meta
+		name="description"
+		content="Kebijakan privasi Baricode Indonesia mengenai pengumpulan dan penggunaan data pengunjung."
+	/>
 </svelte:head>
 
 <section class="mx-auto max-w-3xl px-6 py-16">
-	<p class="text-sm font-medium uppercase tracking-wide text-rose-600 dark:text-red-300">Legal</p>
-	<h1 class="mt-4 text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
+	<p class="text-sm font-medium tracking-wide text-rose-600 uppercase dark:text-red-300">Legal</p>
+	<h1 class="mt-4 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl dark:text-white">
 		Kebijakan Privasi
 	</h1>
 	<p class="mt-2 text-sm text-slate-500 dark:text-red-300">Terakhir diperbarui: {todayStr}</p>
 
-	<div class="mt-8 flex max-w-none flex-col gap-6 text-base leading-relaxed text-slate-600 dark:text-red-100">
+	<div
+		class="mt-8 flex max-w-none flex-col gap-6 text-base leading-relaxed text-slate-600 dark:text-red-100"
+	>
 		<div>
-			<h2 class="text-lg font-semibold text-slate-900 dark:text-white">1. Data yang Kami Kumpulkan</h2>
+			<h2 class="text-lg font-semibold text-slate-900 dark:text-white">
+				1. Data yang Kami Kumpulkan
+			</h2>
 			<p class="mt-2">
 				Kami dapat mengumpulkan data dasar seperti nama dan alamat email saat kamu mendaftar akun
 				atau menghubungi kami, serta data teknis umum (seperti jenis perangkat dan halaman yang
@@ -49,7 +60,9 @@
 			<h2 class="text-lg font-semibold text-slate-900 dark:text-white">5. Hak Kamu</h2>
 			<p class="mt-2">
 				Kamu berhak meminta akses, koreksi, atau penghapusan data pribadimu dengan menghubungi kami
-				melalui <a href="/kontak" class="text-rose-600 dark:text-red-300 hover:underline">halaman kontak</a>.
+				melalui <a href="/kontak" class="text-rose-600 hover:underline dark:text-red-300"
+					>halaman kontak</a
+				>.
 			</p>
 		</div>
 	</div>

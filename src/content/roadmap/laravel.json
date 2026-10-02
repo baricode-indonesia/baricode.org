@@ -1,656 +1,656 @@
 {
-  "slug": "laravel",
-  "order": 1,
-  "title": "Roadmap Belajar Laravel",
-  "badge": "Populer",
-  "tagline": "Dari Pemula PHP Hingga Siap Membangun Aplikasi Web Skala Produksi & REST API Modern",
-  "description": "Panduan langkah demi langkah yang komprehensif dan membumi untuk menguasai framework Laravel: mulai dari fondasi PHP modern, arsitektur MVC, Eloquent ORM tingkat lanjut, keamanan OWASP, sistem autentikasi, arsitektur REST API standar industri, background jobs & queues, hingga automated testing dan deployment ke server VPS.",
-  "difficulty": "Pemula",
-  "estimatedWeeks": "12 - 16 Minggu",
-  "category": "Backend & Web Framework",
-  "iconName": "laravel",
-  "updatedAt": "2026-09-22",
-  "phases": [
-    {
-      "id": "phase-1",
-      "phaseNumber": 1,
-      "title": "Fondasi PHP Modern, Protokol Web & Lingkungan Pengembangan",
-      "subtitle": "Sebelum menyentuh Laravel, kuasai dasar PHP 8+, HTTP web, dan alat pendukungnya.",
-      "description": "Laravel dibangun di atas PHP modern dan standar web HTTP. Memahami konsep OOP, arsitektur Client-Server, dan Composer akan menghindarkanmu dari kebingungan saat melihat sintaks dan alur kerja Laravel.",
-      "topics": [
-        {
-          "id": "php-basics",
-          "title": "Sintaks Dasar & Fitur Modern PHP (PHP 8.2+)",
-          "description": "Pahami variabel, tipe data skalar, strict types, match expression, nullsafe operator, dan penulisan class modern.",
-          "priority": "wajib",
-          "keyPoints": [
-            "Tipe data skalar, array associative, dan strict types (declare(strict_types=1))",
-            "Fitur modern PHP 8+: Match Expression, Nullsafe Operator (?->), dan Named Arguments",
-            "Constructor Property Promotion untuk deklarasi properti class yang ringkas",
-            "PHP Enums untuk standarisasi tipe data status yang aman dan type-safe"
-          ],
-          "resources": [
-            {
-              "title": "Mengenal Perbedaan Statement dan Expression",
-              "url": "/artikel/mengenal-perbedaan-statement-dan-expression-dalam-pemrograman",
-              "isInternal": true
-            },
-            {
-              "title": "Mengenal Function dalam Bahasa Sederhana",
-              "url": "/artikel/function-artinya-dalam-bahasa-bayi",
-              "isInternal": true
-            }
-          ]
-        },
-        {
-          "id": "php-oop",
-          "title": "Pemrograman Berorientasi Objek (OOP) & PSR Standard",
-          "description": "Konsep inti yang mendasari seluruh arsitektur Laravel: Class, Object, Inheritance, Encapsulation, Interface, dan Namespace.",
-          "priority": "wajib",
-          "keyPoints": [
-            "Class, Visibility (public, protected, private), Properties, Methods, dan Constructor",
-            "Namespaces dan Autoloading standar PSR-4 (alasan file di folder app/ otomatis terbaca)",
-            "Interface (kontrak kode), Abstract Class, dan Traits untuk reusabilitas method",
-            "Dependency Injection dasar: menyuntikkan class dependensi lewat constructor"
-          ]
-        },
-        {
-          "id": "http-web-protocol",
-          "title": "Protokol HTTP, Siklus Request-Response & Dasar Web",
-          "description": "Memahami bagaimana browser berkomunikasi dengan server backend melalui request dan response HTTP.",
-          "priority": "wajib",
-          "keyPoints": [
-            "HTTP Methods: GET, POST, PUT, PATCH, DELETE dan peruntukan semantiknya",
-            "HTTP Status Codes: 200, 201, 301, 400, 401, 403, 404, 422 (validasi error), dan 500",
-            "Struktur Request: Headers (Authorization, Accept, Content-Type), Query String, dan Request Body",
-            "Konsep Stateless Web, perbedaan Cookie dan Session untuk manajemen status login pengguna"
-          ]
-        },
-        {
-          "id": "tools-composer",
-          "title": "Composer & Manajemen Dependensi Ekosistem PHP",
-          "description": "Paket manajer resmi ekosistem PHP untuk mengunduh, mengelola, dan memperbarui library pihak ketiga.",
-          "priority": "wajib",
-          "keyPoints": [
-            "Fungsi file composer.json, composer.lock, dan direktori vendor/",
-            "Perintah esensial: composer require, composer update, dan composer install",
-            "Regenerasi autoloader dengan composer dump-autoload",
-            "Aturan semantic versioning (^, ~, wildcard) dalam instalasi paket"
-          ]
-        },
-        {
-          "id": "dev-environment",
-          "title": "Lingkungan Pengembangan Lokal (Herd, Sail, Laragon & Git)",
-          "description": "Menyiapkan server lokal di komputer dengan alat modern yang cepat, terisolasi, dan mudah dikonfigurasi.",
-          "priority": "direkomendasikan",
-          "keyPoints": [
-            "Pilihan tool modern: Laravel Herd (macOS & Windows), Laravel Sail (Docker-based), atau Laragon / WSL2",
-            "Instalasi PHP 8.2+, Node.js/NPM, dan Database Client (DBeaver, TablePlus, atau Beekeeper)",
-            "Dasar Git Version Control: commit, branch, checkout, push, pull, dan konfigurasi file .gitignore"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "phase-2",
-      "phaseNumber": 2,
-      "title": "Instalasi, Arsitektur Inti & Siklus Hidup Laravel 11+",
-      "subtitle": "Mengenal struktur modern Laravel 11+, alur request, dan jantung Service Container.",
-      "description": "Laravel 11 menghadirkan struktur direktori yang jauh lebih ramping dan terpadu. Pelajari siklus hidup sebuah request dari awal masuk hingga menghasilkan respon.",
-      "topics": [
-        {
-          "id": "installation-setup",
-          "title": "Instalasi Proyek & Konfigurasi Lingkungan (.env)",
-          "description": "Membuat proyek baru dengan Laravel Installer atau Composer, serta memahami file konfigurasi dan keamanan environment.",
-          "priority": "wajib",
-          "keyPoints": [
-            "Membuat proyek: laravel new nama-proyek atau composer create-project laravel/laravel",
-            "Konfigurasi file .env (APP_ENV, APP_KEY, APP_DEBUG, DB_CONNECTION)",
-            "Menjalankan development server: php artisan serve",
-            "Penerbitan file konfigurasi kustom: php artisan config:publish"
-          ],
-          "resources": [
-            {
-              "title": "Mengenal Apa Itu Laravel untuk Pemula",
-              "url": "/artikel/laravel-adalah",
-              "isInternal": true
-            }
-          ]
-        },
-        {
-          "id": "artisan-tinker",
-          "title": "Artisan CLI & Laravel Tinker (Interactive REPL)",
-          "description": "Alat baris perintah bawaan Laravel untuk meng-generate kode instan dan bereksperimen dengan database secara interaktif.",
-          "priority": "wajib",
-          "keyPoints": [
-            "Generator perintah make: make:controller, make:model, make:migration, make:request",
-            "Melihat daftar rute aplikasi beserta middleware: php artisan route:list",
-            "Eksperimen kode dan uji coba query database langsung di terminal via php artisan tinker",
-            "Membersihkan seluruh cache konfigurasi dan rute: php artisan optimize:clear"
-          ]
-        },
-        {
-          "id": "mvc-lifecycle-11",
-          "title": "Arsitektur MVC & Request Lifecycle Modern Laravel 11+",
-          "description": "Memahami perjalanan request dari public/index.php, bootstrap/app.php, middleware, router, controller, hingga view.",
-          "priority": "wajib",
-          "keyPoints": [
-            "Pemisahan tanggung jawab Model (data), View (tampilan), dan Controller (penghubung alur)",
-            "Peran file bootstrap/app.php sebagai pusat konfigurasi middleware dan exceptions di Laravel 11+",
-            "Cara kerja Middleware Pipeline: mencegat request sebelum masuk controller dan memodifikasi respon setelahnya"
-          ]
-        },
-        {
-          "id": "service-container-di",
-          "title": "Service Container & Dependency Injection (IoC)",
-          "description": "Jantung paling fundamental di Laravel: bagaimana framework mengelola instansiasi class dan menyuntikkannya otomatis.",
-          "priority": "wajib",
-          "keyPoints": [
-            "Konsep Inversion of Control (IoC) dan Automatic Constructor Resolution berbasis PHP Reflection",
-            "Binding dasar: app()->bind() (instance baru tiap panggil) vs app()->singleton() (satu instance bersama)",
-            "Binding Interface ke Concrete Class untuk kode yang modular dan mudah diuji (testing-friendly)",
-            "Mengakses container secara manual menggunakan helper app() atau resolve()"
-          ]
-        },
-        {
-          "id": "service-providers-facades",
-          "title": "Service Providers & Mekanisme Facades",
-          "description": "Memahami tempat booting seluruh komponen Laravel dan trik di balik pemanggilan statis class Facade.",
-          "priority": "direkomendasikan",
-          "keyPoints": [
-            "Anatomi Service Provider: method register() (binding) vs method boot() (bootstrapping fitur)",
-            "Mendaftarkan konfigurasi kustom dan macro di AppServiceProvider",
-            "Mekanisme kerja Facades (Route::, Auth::, DB::) via magic method __callStatic() ke Service Container",
-            "Kapan sebaiknya memakai Facade vs Constructor Dependency Injection"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "phase-3",
-      "phaseNumber": 3,
-      "title": "Routing Canggih, Controllers, Blade & Asset Bundler",
-      "subtitle": "Membangun halaman web interaktif, layout modular, dan menangani input pengguna.",
-      "description": "Pelajari cara membuat rute URL yang bersih, mengorganisir logika controller, membuat tampilan HTML modular dengan Blade & Vite, serta validasi formulir yang aman.",
-      "topics": [
-        {
-          "id": "routing-model-binding",
-          "title": "Routing Lanjutan & Route Model Binding",
-          "description": "Mendefinisikan endpoint URL, parameter rute, group rute, dan binding otomatis ke Model database.",
-          "priority": "wajib",
-          "keyPoints": [
-            "Route HTTP methods (get, post, put, patch, delete) dan Route::resource()",
-            "Pengelompokan rute: Route::prefix(), Route::middleware(), dan Route::name()",
-            "Implicit Route Model Binding: Route::get('/posts/{post:slug}') otomatis mencari record berdasarkan kolom slug",
-            "Scoped Binding untuk rute bertingkat: /users/{user}/posts/{post}"
-          ]
-        },
-        {
-          "id": "controllers-resource",
-          "title": "Controllers, Inversion of Control & Single Action",
-          "description": "Memisahkan logika bisnis dari file routing ke class controller yang terstruktur dan rapi.",
-          "priority": "wajib",
-          "keyPoints": [
-            "Resource Controller standar CRUD (index, create, store, show, edit, update, destroy)",
-            "Single Action Controller (__invoke) untuk endpoint yang memiliki satu tanggung jawab spesifik",
-            "Dependency Injection pada method controller (Request, Service, dan Model binding)"
-          ]
-        },
-        {
-          "id": "blade-components",
-          "title": "Blade Templating & Arsitektur Komponen Modern",
-          "description": "Sistem template bawaan Laravel yang ekspresif untuk membuat layout bersarang dan komponen UI yang dapat dipakai ulang.",
-          "priority": "wajib",
-          "keyPoints": [
-            "Direktif logika dasar: @if, @foreach, @forelse, @empty, @auth, @guest, @can",
-            "Arsitektur komponen modern tag-based: <x-layout>, <x-button>, dan <x-card>",
-            "Meneruskan data dengan atribut (:title=\"$judul\") dan pengelolaan named slots (<x-slot:header>)",
-            "Merger class styling dengan sintaks $attributes->merge(['class' => '...'])"
-          ],
-          "resources": [
-            {
-              "title": "Panduan Lengkap Memahami HTML dan CSS",
-              "url": "/artikel/panduan-lengkap-memahami-html-dan-css-untuk-pemula",
-              "isInternal": true
-            }
-          ]
-        },
-        {
-          "id": "form-validation-requests",
-          "title": "Penanganan Formulir & Form Request Validation",
-          "description": "Menangkap data POST, proteksi token CSRF, dan validasi data terpusat menggunakan Form Request class.",
-          "priority": "wajib",
-          "keyPoints": [
-            "Proteksi serangan CSRF via direktif @csrf dan simulasi method via @method('PUT')",
-            "Validasi bawaan di controller dengan $request->validate([...])",
-            "Custom Form Request class (php artisan make:request) dengan pemisahan method rules() dan authorize()",
-            "Menampilkan pesan error validasi di Blade menggunakan directive @error('field') dan variabel $errors"
-          ]
-        },
-        {
-          "id": "session-cookies-flash",
-          "title": "Session, Cookies & Flash Data Management",
-          "description": "Menyimpan status pengguna sementara, data keranjang belanja, dan menampilkan pesan notifikasi berhasil/gagal.",
-          "priority": "wajib",
-          "keyPoints": [
-            "Menyimpan dan membaca session: session(['kunci' => 'nilai']) dan session('kunci')",
-            "Flash data untuk notifikasi sekali baca: redirect()->back()->with('success', 'Data berhasil disimpan!')",
-            "Mengembalikan input lama saat validasi gagal via helper old('nama_input')",
-            "Pengaturan driver session: file, cookie, database, atau redis"
-          ]
-        },
-        {
-          "id": "vite-tailwind-assets",
-          "title": "Asset Bundling Modern dengan Vite & Tailwind CSS",
-          "description": "Mengintegrasikan compiler Vite bawaan Laravel untuk mengelola file CSS, JavaScript modern, dan framework Tailwind CSS.",
-          "priority": "direkomendasikan",
-          "keyPoints": [
-            "Konfigurasi file vite.config.js dan pemanggilan via Blade directive @vite(['resources/css/app.css', 'resources/js/app.js'])",
-            "Instalasi dan konfigurasi Tailwind CSS untuk styling utilitas cepat dan responsif",
-            "Hot Module Replacement (HMR) dengan npm run dev dan kompilasi produksi siap deploy via npm run build"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "phase-4",
-      "phaseNumber": 4,
-      "title": "Database, Migration & Eloquent ORM Mahir",
-      "subtitle": "Mengelola data aplikasi dengan terstruktur, relasi kompleks, dan kueri berkinerja tinggi.",
-      "description": "Eloquent adalah keunggulan utama Laravel. Kuasai migrasi database, relasi multi-tabel, pencegahan masalah performa N+1, transaksi data atomik, hingga query scopes.",
-      "topics": [
-        {
-          "id": "migrations-factories-seeders",
-          "title": "Database Migrations, Factories & Data Seeders",
-          "description": "Version control untuk skema database, pembuatan data dummy otomatis, dan pengisian data awal aplikasi.",
-          "priority": "wajib",
-          "keyPoints": [
-            "Perintah migrasi: php artisan migrate, migrate:rollback, migrate:fresh --seed",
-            "Definisi kolom: string, text, integer, boolean, foreignId()->constrained()->cascadeOnDelete()",
-            "Database Factories dengan library Faker untuk menghasilkan ratusan data dummy realistis",
-            "Database Seeder untuk menginisialisasi data penting (seperti akun default administrator)"
-          ]
-        },
-        {
-          "id": "eloquent-crud-queries",
-          "title": "Eloquent ORM Dasar & Fluent Query Builder",
-          "description": "Berinteraksi dengan database secara elegan menggunakan Model Eloquent dan Query Builder tanpa menulis SQL mentah.",
-          "priority": "wajib",
-          "keyPoints": [
-            "Model Mass Assignment: $fillable vs $guarded dan pencegahan unguard via Model::shouldBeStrict()",
-            "Operasi CRUD: Model::create(), find(), findOrFail(), update(), delete()",
-            "Query builder methods: where(), whereIn(), orderBy(), latest(), pluck(), chunk()",
-            "Pagination data: paginate(), simplePaginate(), dan cursorPaginate() untuk data berjumlah besar"
-          ]
-        },
-        {
-          "id": "eloquent-relationships-n1",
-          "title": "Relasi Database Kompleks & Solusi N+1 Query Problem",
-          "description": "Menghubungkan tabel-tabel database dan mengoptimalkan performa kueri menggunakan teknik Eager Loading.",
-          "priority": "wajib",
-          "keyPoints": [
-            "Relasi dasar: hasOne, belongsTo, hasMany, belongsToMany (dengan pivot table dan withPivot)",
-            "Relasi lanjutan: Polymorphic Relations (morphTo, morphMany) untuk data seperti komentar atau gambar multi-model",
-            "Bahaya N+1 Query Problem dan solusinya dengan Eager Loading: Model::with(['author', 'tags'])->get()",
-            "Mendeteksi N+1 otomatis saat development menggunakan Model::preventLazyLoading(!app()->isProduction())"
-          ]
-        },
-        {
-          "id": "accessors-mutators-casts",
-          "title": "Accessors, Mutators, Model Casts & Enums",
-          "description": "Memformat data secara otomatis saat disimpan ke database atau saat dibaca ke aplikasi.",
-          "priority": "wajib",
-          "keyPoints": [
-            "Sintaks modern Attribute::make(get: fn, set: fn) untuk format mata uang atau penyesuaian nama",
-            "Model Casting: datetime, boolean, array, json, encrypted, dan hashed untuk hashing password otomatis",
-            "Casting kolom ke PHP Enum untuk memastikan nilai kolom selalu valid, konsisten, dan type-safe"
-          ]
-        },
-        {
-          "id": "database-transactions",
-          "title": "Database Transactions & Concurrency Locking",
-          "description": "Menjaga integritas data saat beberapa operasi harus berhasil secara bersamaan atau dibatalkan seutuhnya.",
-          "priority": "wajib",
-          "keyPoints": [
-            "Penggunaan closure otomatis: DB::transaction(function () { ... }) dengan auto-rollback saat exception",
-            "Transaksi manual: DB::beginTransaction(), DB::commit(), dan DB::rollBack()",
-            "Pessimistic Locking (lockForUpdate()) untuk mencegah race condition pada pengurangan stok tiket atau saldo"
-          ]
-        },
-        {
-          "id": "scopes-softdeletes-observers",
-          "title": "Query Scopes, Soft Deletes & Eloquent Observers",
-          "description": "Menyederhanakan kueri yang sering berulang, menghapus data secara aman, dan mendengarkan event perubahan model.",
-          "priority": "direkomendasikan",
-          "keyPoints": [
-            "Local Scopes (scopeActive, scopeFilter) dan Global Scopes untuk filter kueri otomatis (seperti multi-tenancy)",
-            "Soft Deletes: trait SoftDeletes, kolom deleted_at, withTrashed(), restore(), dan forceDelete()",
-            "Eloquent Observers (php artisan make:observer) untuk memisahkan logic creating, updated, deleted keluar dari model"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "phase-5",
-      "phaseNumber": 5,
-      "title": "Autentikasi, Keamanan & Otorisasi Pengguna",
-      "subtitle": "Sistem login, hak akses pengguna, dan perlindungan dari celah keamanan web.",
-      "description": "Menerapkan alur registrasi akun, verifikasi email, login sosial Google/GitHub, pembagian hak akses (RBAC), serta standar keamanan OWASP.",
-      "topics": [
-        {
-          "id": "auth-breeze-manual",
-          "title": "Autentikasi: Starter Kits (Breeze) & Custom Manual Auth",
-          "description": "Membangun sistem login, register, dan logout baik menggunakan starter kit instan maupun membuat logika auth manual sendiri.",
-          "priority": "wajib",
-          "keyPoints": [
-            "Instalasi dan penggunaan Laravel Breeze untuk fitur autentikasi siap pakai dengan Blade atau Inertia",
-            "Membangun Custom Auth manual dengan Auth::attempt($credentials) dan Auth::login($user)",
-            "Regenerasi session untuk mencegah session fixation: request()->session()->regenerate()",
-            "Middleware bawaan auth dan guest untuk proteksi halaman rahasia"
-          ]
-        },
-        {
-          "id": "account-management",
-          "title": "Verifikasi Email, Reset Password & Throttling Login",
-          "description": "Menyediakan alur verifikasi email resmi, reset sandi yang aman dengan token bertenggat waktu, dan pembatasan percobaan login.",
-          "priority": "wajib",
-          "keyPoints": [
-            "Implementasi interface MustVerifyEmail pada User model dan middleware verified",
-            "Alur Forgot Password dan Reset Password berbasis token aman bawaan Laravel",
-            "Rate limiting login attempt bawaan untuk melindungi akun dari serangan brute-force"
-          ]
-        },
-        {
-          "id": "authorization-gates-policies",
-          "title": "Otorisasi Granular: Gates & Model Policies",
-          "description": "Menentukan secara spesifik siapa saja pengguna yang berhak melihat, mengedit, atau menghapus suatu data.",
-          "priority": "wajib",
-          "keyPoints": [
-            "Mendefinisikan Gate sederhana di AppServiceProvider via Gate::define()",
-            "Membuat Policy per Model: php artisan make:policy PostPolicy --model=Post",
-            "Mengecek otorisasi di Controller via $this->authorize('update', $post) atau Gate::allows()",
-            "Menyembunyikan tombol aksi di template Blade dengan directive @can dan @cannot"
-          ]
-        },
-        {
-          "id": "role-permissions-spatie",
-          "title": "Role & Permission Terstruktur (Spatie Permission)",
-          "description": "Mengelola banyak level peran pengguna (Super Admin, Editor, Member) dengan tabel relasi RBAC yang teruji.",
-          "priority": "direkomendasikan",
-          "keyPoints": [
-            "Instalasi dan migrasi tabel spatie/laravel-permission",
-            "Menugaskan peran dan izin ke user: $user->assignRole('admin') dan $user->givePermissionTo('publish')",
-            "Memproteksi rute dan controller dengan middleware role:admin atau permission:edit"
-          ]
-        },
-        {
-          "id": "socialite-oauth",
-          "title": "Social Authentication dengan Laravel Socialite (OAuth)",
-          "description": "Memungkinkan pengguna mendaftar dan masuk cukup dengan 1 klik menggunakan akun Google, GitHub, atau Facebook.",
-          "priority": "direkomendasikan",
-          "keyPoints": [
-            "Instalasi paket laravel/socialite dan konfigurasi client_id di config/services.php",
-            "Redirect ke penyedia OAuth via Socialite::driver('google')->redirect()",
-            "Menangani callback, membaca data pengguna, dan sinkronisasi ke tabel users lokal"
-          ]
-        },
-        {
-          "id": "web-security-owasp",
-          "title": "Keamanan Web & Perlindungan Serangan Siber (OWASP)",
-          "description": "Memastikan aplikasi web terlindungi dari eksploitasi berbahaya yang sering menyerang aplikasi PHP di dunia nyata.",
-          "priority": "wajib",
-          "keyPoints": [
-            "CSRF Protection: cara kerja token @csrf dan header X-CSRF-TOKEN",
-            "XSS (Cross-Site Scripting): perbedaan cetak aman {{ $konten }} (auto-escaped) vs {!! $rawHtml !!}",
-            "SQL Injection Protection melalui penggunaan parameter binding PDO di Eloquent",
-            "Mass Assignment Protection dan validasi data input formulir secara menyeluruh"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "phase-6",
-      "phaseNumber": 6,
-      "title": "RESTful API, Serialisasi & Token Authentication",
-      "subtitle": "Menyediakan data backend untuk frontend modern, SPA, dan aplikasi mobile.",
-      "description": "Mengubah Laravel menjadi backend API yang tangguh, mengembalikan format data JSON standar, mengamankan endpoint dengan Sanctum, dan dokumentasi otomatis.",
-      "topics": [
-        {
-          "id": "api-setup-routing",
-          "title": "Setup API Modern Laravel 11/12 & REST Routing",
-          "description": "Inisialisasi rute API modern, memahami prinsip RESTful, dan penanganan status code HTTP.",
-          "priority": "wajib",
-          "keyPoints": [
-            "Perintah instalasi API Laravel 11+: php artisan install:api",
-            "Mendefinisikan rute di routes/api.php dengan Route::apiResource()",
-            "Penerapan HTTP Status Code semantik: 200 (OK), 201 (Created), 204 (No Content), 404 (Not Found)"
-          ]
-        },
-        {
-          "id": "api-standardized-responses",
-          "title": "Standardisasi Format Respons JSON & Error Handling",
-          "description": "Menyusun format struktur respons envelope yang konsisten untuk respon sukses maupun respon error.",
-          "priority": "wajib",
-          "keyPoints": [
-            "Membuat struktur response seragam: { success: true, message: '...', data: [...] }",
-            "Menangani error validasi (HTTP 422) dengan format pesan error terperinci",
-            "Kustomisasi penanganan API Exception di bootstrap/app.php dengan method withExceptions()"
-          ]
-        },
-        {
-          "id": "api-resources-transformation",
-          "title": "API Resources & Transformasi Data Serialisasi",
-          "description": "Membungkus model database ke representasi JSON terstruktur tanpa membocorkan field sensitif tabel.",
-          "priority": "wajib",
-          "keyPoints": [
-            "Membuat resource: php artisan make:resource UserResource dan ResourceCollection",
-            "Menyembunyikan kolom database internal dan memformat data sebelum dikembalikan",
-            "Menyertakan relasi secara kondisional menggunakan method $this->whenLoaded('profile')",
-            "Penanganan pagination metadata otomatis yang rapi di API Resource"
-          ]
-        },
-        {
-          "id": "laravel-sanctum-auth",
-          "title": "Laravel Sanctum (Token-Based Auth & Mobile API)",
-          "description": "Sistem autentikasi API token ringan untuk aplikasi mobile (Flutter/React Native) dan cookie-based auth untuk SPA.",
-          "priority": "wajib",
-          "keyPoints": [
-            "Menerbitkan Personal Access Token saat user login sukses: $user->createToken('nama')->plainTextToken",
-            "Memproteksi endpoint API dengan middleware auth:sanctum",
-            "Penggunaan Token Abilities / Scopes (misal: membatasi token hanya bisa read)",
-            "Menghapus atau mencabut token saat user melakukan logout"
-          ]
-        },
-        {
-          "id": "cors-rate-limiting",
-          "title": "CORS (Cross-Origin) & API Rate Limiting Terkustomisasi",
-          "description": "Mengatur izin akses dari domain frontend berbeda dan melindungi endpoint dari serangan spam request.",
-          "priority": "wajib",
-          "keyPoints": [
-            "Konfigurasi file config/cors.php (allowed origins, allowed headers, supports_credentials)",
-            "Rate Limiting custom via RateLimiter::for('api', ...) di AppServiceProvider",
-            "Pemeriksaan response header pembatasan request: X-RateLimit-Limit dan X-RateLimit-Remaining"
-          ]
-        },
-        {
-          "id": "api-documentation-scramble",
-          "title": "Dokumentasi API Otomatis (Scramble / OpenAPI)",
-          "description": "Menghasilkan dokumentasi interaktif standar OpenAPI/Swagger langsung dari type-hint kode tanpa menulis anotasi manual yang merepotkan.",
-          "priority": "direkomendasikan",
-          "keyPoints": [
-            "Integrasi paket Scramble (dedoc/scramble) untuk dokumentasi OpenAPI zero-config di Laravel",
-            "Testing endpoint API secara interaktif langsung melalui browser UI",
-            "Ekspor spesifikasi JSON/YAML untuk diimpor ke Postman, Bruno, atau Insomnia"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "phase-7",
-      "phaseNumber": 7,
-      "title": "Asynchronous Processing, Antrian, Scheduled Tasks & Caching",
-      "subtitle": "Tingkatkan performa, skala, dan kecepatan aplikasi dengan eksekusi background.",
-      "description": "Fitur esensial untuk aplikasi skala produksi: memindahkan tugas lambat ke antrian (queue), penjadwalan tugas otomatis (cron), event-driven, dan caching memori.",
-      "topics": [
-        {
-          "id": "mail-notifications-system",
-          "title": "Mailable & Notifikasi Multi-Channel",
-          "description": "Kirim email tagihan, selamat datang, dan notifikasi ke berbagai channel (Database, Email, SMS/WhatsApp).",
-          "priority": "wajib",
-          "keyPoints": [
-            "Mailable class (php artisan make:mail) dengan template Blade Markdown yang profesional",
-            "Sistem Notifikasi Laravel (php artisan make:notification) via email dan database bell icon",
-            "Konfigurasi mail server SMTP lokal (Mailtrap) dan produksi (Resend, Brevo, AWS SES)"
-          ]
-        },
-        {
-          "id": "queues-jobs-workers",
-          "title": "Queues & Background Jobs (Pemrosesan Antrian Asinkron)",
-          "description": "Memindahkan tugas berat (seperti kirim email, manipulasi gambar, ekspor Excel) ke antrian agar website tidak loading lama.",
-          "priority": "wajib",
-          "keyPoints": [
-            "Membuat Job: php artisan make:job ProcessExportData dan dispatching via NamaJob::dispatch()",
-            "Driver antrian: sync (lokal dev), database, dan redis (produksi berkecepatan tinggi)",
-            "Menjalankan worker: php artisan queue:work dengan parameter timeout, tries, dan memory",
-            "Penanganan kegagalan antrian: tabel failed_jobs, retry job, dan callback method failed()"
-          ]
-        },
-        {
-          "id": "task-scheduling-cron",
-          "title": "Task Scheduling (Otomasi Cron Job Server)",
-          "description": "Menjadwalkan eksekusi perintah otomatis tanpa perlu repot mengedit banyak konfigurasi crontab di server.",
-          "priority": "wajib",
-          "keyPoints": [
-            "Hanya butuh satu baris cron induk di server Linux: * * * * * php artisan schedule:run",
-            "Mendefinisikan jadwal di routes/console.php: Schedule::command(), Schedule::job(), Schedule::call()",
-            "Frekuensi ekspresif: ->daily(), ->dailyAt('02:00'), ->hourly(), ->weekly(), ->withoutOverlapping()",
-            "Menjalankan scheduler saat development lokal via php artisan schedule:work"
-          ]
-        },
-        {
-          "id": "events-listeners-architecture",
-          "title": "Arsitektur Berbasis Event (Events & Queued Listeners)",
-          "description": "Mendekopel logika aplikasi agar modular dengan memicu event dan mendengarkannya secara independen.",
-          "priority": "direkomendasikan",
-          "keyPoints": [
-            "Membuat event dan listener: php artisan make:event OrderPlaced & make:listener SendOrderInvoice",
-            "Memicu event via OrderPlaced::dispatch($order)",
-            "Menjadikan listener asynchronous di background queue dengan menambahkan interface ShouldQueue"
-          ]
-        },
-        {
-          "id": "caching-strategy-redis",
-          "title": "Strategi Caching Data & Integrasi Redis",
-          "description": "Menyimpan data hasil kueri berat ke dalam RAM untuk memangkas waktu loading dari detik menjadi milidetik.",
-          "priority": "wajib",
-          "keyPoints": [
-            "Pola Cache-Aside dengan method Cache::remember('key', $ttl, fn() => DB::query())",
-            "Menghapus cache saat data berubah: Cache::forget('key')",
-            "Pengelompokan cache dengan Cache::tags(['posts'])->flush() (menggunakan driver Redis/Memcached)",
-            "Perbandingan performa driver cache: file vs database vs Redis"
-          ]
-        },
-        {
-          "id": "file-storage-cloud",
-          "title": "File Storage & Cloud Object Storage (S3 / Cloudflare R2)",
-          "description": "Mengelola file upload foto profil, dokumen PDF, dan penyimpanan ke cloud storage terdistribusi.",
-          "priority": "wajib",
-          "keyPoints": [
-            "Konfigurasi disk di config/filesystems.php (public, local, s3)",
-            "Perintah symlink lokal: php artisan storage:link",
-            "Menyimpan file: $request->file('avatar')->store('avatars', 'public')",
-            "Menghasilkan Signed Temporary URL untuk akses dokumen privat berjangka waktu: Storage::temporaryUrl()"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "phase-8",
-      "phaseNumber": 8,
-      "title": "Testing, Clean Architecture, Observability & Deployment",
-      "subtitle": "Membawa aplikasi ke standar industri profesional: kode bersih, pengujian otomatis, dan server VPS live.",
-      "description": "Langkah akhir yang membedakan programmer amatir dengan engineer profesional: menulis test otomatis, memantau performa di produksi, dan deploy ke VPS secara zero-downtime.",
-      "topics": [
-        {
-          "id": "automated-testing-pest",
-          "title": "Automated Testing Menyeluruh (Pest PHP / PHPUnit)",
-          "description": "Menguji seluruh alur penting aplikasi secara otomatis agar fitur tidak rusak saat ada perubahan kode baru.",
-          "priority": "wajib",
-          "keyPoints": [
-            "Keunggulan Pest PHP: sintaks penulisan test yang sangat ringkas, bersih, dan ekspresif",
-            "Feature Test: menguji HTTP endpoint, status response, dan assertions database (assertDatabaseHas)",
-            "Menggunakan trait RefreshDatabase agar setiap test berjalan di database bersih yang terisolasi",
-            "Mocking dan Fakes resmi: Http::fake(), Mail::fake(), Queue::fake() agar test berjalan super cepat"
-          ],
-          "resources": [
-            {
-              "title": "Contoh Penggunaan K6 Automation Testing",
-              "url": "/artikel/contoh-penggunaan-k6-automation-tools",
-              "isInternal": true
-            }
-          ]
-        },
-        {
-          "id": "clean-code-patterns",
-          "title": "Pola Desain & Arsitektur Kode Bersih (Clean Architecture)",
-          "description": "Mencegah controller menjadi terlalu gemuk (Fat Controller) dengan memisahkan logika bisnis ke layer yang tepat.",
-          "priority": "direkomendasikan",
-          "keyPoints": [
-            "Service Layer Pattern: memindahkan kalkulasi dan logika bisnis kompleks ke class Service khusus",
-            "Action Pattern: class mandiri untuk satu aksi spesifik (misal: CreateOrderAction, RegisterUserAction)",
-            "Data Transfer Objects (DTO): membungkus parameter request menjadi objek dengan tipe data yang ketat",
-            "Formating kode otomatis standar ekosistem Laravel menggunakan Laravel Pint"
-          ]
-        },
-        {
-          "id": "local-debugging-telescope",
-          "title": "Debugging Lokal Tingkat Lanjut (Laravel Telescope & Debugbar)",
-          "description": "Mendiagnosis query database lambat, konsumsi memori, dan tracking log selama proses development di komputer.",
-          "priority": "direkomendasikan",
-          "keyPoints": [
-            "Instalasi dan penggunaan Laravel Telescope untuk dashboard debugging lokal (requests, queries, dumps, logs)",
-            "Laravel Debugbar untuk melihat query SQL yang dieksekusi per halaman secara visual",
-            "Teknik debugging modern: dd(), dump(), dan pencatatan log terstruktur via Log::info() / Log::error()"
-          ]
-        },
-        {
-          "id": "production-monitoring-pulse",
-          "title": "Monitoring Produksi & Error Tracking (Pulse, Horizon, Sentry)",
-          "description": "Memantau performa server secara langsung di produksi dan menerima laporan otomatis jika pengguna mengalami error.",
-          "priority": "wajib",
-          "keyPoints": [
-            "Laravel Pulse: dashboard gratis & open-source untuk memantau beban CPU, query paling lambat, dan endpoint terberat",
-            "Laravel Horizon: dashboard real-time khusus pemantauan antrian Redis dan status antrian",
-            "Error Tracking eksternal dengan Sentry / Flare: notifikasi instan saat terjadi HTTP 500 lengkap dengan stack trace",
-            "Log rotation harian di server Linux agar disk tidak cepat penuh"
-          ]
-        },
-        {
-          "id": "production-optimization",
-          "title": "Optimasi Performa Server & Caching Produksi",
-          "description": "Mempersiapkan kode dan konfigurasi Laravel agar berjalan secepat kilat sebelum diakses oleh ribuan pengguna.",
-          "priority": "wajib",
-          "keyPoints": [
-            "Artisan caching perintah wajib: php artisan config:cache, route:cache, view:cache, event:cache",
-            "OPcache PHP: menyimpan precompiled script bytecode di memori RAM server",
-            "Memastikan file .env produksi: APP_DEBUG=false dan APP_ENV=production",
-            "Optimasi Composer autoloader untuk produksi: composer install --optimize-autoloader --no-dev"
-          ]
-        },
-        {
-          "id": "vps-deployment-cicd",
-          "title": "Deployment VPS Linux, Web Server Nginx, Supervisor & CI/CD",
-          "description": "Menerbitkan aplikasi ke server VPS (Ubuntu), konfigurasi Nginx, SSL Let's Encrypt, Supervisor, dan deploy otomatis via GitHub Actions.",
-          "priority": "wajib",
-          "keyPoints": [
-            "Konfigurasi Nginx Server Block khusus Laravel dan PHP-FPM socket",
-            "Pemasangan sertifikat SSL gratis via Certbot (Let's Encrypt)",
-            "Supervisor Daemon untuk menjaga background worker (queue:work) selalu aktif di server",
-            "CI/CD Pipeline dengan GitHub Actions untuk testing otomatis dan auto-deploy saat push ke branch main",
-            "Penggunaan tool deployment modern: Laravel Forge, Ploi, Coolify, atau script Deployer"
-          ]
-        }
-      ]
-    }
-  ]
+	"slug": "laravel",
+	"order": 1,
+	"title": "Roadmap Belajar Laravel",
+	"badge": "Populer",
+	"tagline": "Dari Pemula PHP Hingga Siap Membangun Aplikasi Web Skala Produksi & REST API Modern",
+	"description": "Panduan langkah demi langkah yang komprehensif dan membumi untuk menguasai framework Laravel: mulai dari fondasi PHP modern, arsitektur MVC, Eloquent ORM tingkat lanjut, keamanan OWASP, sistem autentikasi, arsitektur REST API standar industri, background jobs & queues, hingga automated testing dan deployment ke server VPS.",
+	"difficulty": "Pemula",
+	"estimatedWeeks": "12 - 16 Minggu",
+	"category": "Backend & Web Framework",
+	"iconName": "laravel",
+	"updatedAt": "2026-09-22",
+	"phases": [
+		{
+			"id": "phase-1",
+			"phaseNumber": 1,
+			"title": "Fondasi PHP Modern, Protokol Web & Lingkungan Pengembangan",
+			"subtitle": "Sebelum menyentuh Laravel, kuasai dasar PHP 8+, HTTP web, dan alat pendukungnya.",
+			"description": "Laravel dibangun di atas PHP modern dan standar web HTTP. Memahami konsep OOP, arsitektur Client-Server, dan Composer akan menghindarkanmu dari kebingungan saat melihat sintaks dan alur kerja Laravel.",
+			"topics": [
+				{
+					"id": "php-basics",
+					"title": "Sintaks Dasar & Fitur Modern PHP (PHP 8.2+)",
+					"description": "Pahami variabel, tipe data skalar, strict types, match expression, nullsafe operator, dan penulisan class modern.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Tipe data skalar, array associative, dan strict types (declare(strict_types=1))",
+						"Fitur modern PHP 8+: Match Expression, Nullsafe Operator (?->), dan Named Arguments",
+						"Constructor Property Promotion untuk deklarasi properti class yang ringkas",
+						"PHP Enums untuk standarisasi tipe data status yang aman dan type-safe"
+					],
+					"resources": [
+						{
+							"title": "Mengenal Perbedaan Statement dan Expression",
+							"url": "/artikel/mengenal-perbedaan-statement-dan-expression-dalam-pemrograman",
+							"isInternal": true
+						},
+						{
+							"title": "Mengenal Function dalam Bahasa Sederhana",
+							"url": "/artikel/function-artinya-dalam-bahasa-bayi",
+							"isInternal": true
+						}
+					]
+				},
+				{
+					"id": "php-oop",
+					"title": "Pemrograman Berorientasi Objek (OOP) & PSR Standard",
+					"description": "Konsep inti yang mendasari seluruh arsitektur Laravel: Class, Object, Inheritance, Encapsulation, Interface, dan Namespace.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Class, Visibility (public, protected, private), Properties, Methods, dan Constructor",
+						"Namespaces dan Autoloading standar PSR-4 (alasan file di folder app/ otomatis terbaca)",
+						"Interface (kontrak kode), Abstract Class, dan Traits untuk reusabilitas method",
+						"Dependency Injection dasar: menyuntikkan class dependensi lewat constructor"
+					]
+				},
+				{
+					"id": "http-web-protocol",
+					"title": "Protokol HTTP, Siklus Request-Response & Dasar Web",
+					"description": "Memahami bagaimana browser berkomunikasi dengan server backend melalui request dan response HTTP.",
+					"priority": "wajib",
+					"keyPoints": [
+						"HTTP Methods: GET, POST, PUT, PATCH, DELETE dan peruntukan semantiknya",
+						"HTTP Status Codes: 200, 201, 301, 400, 401, 403, 404, 422 (validasi error), dan 500",
+						"Struktur Request: Headers (Authorization, Accept, Content-Type), Query String, dan Request Body",
+						"Konsep Stateless Web, perbedaan Cookie dan Session untuk manajemen status login pengguna"
+					]
+				},
+				{
+					"id": "tools-composer",
+					"title": "Composer & Manajemen Dependensi Ekosistem PHP",
+					"description": "Paket manajer resmi ekosistem PHP untuk mengunduh, mengelola, dan memperbarui library pihak ketiga.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Fungsi file composer.json, composer.lock, dan direktori vendor/",
+						"Perintah esensial: composer require, composer update, dan composer install",
+						"Regenerasi autoloader dengan composer dump-autoload",
+						"Aturan semantic versioning (^, ~, wildcard) dalam instalasi paket"
+					]
+				},
+				{
+					"id": "dev-environment",
+					"title": "Lingkungan Pengembangan Lokal (Herd, Sail, Laragon & Git)",
+					"description": "Menyiapkan server lokal di komputer dengan alat modern yang cepat, terisolasi, dan mudah dikonfigurasi.",
+					"priority": "direkomendasikan",
+					"keyPoints": [
+						"Pilihan tool modern: Laravel Herd (macOS & Windows), Laravel Sail (Docker-based), atau Laragon / WSL2",
+						"Instalasi PHP 8.2+, Node.js/NPM, dan Database Client (DBeaver, TablePlus, atau Beekeeper)",
+						"Dasar Git Version Control: commit, branch, checkout, push, pull, dan konfigurasi file .gitignore"
+					]
+				}
+			]
+		},
+		{
+			"id": "phase-2",
+			"phaseNumber": 2,
+			"title": "Instalasi, Arsitektur Inti & Siklus Hidup Laravel 11+",
+			"subtitle": "Mengenal struktur modern Laravel 11+, alur request, dan jantung Service Container.",
+			"description": "Laravel 11 menghadirkan struktur direktori yang jauh lebih ramping dan terpadu. Pelajari siklus hidup sebuah request dari awal masuk hingga menghasilkan respon.",
+			"topics": [
+				{
+					"id": "installation-setup",
+					"title": "Instalasi Proyek & Konfigurasi Lingkungan (.env)",
+					"description": "Membuat proyek baru dengan Laravel Installer atau Composer, serta memahami file konfigurasi dan keamanan environment.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Membuat proyek: laravel new nama-proyek atau composer create-project laravel/laravel",
+						"Konfigurasi file .env (APP_ENV, APP_KEY, APP_DEBUG, DB_CONNECTION)",
+						"Menjalankan development server: php artisan serve",
+						"Penerbitan file konfigurasi kustom: php artisan config:publish"
+					],
+					"resources": [
+						{
+							"title": "Mengenal Apa Itu Laravel untuk Pemula",
+							"url": "/artikel/laravel-adalah",
+							"isInternal": true
+						}
+					]
+				},
+				{
+					"id": "artisan-tinker",
+					"title": "Artisan CLI & Laravel Tinker (Interactive REPL)",
+					"description": "Alat baris perintah bawaan Laravel untuk meng-generate kode instan dan bereksperimen dengan database secara interaktif.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Generator perintah make: make:controller, make:model, make:migration, make:request",
+						"Melihat daftar rute aplikasi beserta middleware: php artisan route:list",
+						"Eksperimen kode dan uji coba query database langsung di terminal via php artisan tinker",
+						"Membersihkan seluruh cache konfigurasi dan rute: php artisan optimize:clear"
+					]
+				},
+				{
+					"id": "mvc-lifecycle-11",
+					"title": "Arsitektur MVC & Request Lifecycle Modern Laravel 11+",
+					"description": "Memahami perjalanan request dari public/index.php, bootstrap/app.php, middleware, router, controller, hingga view.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Pemisahan tanggung jawab Model (data), View (tampilan), dan Controller (penghubung alur)",
+						"Peran file bootstrap/app.php sebagai pusat konfigurasi middleware dan exceptions di Laravel 11+",
+						"Cara kerja Middleware Pipeline: mencegat request sebelum masuk controller dan memodifikasi respon setelahnya"
+					]
+				},
+				{
+					"id": "service-container-di",
+					"title": "Service Container & Dependency Injection (IoC)",
+					"description": "Jantung paling fundamental di Laravel: bagaimana framework mengelola instansiasi class dan menyuntikkannya otomatis.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Konsep Inversion of Control (IoC) dan Automatic Constructor Resolution berbasis PHP Reflection",
+						"Binding dasar: app()->bind() (instance baru tiap panggil) vs app()->singleton() (satu instance bersama)",
+						"Binding Interface ke Concrete Class untuk kode yang modular dan mudah diuji (testing-friendly)",
+						"Mengakses container secara manual menggunakan helper app() atau resolve()"
+					]
+				},
+				{
+					"id": "service-providers-facades",
+					"title": "Service Providers & Mekanisme Facades",
+					"description": "Memahami tempat booting seluruh komponen Laravel dan trik di balik pemanggilan statis class Facade.",
+					"priority": "direkomendasikan",
+					"keyPoints": [
+						"Anatomi Service Provider: method register() (binding) vs method boot() (bootstrapping fitur)",
+						"Mendaftarkan konfigurasi kustom dan macro di AppServiceProvider",
+						"Mekanisme kerja Facades (Route::, Auth::, DB::) via magic method __callStatic() ke Service Container",
+						"Kapan sebaiknya memakai Facade vs Constructor Dependency Injection"
+					]
+				}
+			]
+		},
+		{
+			"id": "phase-3",
+			"phaseNumber": 3,
+			"title": "Routing Canggih, Controllers, Blade & Asset Bundler",
+			"subtitle": "Membangun halaman web interaktif, layout modular, dan menangani input pengguna.",
+			"description": "Pelajari cara membuat rute URL yang bersih, mengorganisir logika controller, membuat tampilan HTML modular dengan Blade & Vite, serta validasi formulir yang aman.",
+			"topics": [
+				{
+					"id": "routing-model-binding",
+					"title": "Routing Lanjutan & Route Model Binding",
+					"description": "Mendefinisikan endpoint URL, parameter rute, group rute, dan binding otomatis ke Model database.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Route HTTP methods (get, post, put, patch, delete) dan Route::resource()",
+						"Pengelompokan rute: Route::prefix(), Route::middleware(), dan Route::name()",
+						"Implicit Route Model Binding: Route::get('/posts/{post:slug}') otomatis mencari record berdasarkan kolom slug",
+						"Scoped Binding untuk rute bertingkat: /users/{user}/posts/{post}"
+					]
+				},
+				{
+					"id": "controllers-resource",
+					"title": "Controllers, Inversion of Control & Single Action",
+					"description": "Memisahkan logika bisnis dari file routing ke class controller yang terstruktur dan rapi.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Resource Controller standar CRUD (index, create, store, show, edit, update, destroy)",
+						"Single Action Controller (__invoke) untuk endpoint yang memiliki satu tanggung jawab spesifik",
+						"Dependency Injection pada method controller (Request, Service, dan Model binding)"
+					]
+				},
+				{
+					"id": "blade-components",
+					"title": "Blade Templating & Arsitektur Komponen Modern",
+					"description": "Sistem template bawaan Laravel yang ekspresif untuk membuat layout bersarang dan komponen UI yang dapat dipakai ulang.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Direktif logika dasar: @if, @foreach, @forelse, @empty, @auth, @guest, @can",
+						"Arsitektur komponen modern tag-based: <x-layout>, <x-button>, dan <x-card>",
+						"Meneruskan data dengan atribut (:title=\"$judul\") dan pengelolaan named slots (<x-slot:header>)",
+						"Merger class styling dengan sintaks $attributes->merge(['class' => '...'])"
+					],
+					"resources": [
+						{
+							"title": "Panduan Lengkap Memahami HTML dan CSS",
+							"url": "/artikel/panduan-lengkap-memahami-html-dan-css-untuk-pemula",
+							"isInternal": true
+						}
+					]
+				},
+				{
+					"id": "form-validation-requests",
+					"title": "Penanganan Formulir & Form Request Validation",
+					"description": "Menangkap data POST, proteksi token CSRF, dan validasi data terpusat menggunakan Form Request class.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Proteksi serangan CSRF via direktif @csrf dan simulasi method via @method('PUT')",
+						"Validasi bawaan di controller dengan $request->validate([...])",
+						"Custom Form Request class (php artisan make:request) dengan pemisahan method rules() dan authorize()",
+						"Menampilkan pesan error validasi di Blade menggunakan directive @error('field') dan variabel $errors"
+					]
+				},
+				{
+					"id": "session-cookies-flash",
+					"title": "Session, Cookies & Flash Data Management",
+					"description": "Menyimpan status pengguna sementara, data keranjang belanja, dan menampilkan pesan notifikasi berhasil/gagal.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Menyimpan dan membaca session: session(['kunci' => 'nilai']) dan session('kunci')",
+						"Flash data untuk notifikasi sekali baca: redirect()->back()->with('success', 'Data berhasil disimpan!')",
+						"Mengembalikan input lama saat validasi gagal via helper old('nama_input')",
+						"Pengaturan driver session: file, cookie, database, atau redis"
+					]
+				},
+				{
+					"id": "vite-tailwind-assets",
+					"title": "Asset Bundling Modern dengan Vite & Tailwind CSS",
+					"description": "Mengintegrasikan compiler Vite bawaan Laravel untuk mengelola file CSS, JavaScript modern, dan framework Tailwind CSS.",
+					"priority": "direkomendasikan",
+					"keyPoints": [
+						"Konfigurasi file vite.config.js dan pemanggilan via Blade directive @vite(['resources/css/app.css', 'resources/js/app.js'])",
+						"Instalasi dan konfigurasi Tailwind CSS untuk styling utilitas cepat dan responsif",
+						"Hot Module Replacement (HMR) dengan npm run dev dan kompilasi produksi siap deploy via npm run build"
+					]
+				}
+			]
+		},
+		{
+			"id": "phase-4",
+			"phaseNumber": 4,
+			"title": "Database, Migration & Eloquent ORM Mahir",
+			"subtitle": "Mengelola data aplikasi dengan terstruktur, relasi kompleks, dan kueri berkinerja tinggi.",
+			"description": "Eloquent adalah keunggulan utama Laravel. Kuasai migrasi database, relasi multi-tabel, pencegahan masalah performa N+1, transaksi data atomik, hingga query scopes.",
+			"topics": [
+				{
+					"id": "migrations-factories-seeders",
+					"title": "Database Migrations, Factories & Data Seeders",
+					"description": "Version control untuk skema database, pembuatan data dummy otomatis, dan pengisian data awal aplikasi.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Perintah migrasi: php artisan migrate, migrate:rollback, migrate:fresh --seed",
+						"Definisi kolom: string, text, integer, boolean, foreignId()->constrained()->cascadeOnDelete()",
+						"Database Factories dengan library Faker untuk menghasilkan ratusan data dummy realistis",
+						"Database Seeder untuk menginisialisasi data penting (seperti akun default administrator)"
+					]
+				},
+				{
+					"id": "eloquent-crud-queries",
+					"title": "Eloquent ORM Dasar & Fluent Query Builder",
+					"description": "Berinteraksi dengan database secara elegan menggunakan Model Eloquent dan Query Builder tanpa menulis SQL mentah.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Model Mass Assignment: $fillable vs $guarded dan pencegahan unguard via Model::shouldBeStrict()",
+						"Operasi CRUD: Model::create(), find(), findOrFail(), update(), delete()",
+						"Query builder methods: where(), whereIn(), orderBy(), latest(), pluck(), chunk()",
+						"Pagination data: paginate(), simplePaginate(), dan cursorPaginate() untuk data berjumlah besar"
+					]
+				},
+				{
+					"id": "eloquent-relationships-n1",
+					"title": "Relasi Database Kompleks & Solusi N+1 Query Problem",
+					"description": "Menghubungkan tabel-tabel database dan mengoptimalkan performa kueri menggunakan teknik Eager Loading.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Relasi dasar: hasOne, belongsTo, hasMany, belongsToMany (dengan pivot table dan withPivot)",
+						"Relasi lanjutan: Polymorphic Relations (morphTo, morphMany) untuk data seperti komentar atau gambar multi-model",
+						"Bahaya N+1 Query Problem dan solusinya dengan Eager Loading: Model::with(['author', 'tags'])->get()",
+						"Mendeteksi N+1 otomatis saat development menggunakan Model::preventLazyLoading(!app()->isProduction())"
+					]
+				},
+				{
+					"id": "accessors-mutators-casts",
+					"title": "Accessors, Mutators, Model Casts & Enums",
+					"description": "Memformat data secara otomatis saat disimpan ke database atau saat dibaca ke aplikasi.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Sintaks modern Attribute::make(get: fn, set: fn) untuk format mata uang atau penyesuaian nama",
+						"Model Casting: datetime, boolean, array, json, encrypted, dan hashed untuk hashing password otomatis",
+						"Casting kolom ke PHP Enum untuk memastikan nilai kolom selalu valid, konsisten, dan type-safe"
+					]
+				},
+				{
+					"id": "database-transactions",
+					"title": "Database Transactions & Concurrency Locking",
+					"description": "Menjaga integritas data saat beberapa operasi harus berhasil secara bersamaan atau dibatalkan seutuhnya.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Penggunaan closure otomatis: DB::transaction(function () { ... }) dengan auto-rollback saat exception",
+						"Transaksi manual: DB::beginTransaction(), DB::commit(), dan DB::rollBack()",
+						"Pessimistic Locking (lockForUpdate()) untuk mencegah race condition pada pengurangan stok tiket atau saldo"
+					]
+				},
+				{
+					"id": "scopes-softdeletes-observers",
+					"title": "Query Scopes, Soft Deletes & Eloquent Observers",
+					"description": "Menyederhanakan kueri yang sering berulang, menghapus data secara aman, dan mendengarkan event perubahan model.",
+					"priority": "direkomendasikan",
+					"keyPoints": [
+						"Local Scopes (scopeActive, scopeFilter) dan Global Scopes untuk filter kueri otomatis (seperti multi-tenancy)",
+						"Soft Deletes: trait SoftDeletes, kolom deleted_at, withTrashed(), restore(), dan forceDelete()",
+						"Eloquent Observers (php artisan make:observer) untuk memisahkan logic creating, updated, deleted keluar dari model"
+					]
+				}
+			]
+		},
+		{
+			"id": "phase-5",
+			"phaseNumber": 5,
+			"title": "Autentikasi, Keamanan & Otorisasi Pengguna",
+			"subtitle": "Sistem login, hak akses pengguna, dan perlindungan dari celah keamanan web.",
+			"description": "Menerapkan alur registrasi akun, verifikasi email, login sosial Google/GitHub, pembagian hak akses (RBAC), serta standar keamanan OWASP.",
+			"topics": [
+				{
+					"id": "auth-breeze-manual",
+					"title": "Autentikasi: Starter Kits (Breeze) & Custom Manual Auth",
+					"description": "Membangun sistem login, register, dan logout baik menggunakan starter kit instan maupun membuat logika auth manual sendiri.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Instalasi dan penggunaan Laravel Breeze untuk fitur autentikasi siap pakai dengan Blade atau Inertia",
+						"Membangun Custom Auth manual dengan Auth::attempt($credentials) dan Auth::login($user)",
+						"Regenerasi session untuk mencegah session fixation: request()->session()->regenerate()",
+						"Middleware bawaan auth dan guest untuk proteksi halaman rahasia"
+					]
+				},
+				{
+					"id": "account-management",
+					"title": "Verifikasi Email, Reset Password & Throttling Login",
+					"description": "Menyediakan alur verifikasi email resmi, reset sandi yang aman dengan token bertenggat waktu, dan pembatasan percobaan login.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Implementasi interface MustVerifyEmail pada User model dan middleware verified",
+						"Alur Forgot Password dan Reset Password berbasis token aman bawaan Laravel",
+						"Rate limiting login attempt bawaan untuk melindungi akun dari serangan brute-force"
+					]
+				},
+				{
+					"id": "authorization-gates-policies",
+					"title": "Otorisasi Granular: Gates & Model Policies",
+					"description": "Menentukan secara spesifik siapa saja pengguna yang berhak melihat, mengedit, atau menghapus suatu data.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Mendefinisikan Gate sederhana di AppServiceProvider via Gate::define()",
+						"Membuat Policy per Model: php artisan make:policy PostPolicy --model=Post",
+						"Mengecek otorisasi di Controller via $this->authorize('update', $post) atau Gate::allows()",
+						"Menyembunyikan tombol aksi di template Blade dengan directive @can dan @cannot"
+					]
+				},
+				{
+					"id": "role-permissions-spatie",
+					"title": "Role & Permission Terstruktur (Spatie Permission)",
+					"description": "Mengelola banyak level peran pengguna (Super Admin, Editor, Member) dengan tabel relasi RBAC yang teruji.",
+					"priority": "direkomendasikan",
+					"keyPoints": [
+						"Instalasi dan migrasi tabel spatie/laravel-permission",
+						"Menugaskan peran dan izin ke user: $user->assignRole('admin') dan $user->givePermissionTo('publish')",
+						"Memproteksi rute dan controller dengan middleware role:admin atau permission:edit"
+					]
+				},
+				{
+					"id": "socialite-oauth",
+					"title": "Social Authentication dengan Laravel Socialite (OAuth)",
+					"description": "Memungkinkan pengguna mendaftar dan masuk cukup dengan 1 klik menggunakan akun Google, GitHub, atau Facebook.",
+					"priority": "direkomendasikan",
+					"keyPoints": [
+						"Instalasi paket laravel/socialite dan konfigurasi client_id di config/services.php",
+						"Redirect ke penyedia OAuth via Socialite::driver('google')->redirect()",
+						"Menangani callback, membaca data pengguna, dan sinkronisasi ke tabel users lokal"
+					]
+				},
+				{
+					"id": "web-security-owasp",
+					"title": "Keamanan Web & Perlindungan Serangan Siber (OWASP)",
+					"description": "Memastikan aplikasi web terlindungi dari eksploitasi berbahaya yang sering menyerang aplikasi PHP di dunia nyata.",
+					"priority": "wajib",
+					"keyPoints": [
+						"CSRF Protection: cara kerja token @csrf dan header X-CSRF-TOKEN",
+						"XSS (Cross-Site Scripting): perbedaan cetak aman {{ $konten }} (auto-escaped) vs {!! $rawHtml !!}",
+						"SQL Injection Protection melalui penggunaan parameter binding PDO di Eloquent",
+						"Mass Assignment Protection dan validasi data input formulir secara menyeluruh"
+					]
+				}
+			]
+		},
+		{
+			"id": "phase-6",
+			"phaseNumber": 6,
+			"title": "RESTful API, Serialisasi & Token Authentication",
+			"subtitle": "Menyediakan data backend untuk frontend modern, SPA, dan aplikasi mobile.",
+			"description": "Mengubah Laravel menjadi backend API yang tangguh, mengembalikan format data JSON standar, mengamankan endpoint dengan Sanctum, dan dokumentasi otomatis.",
+			"topics": [
+				{
+					"id": "api-setup-routing",
+					"title": "Setup API Modern Laravel 11/12 & REST Routing",
+					"description": "Inisialisasi rute API modern, memahami prinsip RESTful, dan penanganan status code HTTP.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Perintah instalasi API Laravel 11+: php artisan install:api",
+						"Mendefinisikan rute di routes/api.php dengan Route::apiResource()",
+						"Penerapan HTTP Status Code semantik: 200 (OK), 201 (Created), 204 (No Content), 404 (Not Found)"
+					]
+				},
+				{
+					"id": "api-standardized-responses",
+					"title": "Standardisasi Format Respons JSON & Error Handling",
+					"description": "Menyusun format struktur respons envelope yang konsisten untuk respon sukses maupun respon error.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Membuat struktur response seragam: { success: true, message: '...', data: [...] }",
+						"Menangani error validasi (HTTP 422) dengan format pesan error terperinci",
+						"Kustomisasi penanganan API Exception di bootstrap/app.php dengan method withExceptions()"
+					]
+				},
+				{
+					"id": "api-resources-transformation",
+					"title": "API Resources & Transformasi Data Serialisasi",
+					"description": "Membungkus model database ke representasi JSON terstruktur tanpa membocorkan field sensitif tabel.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Membuat resource: php artisan make:resource UserResource dan ResourceCollection",
+						"Menyembunyikan kolom database internal dan memformat data sebelum dikembalikan",
+						"Menyertakan relasi secara kondisional menggunakan method $this->whenLoaded('profile')",
+						"Penanganan pagination metadata otomatis yang rapi di API Resource"
+					]
+				},
+				{
+					"id": "laravel-sanctum-auth",
+					"title": "Laravel Sanctum (Token-Based Auth & Mobile API)",
+					"description": "Sistem autentikasi API token ringan untuk aplikasi mobile (Flutter/React Native) dan cookie-based auth untuk SPA.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Menerbitkan Personal Access Token saat user login sukses: $user->createToken('nama')->plainTextToken",
+						"Memproteksi endpoint API dengan middleware auth:sanctum",
+						"Penggunaan Token Abilities / Scopes (misal: membatasi token hanya bisa read)",
+						"Menghapus atau mencabut token saat user melakukan logout"
+					]
+				},
+				{
+					"id": "cors-rate-limiting",
+					"title": "CORS (Cross-Origin) & API Rate Limiting Terkustomisasi",
+					"description": "Mengatur izin akses dari domain frontend berbeda dan melindungi endpoint dari serangan spam request.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Konfigurasi file config/cors.php (allowed origins, allowed headers, supports_credentials)",
+						"Rate Limiting custom via RateLimiter::for('api', ...) di AppServiceProvider",
+						"Pemeriksaan response header pembatasan request: X-RateLimit-Limit dan X-RateLimit-Remaining"
+					]
+				},
+				{
+					"id": "api-documentation-scramble",
+					"title": "Dokumentasi API Otomatis (Scramble / OpenAPI)",
+					"description": "Menghasilkan dokumentasi interaktif standar OpenAPI/Swagger langsung dari type-hint kode tanpa menulis anotasi manual yang merepotkan.",
+					"priority": "direkomendasikan",
+					"keyPoints": [
+						"Integrasi paket Scramble (dedoc/scramble) untuk dokumentasi OpenAPI zero-config di Laravel",
+						"Testing endpoint API secara interaktif langsung melalui browser UI",
+						"Ekspor spesifikasi JSON/YAML untuk diimpor ke Postman, Bruno, atau Insomnia"
+					]
+				}
+			]
+		},
+		{
+			"id": "phase-7",
+			"phaseNumber": 7,
+			"title": "Asynchronous Processing, Antrian, Scheduled Tasks & Caching",
+			"subtitle": "Tingkatkan performa, skala, dan kecepatan aplikasi dengan eksekusi background.",
+			"description": "Fitur esensial untuk aplikasi skala produksi: memindahkan tugas lambat ke antrian (queue), penjadwalan tugas otomatis (cron), event-driven, dan caching memori.",
+			"topics": [
+				{
+					"id": "mail-notifications-system",
+					"title": "Mailable & Notifikasi Multi-Channel",
+					"description": "Kirim email tagihan, selamat datang, dan notifikasi ke berbagai channel (Database, Email, SMS/WhatsApp).",
+					"priority": "wajib",
+					"keyPoints": [
+						"Mailable class (php artisan make:mail) dengan template Blade Markdown yang profesional",
+						"Sistem Notifikasi Laravel (php artisan make:notification) via email dan database bell icon",
+						"Konfigurasi mail server SMTP lokal (Mailtrap) dan produksi (Resend, Brevo, AWS SES)"
+					]
+				},
+				{
+					"id": "queues-jobs-workers",
+					"title": "Queues & Background Jobs (Pemrosesan Antrian Asinkron)",
+					"description": "Memindahkan tugas berat (seperti kirim email, manipulasi gambar, ekspor Excel) ke antrian agar website tidak loading lama.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Membuat Job: php artisan make:job ProcessExportData dan dispatching via NamaJob::dispatch()",
+						"Driver antrian: sync (lokal dev), database, dan redis (produksi berkecepatan tinggi)",
+						"Menjalankan worker: php artisan queue:work dengan parameter timeout, tries, dan memory",
+						"Penanganan kegagalan antrian: tabel failed_jobs, retry job, dan callback method failed()"
+					]
+				},
+				{
+					"id": "task-scheduling-cron",
+					"title": "Task Scheduling (Otomasi Cron Job Server)",
+					"description": "Menjadwalkan eksekusi perintah otomatis tanpa perlu repot mengedit banyak konfigurasi crontab di server.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Hanya butuh satu baris cron induk di server Linux: * * * * * php artisan schedule:run",
+						"Mendefinisikan jadwal di routes/console.php: Schedule::command(), Schedule::job(), Schedule::call()",
+						"Frekuensi ekspresif: ->daily(), ->dailyAt('02:00'), ->hourly(), ->weekly(), ->withoutOverlapping()",
+						"Menjalankan scheduler saat development lokal via php artisan schedule:work"
+					]
+				},
+				{
+					"id": "events-listeners-architecture",
+					"title": "Arsitektur Berbasis Event (Events & Queued Listeners)",
+					"description": "Mendekopel logika aplikasi agar modular dengan memicu event dan mendengarkannya secara independen.",
+					"priority": "direkomendasikan",
+					"keyPoints": [
+						"Membuat event dan listener: php artisan make:event OrderPlaced & make:listener SendOrderInvoice",
+						"Memicu event via OrderPlaced::dispatch($order)",
+						"Menjadikan listener asynchronous di background queue dengan menambahkan interface ShouldQueue"
+					]
+				},
+				{
+					"id": "caching-strategy-redis",
+					"title": "Strategi Caching Data & Integrasi Redis",
+					"description": "Menyimpan data hasil kueri berat ke dalam RAM untuk memangkas waktu loading dari detik menjadi milidetik.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Pola Cache-Aside dengan method Cache::remember('key', $ttl, fn() => DB::query())",
+						"Menghapus cache saat data berubah: Cache::forget('key')",
+						"Pengelompokan cache dengan Cache::tags(['posts'])->flush() (menggunakan driver Redis/Memcached)",
+						"Perbandingan performa driver cache: file vs database vs Redis"
+					]
+				},
+				{
+					"id": "file-storage-cloud",
+					"title": "File Storage & Cloud Object Storage (S3 / Cloudflare R2)",
+					"description": "Mengelola file upload foto profil, dokumen PDF, dan penyimpanan ke cloud storage terdistribusi.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Konfigurasi disk di config/filesystems.php (public, local, s3)",
+						"Perintah symlink lokal: php artisan storage:link",
+						"Menyimpan file: $request->file('avatar')->store('avatars', 'public')",
+						"Menghasilkan Signed Temporary URL untuk akses dokumen privat berjangka waktu: Storage::temporaryUrl()"
+					]
+				}
+			]
+		},
+		{
+			"id": "phase-8",
+			"phaseNumber": 8,
+			"title": "Testing, Clean Architecture, Observability & Deployment",
+			"subtitle": "Membawa aplikasi ke standar industri profesional: kode bersih, pengujian otomatis, dan server VPS live.",
+			"description": "Langkah akhir yang membedakan programmer amatir dengan engineer profesional: menulis test otomatis, memantau performa di produksi, dan deploy ke VPS secara zero-downtime.",
+			"topics": [
+				{
+					"id": "automated-testing-pest",
+					"title": "Automated Testing Menyeluruh (Pest PHP / PHPUnit)",
+					"description": "Menguji seluruh alur penting aplikasi secara otomatis agar fitur tidak rusak saat ada perubahan kode baru.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Keunggulan Pest PHP: sintaks penulisan test yang sangat ringkas, bersih, dan ekspresif",
+						"Feature Test: menguji HTTP endpoint, status response, dan assertions database (assertDatabaseHas)",
+						"Menggunakan trait RefreshDatabase agar setiap test berjalan di database bersih yang terisolasi",
+						"Mocking dan Fakes resmi: Http::fake(), Mail::fake(), Queue::fake() agar test berjalan super cepat"
+					],
+					"resources": [
+						{
+							"title": "Contoh Penggunaan K6 Automation Testing",
+							"url": "/artikel/contoh-penggunaan-k6-automation-tools",
+							"isInternal": true
+						}
+					]
+				},
+				{
+					"id": "clean-code-patterns",
+					"title": "Pola Desain & Arsitektur Kode Bersih (Clean Architecture)",
+					"description": "Mencegah controller menjadi terlalu gemuk (Fat Controller) dengan memisahkan logika bisnis ke layer yang tepat.",
+					"priority": "direkomendasikan",
+					"keyPoints": [
+						"Service Layer Pattern: memindahkan kalkulasi dan logika bisnis kompleks ke class Service khusus",
+						"Action Pattern: class mandiri untuk satu aksi spesifik (misal: CreateOrderAction, RegisterUserAction)",
+						"Data Transfer Objects (DTO): membungkus parameter request menjadi objek dengan tipe data yang ketat",
+						"Formating kode otomatis standar ekosistem Laravel menggunakan Laravel Pint"
+					]
+				},
+				{
+					"id": "local-debugging-telescope",
+					"title": "Debugging Lokal Tingkat Lanjut (Laravel Telescope & Debugbar)",
+					"description": "Mendiagnosis query database lambat, konsumsi memori, dan tracking log selama proses development di komputer.",
+					"priority": "direkomendasikan",
+					"keyPoints": [
+						"Instalasi dan penggunaan Laravel Telescope untuk dashboard debugging lokal (requests, queries, dumps, logs)",
+						"Laravel Debugbar untuk melihat query SQL yang dieksekusi per halaman secara visual",
+						"Teknik debugging modern: dd(), dump(), dan pencatatan log terstruktur via Log::info() / Log::error()"
+					]
+				},
+				{
+					"id": "production-monitoring-pulse",
+					"title": "Monitoring Produksi & Error Tracking (Pulse, Horizon, Sentry)",
+					"description": "Memantau performa server secara langsung di produksi dan menerima laporan otomatis jika pengguna mengalami error.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Laravel Pulse: dashboard gratis & open-source untuk memantau beban CPU, query paling lambat, dan endpoint terberat",
+						"Laravel Horizon: dashboard real-time khusus pemantauan antrian Redis dan status antrian",
+						"Error Tracking eksternal dengan Sentry / Flare: notifikasi instan saat terjadi HTTP 500 lengkap dengan stack trace",
+						"Log rotation harian di server Linux agar disk tidak cepat penuh"
+					]
+				},
+				{
+					"id": "production-optimization",
+					"title": "Optimasi Performa Server & Caching Produksi",
+					"description": "Mempersiapkan kode dan konfigurasi Laravel agar berjalan secepat kilat sebelum diakses oleh ribuan pengguna.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Artisan caching perintah wajib: php artisan config:cache, route:cache, view:cache, event:cache",
+						"OPcache PHP: menyimpan precompiled script bytecode di memori RAM server",
+						"Memastikan file .env produksi: APP_DEBUG=false dan APP_ENV=production",
+						"Optimasi Composer autoloader untuk produksi: composer install --optimize-autoloader --no-dev"
+					]
+				},
+				{
+					"id": "vps-deployment-cicd",
+					"title": "Deployment VPS Linux, Web Server Nginx, Supervisor & CI/CD",
+					"description": "Menerbitkan aplikasi ke server VPS (Ubuntu), konfigurasi Nginx, SSL Let's Encrypt, Supervisor, dan deploy otomatis via GitHub Actions.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Konfigurasi Nginx Server Block khusus Laravel dan PHP-FPM socket",
+						"Pemasangan sertifikat SSL gratis via Certbot (Let's Encrypt)",
+						"Supervisor Daemon untuk menjaga background worker (queue:work) selalu aktif di server",
+						"CI/CD Pipeline dengan GitHub Actions untuk testing otomatis dan auto-deploy saat push ke branch main",
+						"Penggunaan tool deployment modern: Laravel Forge, Ploi, Coolify, atau script Deployer"
+					]
+				}
+			]
+		}
+	]
 }

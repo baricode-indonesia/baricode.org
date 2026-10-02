@@ -1,22 +1,18 @@
 <script lang="ts">
-	let { class: className = 'h-8 w-auto', showText = true }: { class?: string; showText?: boolean } = $props();
+	let { class: className = 'h-8 w-auto', showText = true }: { class?: string; showText?: boolean } =
+		$props();
 </script>
 
 <div class="flex items-center gap-3">
 	<!-- BC Monogram Barcode SVG (With balanced spacing between B and C) -->
-	<svg
-		class={className}
-		viewBox="0 0 260 215"
-		fill="none"
-		xmlns="http://www.w3.org/2000/svg"
-	>
+	<svg class={className} viewBox="0 0 260 215" fill="none" xmlns="http://www.w3.org/2000/svg">
 		<defs>
 			<!-- Linear Gradient Cyan -> Emerald -> Purple -->
 			<linearGradient id="bcGradComp" x1="0%" y1="0%" x2="100%" y2="0%">
-				<stop offset="0%" stop-color="#00b4d8"/>
-				<stop offset="35%" stop-color="#06b6d4"/>
-				<stop offset="70%" stop-color="#10b981"/>
-				<stop offset="100%" stop-color="#8b5cf6"/>
+				<stop offset="0%" stop-color="#00b4d8" />
+				<stop offset="35%" stop-color="#06b6d4" />
+				<stop offset="70%" stop-color="#10b981" />
+				<stop offset="100%" stop-color="#8b5cf6" />
 			</linearGradient>
 
 			<!-- Barcode Mask -->
@@ -48,14 +44,20 @@
 
 		<g mask="url(#bcBarcodeMaskComp)" fill="url(#bcGradComp)">
 			<!-- Letter B -->
-			<path d="M 10 10 L 76 10 C 102 10 118 24 118 52 C 118 70 106 86 88 93 C 112 100 124 120 124 148 C 124 180 104 198 76 198 L 10 198 Z M 40 38 L 40 84 L 72 84 C 84 84 92 76 92 61 C 92 46 84 38 72 38 Z M 40 119 L 40 170 L 74 170 C 88 170 96 160 96 145 C 96 131 88 119 74 119 Z" />
+			<path
+				d="M 10 10 L 76 10 C 102 10 118 24 118 52 C 118 70 106 86 88 93 C 112 100 124 120 124 148 C 124 180 104 198 76 198 L 10 198 Z M 40 38 L 40 84 L 72 84 C 84 84 92 76 92 61 C 92 46 84 38 72 38 Z M 40 119 L 40 170 L 74 170 C 88 170 96 160 96 145 C 96 131 88 119 74 119 Z"
+			/>
 
 			<!-- Letter C (Shifted right for balanced gap) -->
-			<path d="M 252 44 C 238 22 212 10 186 10 C 142 10 124 44 124 104 C 124 165 142 198 186 198 C 212 198 238 186 252 164 L 224 142 C 215 156 200 165 186 165 C 162 165 152 142 152 104 C 152 67 162 43 186 43 C 200 43 215 52 224 66 Z" />
+			<path
+				d="M 252 44 C 238 22 212 10 186 10 C 142 10 124 44 124 104 C 124 165 142 198 186 198 C 212 198 238 186 252 164 L 224 142 C 215 156 200 165 186 165 C 162 165 152 142 152 104 C 152 67 162 43 186 43 C 200 43 215 52 224 66 Z"
+			/>
 		</g>
 	</svg>
 
 	{#if showText}
-		<span class="text-base font-bold tracking-tight text-slate-900 dark:text-white">Baricode Indonesia</span>
+		<span class="text-base font-bold tracking-tight text-slate-900 dark:text-white"
+			>Baricode Indonesia</span
+		>
 	{/if}
 </div>

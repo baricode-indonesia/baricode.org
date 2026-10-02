@@ -34,8 +34,7 @@ export const glossaryList: GlossaryItem[] = [
 			'Urutan langkah-langkah logis, terencana, dan terstruktur yang disusun secara sistematis untuk menyelesaikan masalah atau mencapai tujuan tertentu di komputer.',
 		analogy:
 			'Sama seperti resep memasak mie instan: Langkah 1 rebus air, langkah 2 masukkan mie saat mendidih, langkah 3 campur bumbu di piring, langkah 4 tiriskan dan aduk. Urutan tidak boleh terbalik agar hasilnya matang sempurna.',
-		example:
-			'Algoritma pencarian nomor kontak di buku telepon secara alfabetis (A sampai Z).',
+		example: 'Algoritma pencarian nomor kontak di buku telepon secara alfabetis (A sampai Z).',
 		relatedArticle: {
 			title: 'Panduan Algoritma dan Pemrograman untuk Pemula',
 			url: '/artikel/algoritma-dan-pemrograman-panduan-dasar-cara-mudah-memahaminya-bagi-pemula'
@@ -63,8 +62,7 @@ export const glossaryList: GlossaryItem[] = [
 			'Struktur data berurutan yang digunakan untuk menampung sekumpulan nilai atau data bertipe sama/beragam di dalam satu variabel tunggal.',
 		analogy:
 			'Rak sepatu bertingkat dengan nomor urut kotak 0, 1, 2, dst. Setiap kotak bisa diisi sepatu yang berbeda, dan kita bisa mengambil sepatu tertentu hanya dengan menyebut nomor kotaknya.',
-		example:
-			'Daftar nama siswa: const santri = ["Ahmad", "Zaid", "Fatimah"];'
+		example: 'Daftar nama siswa: const santri = ["Ahmad", "Zaid", "Fatimah"];'
 	},
 	{
 		term: 'Backend',
@@ -116,8 +114,7 @@ export const glossaryList: GlossaryItem[] = [
 			'Bahasa penata gaya yang dipakai untuk mengatur tampilan visual, estetika, warna, tipografi, dan tata letak halaman web yang dibangun dengan HTML.',
 		analogy:
 			'Pakaian, cat warna dinding, lampu hias, dan perabotan yang membuat sebuah rumah kosong menjadi indah, nyaman dipandang, dan rapi.',
-		example:
-			'Mengubah warna tombol menjadi merah dengan kode: button { background-color: red; }',
+		example: 'Mengubah warna tombol menjadi merah dengan kode: button { background-color: red; }',
 		relatedArticle: {
 			title: 'Panduan Lengkap Memahami HTML dan CSS untuk Pemula',
 			url: '/artikel/panduan-lengkap-memahami-html-dan-css-untuk-pemula'
@@ -170,8 +167,7 @@ export const glossaryList: GlossaryItem[] = [
 			'Representasi pohon hierarki dari seluruh elemen HTML di halaman web yang memungkinkan JavaScript membaca, mengubah teks, memodifikasi style, dan menghapus elemen secara dinamis.',
 		analogy:
 			'Papan denah perabot interaktif di ruangan. Lewat papan kendali tersebut, kamu bisa menyalakan lampu, menggeser kursi, atau mengganti warna gorden tanpa harus merobohkan tembok rumah.',
-		example:
-			'document.getElementById("judul").innerText = "Selamat Datang!";'
+		example: 'document.getElementById("judul").innerText = "Selamat Datang!";'
 	},
 	{
 		term: 'Framework',
@@ -182,8 +178,7 @@ export const glossaryList: GlossaryItem[] = [
 			'Kerangka kerja siap pakai berisikan sekumpulan aturan, alat, dan pustaka kode baku yang membantu programmer membangun aplikasi lebih cepat dan terstandarisasi.',
 		analogy:
 			'Rangka cetakan atau cetakan kue siap pakai. Kamu tidak perlu membuat loyang atau menakar logam dari nol, cukup masukkan adonan sesuai aturan yang disediakan.',
-		example:
-			'Laravel untuk PHP, SvelteKit untuk JavaScript, atau Django untuk Python.'
+		example: 'Laravel untuk PHP, SvelteKit untuk JavaScript, atau Django untuk Python.'
 	},
 	{
 		term: 'Frontend',
@@ -207,8 +202,7 @@ export const glossaryList: GlossaryItem[] = [
 			'Blok instruksi kode mandiri yang dirancang khusus untuk menjalankan satu tugas tertentu, dapat menerima masukan (parameter/argumen), dan mengembalikan hasil olahan (return value).',
 		analogy:
 			'Mesin blender di dapur. Kamu masukkan potongan buah dan es batu (input/parameter), tekan tombol, blender berputar memproses, lalu menyajikan segelas jus segar (output).',
-		example:
-			'function hitungDiskon(harga, persen) { return harga * (persen / 100); }',
+		example: 'function hitungDiskon(harga, persen) { return harga * (persen / 100); }',
 		relatedArticle: {
 			title: 'Function Artinya dalam Bahasa Bayi',
 			url: '/artikel/function-artinya-dalam-bahasa-bayi'
@@ -235,8 +229,7 @@ export const glossaryList: GlossaryItem[] = [
 			'Platform layanan berbasis web dan cloud untuk menyimpan repositori Git, berkolaborasi antar developer di seluruh dunia, mereview kode, dan memamerkan portofolio karya perangkat lunak.',
 		analogy:
 			'Media sosial sekaligus brankas portofolio karya bagi para programmer. Tempat memamerkan proyek buatanmu kepada publik atau calon klien dan perekrut kerja.',
-		example:
-			'Membuka repositori kode terbuka Baricode di github.com/baricode-indonesia.'
+		example: 'Membuka repositori kode terbuka Baricode di github.com/baricode-indonesia.'
 	},
 	{
 		term: 'HTML',
@@ -248,8 +241,7 @@ export const glossaryList: GlossaryItem[] = [
 			'Bahasa markup standar universal yang digunakan untuk mendefinisikan kerangka, tulang punggung, dan struktur isi dari sebuah dokumen halaman web.',
 		analogy:
 			'Tiang beton, dinding batu bata, dan lantai dasar sebuah bangunan rumah sebelum dipasangi cat atau perabotan.',
-		example:
-			'Menuliskan <h1>Ini Judul Halaman</h1> dan <p>Ini paragraf penjelasan.</p>',
+		example: 'Menuliskan <h1>Ini Judul Halaman</h1> dan <p>Ini paragraf penjelasan.</p>',
 		relatedArticle: {
 			title: 'Panduan Lengkap Memahami HTML dan CSS untuk Pemula',
 			url: '/artikel/panduan-lengkap-memahami-html-dan-css-untuk-pemula'
@@ -265,8 +257,7 @@ export const glossaryList: GlossaryItem[] = [
 			'Aplikasi perangkat lunak terintegrasi yang menyediakan fasilitas lengkap bagi programmer untuk menulis kode, melihat rekomendasi otomatis, menjalankan kode, dan melacak bug.',
 		analogy:
 			'Meja bengkel profesional yang lengkap dengan penerangan, laci perkakas otomatis, kaca pembesar, dan peralatan multimeter dalam satu jangkauan tangan.',
-		example:
-			'Visual Studio Code (VS Code), Android Studio, atau PhpStorm.'
+		example: 'Visual Studio Code (VS Code), Android Studio, atau PhpStorm.'
 	},
 	{
 		term: 'Internet',
@@ -307,8 +298,7 @@ export const glossaryList: GlossaryItem[] = [
 			'Format pertukaran data berbasis teks ringan yang mudah dibaca dan ditulis oleh manusia serta sangat efisien untuk diurai (parsed) dan dihasilkan oleh mesin komputer.',
 		analogy:
 			'Kertas formulir pendaftaran resmi yang memiliki kolom nama dan isian data yang disepakati bersama oleh semua kantor cabang.',
-		example:
-			'{ "nama": "Ahmad", "kota": "Jombang", "status": "Santri Belajar Coding" }'
+		example: '{ "nama": "Ahmad", "kota": "Jombang", "status": "Santri Belajar Coding" }'
 	},
 	{
 		term: 'Loop',
@@ -349,8 +339,7 @@ export const glossaryList: GlossaryItem[] = [
 			'Perangkat lunak yang kode sumbernya (source code) disediakan secara terbuka untuk umum sehingga siapa saja boleh mempelajari, memodifikasi, meningkatkan, dan membagikannya kembali.',
 		analogy:
 			'Resep rahasia kuliner lezat yang dibagikan secara ikhlas di media sosial agar ibu-ibu di seluruh pelosok desa bisa ikut memasak dan memodifikasinya.',
-		example:
-			'Sistem operasi Linux, framework Svelte, dan basis data PostgreSQL.'
+		example: 'Sistem operasi Linux, framework Svelte, dan basis data PostgreSQL.'
 	},
 	{
 		term: 'Repository',
@@ -362,8 +351,7 @@ export const glossaryList: GlossaryItem[] = [
 			'Folder penyimpanan digital tempat seluruh berkas kode proyek disimpan, lengkap dengan seluruh catatan riwayat perubahan (history) dari awal hingga versi terbaru.',
 		analogy:
 			'Brankas map proyek lengkap berstempel tanggal. Di dalamnya tersimpan draft lembaran pertama rancangan hingga buku final yang sudah dicetak rapi.',
-		example:
-			'Folder proyek di komputer yang sudah diinisiasi dengan perintah git init.'
+		example: 'Folder proyek di komputer yang sudah diinisiasi dengan perintah git init.'
 	},
 	{
 		term: 'Responsive',
@@ -399,8 +387,7 @@ export const glossaryList: GlossaryItem[] = [
 			'Bahasa terstandarisasi yang dirancang khusus untuk mengelola, mengambil, menyaring, memperbarui, dan memanipulasi relasi data di dalam basis data (database).',
 		analogy:
 			'Pustakawan ahli yang hafal letak seluruh buku di perpustakaan besar. Saat kamu bertanya: "Tolong carikan buku terbitan tahun 2024 yang ditulis penulis bernama Ahmad", pustakawan langsung membawakan bukunya.',
-		example:
-			'SELECT * FROM santri WHERE nilai > 80;'
+		example: 'SELECT * FROM santri WHERE nilai > 80;'
 	},
 	{
 		term: 'Syntax',
@@ -436,8 +423,7 @@ export const glossaryList: GlossaryItem[] = [
 			'Nama penampung atau wadah di dalam memori komputer yang digunakan untuk menyimpan suatu nilai atau data yang nilainya dapat dibaca atau diubah selama program berjalan.',
 		analogy:
 			'Kotak kardus berlabel nama spidol, misalnya label "Skor Permainan". Isinya bisa kamu masukkan angka 0, lalu saat pemain mendapat poin, angkanya kamu ganti menjadi 10.',
-		example:
-			'let namaSiswa = "Budi"; namaSiswa = "Santoso";'
+		example: 'let namaSiswa = "Budi"; namaSiswa = "Santoso";'
 	},
 	{
 		term: 'Vibe Coding',

@@ -30,9 +30,14 @@
 </script>
 
 {#if totalItems > 0}
-	<div class="mt-12 flex flex-col items-center justify-between gap-4 border-t border-slate-200/80 dark:border-zinc-800/80 pt-6 sm:flex-row">
+	<div
+		class="mt-12 flex flex-col items-center justify-between gap-4 border-t border-slate-200/80 pt-6 sm:flex-row dark:border-zinc-800/80"
+	>
 		<p class="text-xs font-medium text-slate-500 dark:text-zinc-400">
-			Menampilkan <span class="font-semibold text-slate-900 dark:text-white">{startItem}-{endItem}</span> dari <span class="font-semibold text-slate-900 dark:text-white">{totalItems}</span> artikel
+			Menampilkan <span class="font-semibold text-slate-900 dark:text-white"
+				>{startItem}-{endItem}</span
+			>
+			dari <span class="font-semibold text-slate-900 dark:text-white">{totalItems}</span> artikel
 		</p>
 
 		{#if totalPages > 1}

@@ -14,8 +14,13 @@
 	}
 </script>
 
-<article class={`group flex flex-col overflow-hidden rounded-2xl border border-slate-200/80 bg-white/80 dark:border-zinc-800/80 dark:bg-zinc-900/60 shadow-md dark:shadow-xl backdrop-blur-md transition hover:-translate-y-1 hover:border-slate-300 dark:hover:border-zinc-700 ${className}`}>
-	<a href={getPostUrl(post.slug)} class="block aspect-video overflow-hidden bg-slate-100 dark:bg-zinc-950">
+<article
+	class={`group flex flex-col overflow-hidden rounded-2xl border border-slate-200/80 bg-white/80 shadow-md backdrop-blur-md transition hover:-translate-y-1 hover:border-slate-300 dark:border-zinc-800/80 dark:bg-zinc-900/60 dark:shadow-xl dark:hover:border-zinc-700 ${className}`}
+>
+	<a
+		href={getPostUrl(post.slug)}
+		class="block aspect-video overflow-hidden bg-slate-100 dark:bg-zinc-950"
+	>
 		<img
 			src={post.featuredImage || DEFAULT_POST_IMAGE}
 			alt={post.title}
@@ -31,17 +36,24 @@
 			{post.category.name}
 		</span>
 
-		<h3 class="text-lg font-bold leading-snug text-slate-900 dark:text-white">
-			<a href={getPostUrl(post.slug)} class="transition hover:text-rose-600 dark:hover:text-rose-400">
+		<h3 class="text-lg leading-snug font-bold text-slate-900 dark:text-white">
+			<a
+				href={getPostUrl(post.slug)}
+				class="transition hover:text-rose-600 dark:hover:text-rose-400"
+			>
 				{post.title}
 			</a>
 		</h3>
 
 		{#if post.excerpt}
-			<p class="line-clamp-3 text-sm leading-relaxed text-slate-600 dark:text-zinc-400">{post.excerpt}</p>
+			<p class="line-clamp-3 text-sm leading-relaxed text-slate-600 dark:text-zinc-400">
+				{post.excerpt}
+			</p>
 		{/if}
 
-		<div class="mt-auto border-t border-slate-100 dark:border-zinc-800/60 pt-3 text-xs text-slate-500 dark:text-zinc-500">
+		<div
+			class="mt-auto border-t border-slate-100 pt-3 text-xs text-slate-500 dark:border-zinc-800/60 dark:text-zinc-500"
+		>
 			{formatDate(post.published_at)}
 		</div>
 	</div>

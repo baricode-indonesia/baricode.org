@@ -52,7 +52,11 @@ const rawRoadmapFiles = import.meta.glob('/src/content/roadmap/*.json', {
 
 export const roadmaps: RoadmapItem[] = Object.entries(rawRoadmapFiles)
 	.map(([filepath, data]) => {
-		const filename = filepath.split('/').pop()?.replace(/\.json$/, '') || '';
+		const filename =
+			filepath
+				.split('/')
+				.pop()
+				?.replace(/\.json$/, '') || '';
 		return {
 			...data,
 			slug: data.slug || filename,

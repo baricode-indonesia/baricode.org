@@ -1,10 +1,10 @@
 ---
-title: "Hari Peluncuran Baricode Bimbingan: Langkah Awal dengan 4 Peserta yang Antusias"
-excerpt: "Pada hari peluncurannya, sebanyak 4 peserta pertama telah bergabung dan menunjukkan antusiasme untuk memulai proses belajar bersama Baricode Bimbingan. Meskipun jumlahnya masih kecil, momen ini menjadi fondasi penting bagi perjalanan yang lebih besar ke depannya."
-category: "tentang-baricode"
-tags: ["bimbingan", "pemula", "pemula-coding", "tips-belajar"]
-author: "Baricode Team"
-published_at: "2026-08-03"
+title: 'Hari Peluncuran Baricode Bimbingan: Langkah Awal dengan 4 Peserta yang Antusias'
+excerpt: 'Pada hari peluncurannya, sebanyak 4 peserta pertama telah bergabung dan menunjukkan antusiasme untuk memulai proses belajar bersama Baricode Bimbingan. Meskipun jumlahnya masih kecil, momen ini menjadi fondasi penting bagi perjalanan yang lebih besar ke depannya.'
+category: 'tentang-baricode'
+tags: ['bimbingan', 'pemula', 'pemula-coding', 'tips-belajar']
+author: 'Baricode Team'
+published_at: '2026-08-03'
 ---
 
 ## Momen Bersejarah

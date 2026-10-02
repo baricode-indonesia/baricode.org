@@ -1,10 +1,10 @@
 ---
-title: "Teks Observasi Adalah...: Pengertian, Ciri-Ciri, Struktur, Kebahasaan, dan Contohnya"
-excerpt: "Teks laporan hasil observasi (LHO) adalah teks yang menyajikan informasi fakta berdasarkan pengamatan langsung. Pelajari pengertian, ciri, struktur, kaidah kebahasaan, dan contoh lengkapnya."
-category: "tips-dan-trik"
-tags: ["pemula", "tips-belajar"]
-author: "Baricode Team"
-published_at: "2026-09-13"
+title: 'Teks Observasi Adalah...: Pengertian, Ciri-Ciri, Struktur, Kebahasaan, dan Contohnya'
+excerpt: 'Teks laporan hasil observasi (LHO) adalah teks yang menyajikan informasi fakta berdasarkan pengamatan langsung. Pelajari pengertian, ciri, struktur, kaidah kebahasaan, dan contoh lengkapnya.'
+category: 'tips-dan-trik'
+tags: ['pemula', 'tips-belajar']
+author: 'Baricode Team'
+published_at: '2026-09-13'
 ---
 
 Dalam kegiatan akademis, penelitian ilmiah, hingga dokumentasi teknis di industri modern, kemampuan menyampaikan fakta secara objektif dan sistematis adalah keterampilan yang sangat krusial. Salah satu bentuk tulisan yang digunakan untuk menyampaikan informasi berbasis fakta tersebut adalah **Teks Laporan Hasil Observasi (LHO)**.
@@ -17,15 +17,17 @@ Artikel ini akan mengupas tuntas pengertian teks observasi, ciri-ciri utama, str
 
 ## 1. Apa Itu Teks Observasi?
 
-**Teks observasi adalah** teks yang berisi penjabaran umum atau melaporkan sesuatu hasil dari kegiatan pengamatan (*observasi*) secara langsung terhadap suatu objek, fenomena, atau peristiwa.
+**Teks observasi adalah** teks yang berisi penjabaran umum atau melaporkan sesuatu hasil dari kegiatan pengamatan (_observasi_) secara langsung terhadap suatu objek, fenomena, atau peristiwa.
 
 Objek yang diamati dalam teks laporan hasil observasi bisa sangat beragam, mulai dari:
+
 - **Benda mati**: Bangunan, perangkat komputer, alat transportasi, atau karya seni.
 - **Makhluk hidup**: Manusia, hewan, tumbuhan, atau mikroorganisme.
 - **Fenomena alam**: Hujan, gempa bumi, gerhana, atau ekosistem sungai.
 - **Fenomena sosial & budaya**: Tradisi masyarakat, pola lalu lintas, atau perilaku pengguna aplikasi.
 
 ### Tujuan Utama Teks Laporan Hasil Observasi
+
 1. **Menyajikan Informasi Objektif**: Menyampaikan fakta-fakta yang ditemukan di lapangan tanpa campuran opini atau penilaian subjektif penulis.
 2. **Alat Pendokumentasian**: Menjadi catatan resmi hasil pengamatan untuk referensi di masa mendatang.
 3. **Bahan Pengambilan Keputusan**: Memberikan data akurat yang dapat digunakan untuk analisis, pemecahan masalah, atau perencanaan.
@@ -53,7 +55,7 @@ Agar dapat membedakan teks laporan hasil observasi dengan jenis teks lainnya (se
    Fokus pembahasan tertuju pada satu objek spesifik atau satu kelompok objek dalam satu laporan.
 
 6. **Saling Terkait Antar Kelas dan Sub-kelas**  
-   Teks sering memuat pengelompokan (*klasifikasi*) objek ke dalam kategori-kategori tertentu berdasarkan kriteria ilmiah atau praktis.
+   Teks sering memuat pengelompokan (_klasifikasi_) objek ke dalam kategori-kategori tertentu berdasarkan kriteria ilmiah atau praktis.
 
 ---
 
@@ -72,12 +74,15 @@ Penyusunan teks laporan hasil observasi memiliki aturan struktur yang teratur ag
 ```
 
 ### 1. Pernyataan Umum (Klasifikasi / Definisi Umum)
+
 Bagian pembuka yang berisi pengenalan dasar mengenai objek yang diobservasi. Bagian ini menjelaskan pengertian umum, nama latin/ilmiah (jika ada), serta pengelompokan awal objek tersebut.
 
 ### 2. Deskripsi Bagian
+
 Bagian isi yang menjelaskan secara rinci gambaran khusus mengenai objek yang diamati. Pada bagian ini, penulis menguraikan bagian-bagian, ciri fisik, perilaku, sifat, atau komponen-komponen yang dimiliki objek secara detail.
 
 ### 3. Deskripsi Manfaat (atau Kesimpulan)
+
 Bagian penutup yang menjelaskan fungsi, kegunaan, atau manfaat dari objek yang diobservasi bagi kehidupan manusia, lingkungan, atau sistem tertentu.
 
 ---
@@ -86,14 +91,14 @@ Bagian penutup yang menjelaskan fungsi, kegunaan, atau manfaat dari objek yang d
 
 Teks laporan hasil observasi memiliki gaya bahasa ilmiah populer yang khas. Berikut kaidah kebahasaan yang umum digunakan:
 
-- **Kalimat Definisi**: Menggunakan kata verba definitif seperti *adalah*, *merupakan*, *yaitu*, atau *yakni*.  
-  *Contoh*: *"Laptop adalah perangkat komputer bergerak yang mengintegrasikan layar, keyboard, dan komponen pemrosesan dalam satu unit."*
+- **Kalimat Definisi**: Menggunakan kata verba definitif seperti _adalah_, _merupakan_, _yaitu_, atau _yakni_.  
+  _Contoh_: _"Laptop adalah perangkat komputer bergerak yang mengintegrasikan layar, keyboard, dan komponen pemrosesan dalam satu unit."_
 - **Kalimat Deskripsi**: Menggunakan kata-kata yang menggambarkan sifat atau kondisi fisik objek.  
-  *Contoh*: *"Layar laptop ini berukuran 15,6 inci dengan resolusi Full HD dan panel IPS."*
-- **Penggunaan Istilah Teknis / Ilmiah**: Kata-kata khusus yang berkaitan dengan bidang ilmu objek yang diamati (misalnya *processor*, *RAM*, *fotosintesis*, *ekosistem*).
-- **Kata Benda (Nomina)**: Menggunakan kata benda umum maupun spesifik (misalnya *server*, *jaringan*, *pohon kelapa*).
-- **Verba Material & Relasional**: Kata kerja yang menunjukkan tindakan fisik (misalnya *memproses*, *menyerap*, *menghasilkan*) atau menunjukkan hubungan klasifikasi.
-- **Kata Hubung (Konjungsi)**: Menggunakan kata hubung penambahan (*dan*, *serta*), pembandingan (*sedangkan*, *berbeda dengan*), atau urutan.
+  _Contoh_: _"Layar laptop ini berukuran 15,6 inci dengan resolusi Full HD dan panel IPS."_
+- **Penggunaan Istilah Teknis / Ilmiah**: Kata-kata khusus yang berkaitan dengan bidang ilmu objek yang diamati (misalnya _processor_, _RAM_, _fotosintesis_, _ekosistem_).
+- **Kata Benda (Nomina)**: Menggunakan kata benda umum maupun spesifik (misalnya _server_, _jaringan_, _pohon kelapa_).
+- **Verba Material & Relasional**: Kata kerja yang menunjukkan tindakan fisik (misalnya _memproses_, _menyerap_, _menghasilkan_) atau menunjukkan hubungan klasifikasi.
+- **Kata Hubung (Konjungsi)**: Menggunakan kata hubung penambahan (_dan_, _serta_), pembandingan (_sedangkan_, _berbeda dengan_), atau urutan.
 
 ---
 
@@ -113,18 +118,18 @@ Jika kamu ingin membuat teks laporan hasil observasi yang baik dan benar, ikuti 
 
 Berikut adalah dua contoh teks laporan hasil observasi lengkap beserta analisis strukturnya:
 
-### Contoh 1: Objek Teknis — Keyboard Mekanikal (*Mechanical Keyboard*)
+### Contoh 1: Objek Teknis — Keyboard Mekanikal (_Mechanical Keyboard_)
 
 > **Judul: Laporan Hasil Observasi Keyboard Mekanikal**
 >
 > **[Pernyataan Umum]**  
-> Keyboard mekanikal adalah jenis papan ketik komputer yang menggunakan sakelar fisik mandiri (*switch*) di bawah setiap tombolnya. Berbeda dengan keyboard membran biasa yang menggunakan lembaran karet konduktif, keyboard mekanikal memberikan umpan balik taktil dan suara ketukan yang lebih konsisten serta daya tahan yang lebih tinggi.
+> Keyboard mekanikal adalah jenis papan ketik komputer yang menggunakan sakelar fisik mandiri (_switch_) di bawah setiap tombolnya. Berbeda dengan keyboard membran biasa yang menggunakan lembaran karet konduktif, keyboard mekanikal memberikan umpan balik taktil dan suara ketukan yang lebih konsisten serta daya tahan yang lebih tinggi.
 >
 > **[Deskripsi Bagian]**  
-> Komponen utama keyboard mekanikal terdiri dari *keycaps*, *switch*, *PCB (Printed Circuit Board)*, dan *plate*. *Switch* mekanikal umumnya dikategorikan menjadi tiga jenis berdasarkan umpan baliknya, yaitu *linear* (pengetikan mulus tanpa hambatan), *tactile* (memiliki hentakan halus saat ditekan), dan *clicky* (memiliki hentakan disertai suara klik yang nyaring). *Keycaps* terbuat dari bahan plastik seperti ABS atau PBT, di mana bahan PBT memiliki tekstur lebih tebal dan tidak mudah aus atau berminyak akibat gesekan jari.
+> Komponen utama keyboard mekanikal terdiri dari _keycaps_, _switch_, _PCB (Printed Circuit Board)_, dan _plate_. _Switch_ mekanikal umumnya dikategorikan menjadi tiga jenis berdasarkan umpan baliknya, yaitu _linear_ (pengetikan mulus tanpa hambatan), _tactile_ (memiliki hentakan halus saat ditekan), dan _clicky_ (memiliki hentakan disertai suara klik yang nyaring). _Keycaps_ terbuat dari bahan plastik seperti ABS atau PBT, di mana bahan PBT memiliki tekstur lebih tebal dan tidak mudah aus atau berminyak akibat gesekan jari.
 >
 > **[Deskripsi Manfaat]**  
-> Keyboard mekanikal memiliki manfaat signifikan bagi pengguna yang sering mengetik dalam durasi panjang, seperti *software developer*, penulis, dan *gamer*. Penggunaan sakelar mekanikal membantu mengurangi kelelahan jari (*typing fatigue*) serta meningkatkan akurasi pengetikan. Selain itu, daya tahannya yang mencapai 50 hingga 100 juta kali tekan membuat perangkat ini lebih tahan lama dibanding keyboard standar.
+> Keyboard mekanikal memiliki manfaat signifikan bagi pengguna yang sering mengetik dalam durasi panjang, seperti _software developer_, penulis, dan _gamer_. Penggunaan sakelar mekanikal membantu mengurangi kelelahan jari (_typing fatigue_) serta meningkatkan akurasi pengetikan. Selain itu, daya tahannya yang mencapai 50 hingga 100 juta kali tekan membuat perangkat ini lebih tahan lama dibanding keyboard standar.
 
 ---
 
@@ -133,7 +138,7 @@ Berikut adalah dua contoh teks laporan hasil observasi lengkap beserta analisis 
 > **Judul: Laporan Hasil Observasi Pohon Kelapa**
 >
 > **[Pernyataan Umum]**  
-> Pohon kelapa (*Cocos nucifera*) adalah tumbuhan palem berbatang tinggi yang termasuk dalam famili *Arecaceae*. Tumbuhan ini merupakan tanaman serbaguna yang tumbuh subur di kawasan tropis, khususnya di daerah pesisir pantai.
+> Pohon kelapa (_Cocos nucifera_) adalah tumbuhan palem berbatang tinggi yang termasuk dalam famili _Arecaceae_. Tumbuhan ini merupakan tanaman serbaguna yang tumbuh subur di kawasan tropis, khususnya di daerah pesisir pantai.
 >
 > **[Deskripsi Bagian]**  
 > Batang pohon kelapa tumbuh tegak lurus ke atas tanpa cabang, dengan ketinggian dapat mencapai 15 hingga 30 meter. Daunnya tersusun menyirip panjang dengan pelepah yang kokoh. Buah kelapa berbentuk bulat atau lonjong yang terbungkus oleh sabut tebal di bagian luar dan tempurung keras di bagian dalam. Di dalam tempurung terdapat daging buah berwarna putih serta air kelapa yang segar.
@@ -145,11 +150,12 @@ Berikut adalah dua contoh teks laporan hasil observasi lengkap beserta analisis 
 
 ## 7. Relevansi Observasi dalam Dunia IT & Programming
 
-Mengapa pemahaman mengenai **observasi faktual** penting juga bagi calon *developer* dan praktisi IT?
+Mengapa pemahaman mengenai **observasi faktual** penting juga bagi calon _developer_ dan praktisi IT?
 
-Di dunia pengembangan perangkat lunak (*software engineering*):
-- **Monitoring & Logging**: *Developer* melakukan observasi terhadap performa server dan aplikasi melalui catatan *log* (*application logs*) untuk mencatat data faktual tanpa berasumsi.
-- **Debugging & TroubleShooting**: Saat terjadi kegagalan sistem (*bug* atau *error*), *developer* harus mengamati gejala kerusakan secara objektif berdasarkan *stack trace* dan fakta di lapangan.
+Di dunia pengembangan perangkat lunak (_software engineering_):
+
+- **Monitoring & Logging**: _Developer_ melakukan observasi terhadap performa server dan aplikasi melalui catatan _log_ (_application logs_) untuk mencatat data faktual tanpa berasumsi.
+- **Debugging & TroubleShooting**: Saat terjadi kegagalan sistem (_bug_ atau _error_), _developer_ harus mengamati gejala kerusakan secara objektif berdasarkan _stack trace_ dan fakta di lapangan.
 - **Penyusunan Dokumentasi Teknis**: Menulis dokumentasi API atau spesifikasi sistem membutuhkan bahasa yang definitif, faktual, dan terstruktur persis seperti penyusunan teks laporan hasil observasi.
 
 ---

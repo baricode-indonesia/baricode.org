@@ -42,39 +42,65 @@
 
 <svelte:head>
 	<title>Pusat Penanganan Error — Baricode Indonesia</title>
-	<meta name="description" content="Dokumentasi dan simulasi halaman penanganan error di Baricode Indonesia." />
+	<meta
+		name="description"
+		content="Dokumentasi dan simulasi halaman penanganan error di Baricode Indonesia."
+	/>
 </svelte:head>
 
 <section class="mx-auto max-w-4xl px-6 py-16">
-	<p class="text-xs font-bold uppercase tracking-wider text-rose-600 dark:text-rose-400">Error Handling Hub</p>
-	<h1 class="mt-2 text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
+	<p class="text-xs font-bold tracking-wider text-rose-600 uppercase dark:text-rose-400">
+		Error Handling Hub
+	</p>
+	<h1
+		class="mt-2 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl dark:text-white"
+	>
 		Halaman Handling Error
 	</h1>
 	<p class="mt-4 text-base text-slate-600 dark:text-zinc-300">
-		Baricode Indonesia dilengkapi dengan halaman error universal (<code class="rounded bg-slate-200 dark:bg-zinc-800 px-1.5 py-0.5 text-xs text-rose-500">+error.svelte</code>) yang menangani berbagai kode HTTP status secara dinamis, intuitif, dan ramah pengguna.
+		Baricode Indonesia dilengkapi dengan halaman error universal (<code
+			class="rounded bg-slate-200 px-1.5 py-0.5 text-xs text-rose-500 dark:bg-zinc-800"
+			>+error.svelte</code
+		>) yang menangani berbagai kode HTTP status secara dinamis, intuitif, dan ramah pengguna.
 	</p>
 
 	<div class="mt-10 grid gap-6 sm:grid-cols-2">
 		{#each errorTypes as err}
-			<div class="flex flex-col justify-between rounded-2xl border border-slate-200/80 dark:border-zinc-800/80 bg-white/80 dark:bg-zinc-900/60 p-6 backdrop-blur transition hover:-translate-y-1 hover:border-rose-400/40 shadow-sm">
+			<div
+				class="flex flex-col justify-between rounded-2xl border border-slate-200/80 bg-white/80 p-6 shadow-sm backdrop-blur transition hover:-translate-y-1 hover:border-rose-400/40 dark:border-zinc-800/80 dark:bg-zinc-900/60"
+			>
 				<div>
 					<div class="flex items-center justify-between">
-						<span class="inline-flex items-center rounded-lg px-2.5 py-1 text-xs font-bold {err.badge}">
+						<span
+							class="inline-flex items-center rounded-lg px-2.5 py-1 text-xs font-bold {err.badge}"
+						>
 							HTTP {err.code}
 						</span>
-						<span class="text-xs text-slate-400 dark:text-zinc-500 font-mono">{err.path}</span>
+						<span class="font-mono text-xs text-slate-400 dark:text-zinc-500">{err.path}</span>
 					</div>
 					<h2 class="mt-4 text-lg font-bold text-slate-900 dark:text-white">{err.title}</h2>
 					<p class="mt-2 text-sm text-slate-600 dark:text-zinc-400">{err.desc}</p>
 				</div>
-				<div class="mt-6 border-t border-slate-100 dark:border-zinc-800/60 pt-4 flex items-center justify-between">
+				<div
+					class="mt-6 flex items-center justify-between border-t border-slate-100 pt-4 dark:border-zinc-800/60"
+				>
 					<a
 						href={err.path}
-						class="inline-flex items-center gap-1.5 text-xs font-semibold text-rose-600 dark:text-rose-400 hover:text-rose-700 dark:hover:text-rose-300 transition"
+						class="inline-flex items-center gap-1.5 text-xs font-semibold text-rose-600 transition hover:text-rose-700 dark:text-rose-400 dark:hover:text-rose-300"
 					>
 						Buka Halaman
-						<svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-							<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+						<svg
+							class="h-3.5 w-3.5"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+							stroke-width="2"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+							/>
 						</svg>
 					</a>
 				</div>

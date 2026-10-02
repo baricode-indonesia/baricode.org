@@ -1,12 +1,12 @@
 ---
-title: "Algoritma dan Pemrograman: Panduan Dasar & Cara Mudah Memahaminya Bagi Pemula"
-excerpt: "Pelajari konsep dasar algoritma dan pemrograman secara mudah, intuitif, dan tanpa istilah rumit. Panduan lengkap bagi pemula yang baru memulai dunia koding."
-category: "pemrograman-dasar"
-tags: ["pemula", "roadmap"]
-author: "Baricode Team"
+title: 'Algoritma dan Pemrograman: Panduan Dasar & Cara Mudah Memahaminya Bagi Pemula'
+excerpt: 'Pelajari konsep dasar algoritma dan pemrograman secara mudah, intuitif, dan tanpa istilah rumit. Panduan lengkap bagi pemula yang baru memulai dunia koding.'
+category: 'pemrograman-dasar'
+tags: ['pemula', 'roadmap']
+author: 'Baricode Team'
 ---
 
-Dunia teknologi dan *software development* sering kali terlihat rumit bagi pemula. Istilah seperti *algoritma*, *pemrograman*, *syntax*, hingga *logic error* tak jarang membuat calon *developer* merasa minder sebelum mulai belajar. 
+Dunia teknologi dan _software development_ sering kali terlihat rumit bagi pemula. Istilah seperti _algoritma_, _pemrograman_, _syntax_, hingga _logic error_ tak jarang membuat calon _developer_ merasa minder sebelum mulai belajar.
 
 Padahal, algoritma dan pemrograman sebenarnya adalah konsep dasar yang sangat dekat dengan kehidupan sehari-hari kita. Artikel ini dirancang khusus untuk membantumu memahami algoritma dan pemrograman secara alami, bertahap, dan tanpa bahasa yang membingungkan.
 
@@ -17,7 +17,9 @@ Padahal, algoritma dan pemrograman sebenarnya adalah konsep dasar yang sangat de
 Secara sederhana, **algoritma adalah urutan langkah-langkah logis dan terstruktur untuk menyelesaikan suatu masalah atau mencapai tujuan tertentu**.
 
 ### Analogi Kehidupan Sehari-hari
+
 Bayangkan kamu ingin membuat secangkir mi instan. Langkah-langkah yang kamu lakukan umumnya adalah:
+
 1. Rebus air hingga mendidih.
 2. Masukkan mi ke dalam air mendidih selama 3 menit.
 3. Tuangkan bumbu ke dalam mangkuk.
@@ -27,9 +29,10 @@ Bayangkan kamu ingin membuat secangkir mi instan. Langkah-langkah yang kamu laku
 Langkah-langkah di atas adalah sebuah **algoritma**. Jika urutannya diacak—misalnya kamu memasukkan bumbu sebelum merebus air—hasilnya tidak akan optimal. Begitu pula dalam komputer, algoritma memberikan panduan instruksi yang tepat agar komputer bekerja sesuai harapan.
 
 ### Ciri-Ciri Algoritma yang Baik
-- **Terarah & Jelas (*Unambiguous*)**: Setiap langkah memiliki instruksi yang pasti dan tidak menimbulkan tafsir ganda.
-- **Memiliki Masukan (*Input*) & Keluaran (*Output*)**: Ada bahan awal yang diproses dan ada hasil akhir yang diharapkan.
-- **Terbatas (*Finiteness*)**: Algoritma harus memiliki titik henti setelah sejumlah langkah tertentu diselesaikan.
+
+- **Terarah & Jelas (_Unambiguous_)**: Setiap langkah memiliki instruksi yang pasti dan tidak menimbulkan tafsir ganda.
+- **Memiliki Masukan (_Input_) & Keluaran (_Output_)**: Ada bahan awal yang diproses dan ada hasil akhir yang diharapkan.
+- **Terbatas (_Finiteness_)**: Algoritma harus memiliki titik henti setelah sejumlah langkah tertentu diselesaikan.
 - **Efisien**: Tidak membuang-buang waktu atau daya komputasi secara sia-sia.
 
 ---
@@ -38,10 +41,10 @@ Langkah-langkah di atas adalah sebuah **algoritma**. Jika urutannya diacak—mis
 
 Banyak orang menganggap kedua istilah ini sama, padahal keduanya memiliki peran berbeda yang saling melengkapi:
 
-| Konsep | Penjelasan | Analogi |
-| :--- | :--- | :--- |
-| **Algoritma** | Ide, logika, atau urutan langkah penyelesaian masalah. | Resep masakan |
-| **Pemrograman** | Proses menerjemahkan algoritma ke dalam bahasa yang dimengerti komputer (*coding*). | Proses memasak sesuai resep |
+| Konsep          | Penjelasan                                                                          | Analogi                     |
+| :-------------- | :---------------------------------------------------------------------------------- | :-------------------------- |
+| **Algoritma**   | Ide, logika, atau urutan langkah penyelesaian masalah.                              | Resep masakan               |
+| **Pemrograman** | Proses menerjemahkan algoritma ke dalam bahasa yang dimengerti komputer (_coding_). | Proses memasak sesuai resep |
 
 Dengan kata lain: **Algoritma adalah cara berpikirnya, sedangkan Pemrograman adalah cara mengeksekusinya.**
 
@@ -52,6 +55,7 @@ Dengan kata lain: **Algoritma adalah cara berpikirnya, sedangkan Pemrograman ada
 Saat mulai menulis kode, kamu akan menemukan 5 fondasi utama yang ada di hampir semua bahasa pemrograman:
 
 ### A. Variabel & Tipe Data
+
 **Variabel** adalah wadah untuk menyimpan data di ingatan komputer. Sedangkan **Tipe Data** mendefinisikan jenis data apa yang disimpan (teks, angka, atau nilai benar/salah).
 
 - **String**: Teks, contoh: `"Baricode"`
@@ -59,18 +63,22 @@ Saat mulai menulis kode, kamu akan menemukan 5 fondasi utama yang ada di hampir 
 - **Boolean**: Nilai kebenaran, yaitu `true` (benar) atau `false` (salah).
 
 ### B. Input & Output
+
 - **Input**: Data yang dimasukkan pengguna (misal: mengetik nama di form).
 - **Output**: Hasil yang ditampilkan program ke layar.
 
-### C. Percabangan (*Conditional Statement*)
+### C. Percabangan (_Conditional Statement_)
+
 Komputer bisa mengambil keputusan berdasarkan kondisi tertentu menggunakan aturan `If - Else`.
 
-> **Contoh**: *JIKA* nilai ujian >= 75 *MAKA* dinyatakan LULUS, *JIKA TIDAK* dinyatakan REMEDIAL.
+> **Contoh**: _JIKA_ nilai ujian >= 75 _MAKA_ dinyatakan LULUS, _JIKA TIDAK_ dinyatakan REMEDIAL.
 
-### D. Perulangan (*Looping*)
+### D. Perulangan (_Looping_)
+
 Digunakan ketika kamu ingin menjalankan suatu instruksi secara berulang-ulang tanpa harus mengetik kode yang sama bertahun-tahun.
 
-### E. Fungsi (*Function*)
+### E. Fungsi (_Function_)
+
 Kumpulan instruksi yang dibungkus dalam satu nama agar bisa dipanggil kembali kapan saja dibutuhkan tanpa menulis ulang kodenya.
 
 ---
@@ -82,18 +90,19 @@ Mari kita lihat contoh penerapan algoritma menentukan apakah sebuah angka adalah
 ```javascript
 // Algoritma: Memeriksa angka genap atau ganjil
 function cekGenapGanjil(angka) {
-    if (angka % 2 === 0) {
-        return angka + " adalah bilangan GENAP";
-    } else {
-        return angka + " adalah bilangan GANJIL";
-    }
+	if (angka % 2 === 0) {
+		return angka + ' adalah bilangan GENAP';
+	} else {
+		return angka + ' adalah bilangan GANJIL';
+	}
 }
 
-console.log(cekGenapGanjil(7));  // Output: 7 adalah bilangan GANJIL
+console.log(cekGenapGanjil(7)); // Output: 7 adalah bilangan GANJIL
 console.log(cekGenapGanjil(10)); // Output: 10 adalah bilangan GENAP
 ```
 
 Perhatikan betapa jernihnya logika di atas:
+
 1. Terima masukan `angka`.
 2. Bagi `angka` dengan 2, lalu cek sisa baginya (`%`).
 3. Jika sisa bagi adalah 0, maka angka tersebut genap.
@@ -103,11 +112,11 @@ Perhatikan betapa jernihnya logika di atas:
 
 ## 5. Tips Mudah Memahami Algoritma Bagi Pemula
 
-1. **Mulailah dari Kertas & Pensil (*Flowchart* / Pseudocode)**  
+1. **Mulailah dari Kertas & Pensil (_Flowchart_ / Pseudocode)**  
    Sebelum menyentuh keyboard, tuliskan dulu logika penyelesaian masalahmu di kertas dalam bahasa sehari-hari.
 
-2. **Gunakan Berpikir Komputasional (*Computational Thinking*)**  
-   Pecah masalah besar (*decomposition*) menjadi bagian-bagian kecil yang lebih mudah diselesaikan satu per satu.
+2. **Gunakan Berpikir Komputasional (_Computational Thinking_)**  
+   Pecah masalah besar (_decomposition_) menjadi bagian-bagian kecil yang lebih mudah diselesaikan satu per satu.
 
 3. **Pilih Bahasa Pemrograman yang Ramah Pemula**  
    Bahasa seperti **Python** atau **JavaScript** memiliki sintaks yang relatif mudah dibaca seperti bahasa Inggris sehari-hari.
@@ -122,8 +131,8 @@ Perhatikan betapa jernihnya logika di atas:
 
 ## Kesimpulan
 
-Memahami algoritma dan pemrograman tidak membutuhkan keahlian matematika tingkat tinggi atau latar belakang pendidikan IT khusus. Yang paling penting adalah **pola pikir logis (*logic mindset*)** dan **kemauan untuk terus mencoba**.
+Memahami algoritma dan pemrograman tidak membutuhkan keahlian matematika tingkat tinggi atau latar belakang pendidikan IT khusus. Yang paling penting adalah **pola pikir logis (_logic mindset_)** dan **kemauan untuk terus mencoba**.
 
 Di **Baricode Indonesia**, kami percaya bahwa siapa saja—termasuk pelajar, pemuda desa, dan pemula tanpa pengalaman—bisa belajar koding secara membumi dan menyenangkan.
 
-> *"Jangan menyerah di awal. Setiap programmer berpengalaman pernah berada di posisi kamu saat ini."*
+> _"Jangan menyerah di awal. Setiap programmer berpengalaman pernah berada di posisi kamu saat ini."_
