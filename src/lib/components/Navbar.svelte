@@ -245,7 +245,7 @@
 											<span
 												class="rounded-full bg-amber-500/10 px-2 py-0.5 text-[10px] font-semibold text-amber-600 dark:bg-amber-500/20 dark:text-amber-400"
 											>
-												Modul
+												Segera Hadir
 											</span>
 										</div>
 										<p class="mt-0.5 text-xs text-slate-500 dark:text-zinc-400">
@@ -290,7 +290,7 @@
 											<span
 												class="rounded-full bg-rose-500/10 px-2 py-0.5 text-[10px] font-semibold text-rose-600 dark:bg-rose-500/20 dark:text-rose-400"
 											>
-												Gratis
+												Segera Hadir
 											</span>
 										</div>
 										<p class="mt-0.5 text-xs text-slate-500 dark:text-zinc-400">
@@ -335,7 +335,7 @@
 											<span
 												class="rounded-full bg-sky-500/10 px-2 py-0.5 text-[10px] font-semibold text-sky-600 dark:bg-sky-500/20 dark:text-sky-400"
 											>
-												Live Class
+												Segera Hadir
 											</span>
 										</div>
 										<p class="mt-0.5 text-xs text-slate-500 dark:text-zinc-400">
@@ -932,7 +932,10 @@
 									</svg>
 								</div>
 								<div>
-									<div class="font-semibold">Kursus Mandiri</div>
+									<div class="flex items-center gap-1.5 font-semibold">
+										<span>Kursus Mandiri</span>
+										<span class="rounded bg-amber-500/10 px-1.5 py-0.2 text-[9px] font-bold text-amber-600 dark:bg-amber-500/20 dark:text-amber-400">Segera</span>
+									</div>
 									<div class="text-[11px] text-slate-500 dark:text-zinc-400">
 										Modul &amp; kurikulum terarah
 									</div>
@@ -965,7 +968,10 @@
 									</svg>
 								</div>
 								<div>
-									<div class="font-semibold">Baricode Bimbingan</div>
+									<div class="flex items-center gap-1.5 font-semibold">
+										<span>Baricode Bimbingan</span>
+										<span class="rounded bg-rose-500/10 px-1.5 py-0.2 text-[9px] font-bold text-rose-600 dark:bg-rose-500/20 dark:text-rose-400">Segera</span>
+									</div>
 									<div class="text-[11px] text-slate-500 dark:text-zinc-400">
 										Pendampingan gratis via WA
 									</div>
@@ -998,7 +1004,10 @@
 									</svg>
 								</div>
 								<div>
-									<div class="font-semibold">Baricode Akademi</div>
+									<div class="flex items-center gap-1.5 font-semibold">
+										<span>Baricode Akademi</span>
+										<span class="rounded bg-sky-500/10 px-1.5 py-0.2 text-[9px] font-bold text-sky-600 dark:bg-sky-500/20 dark:text-sky-400">Segera</span>
+									</div>
 									<div class="text-[11px] text-slate-500 dark:text-zinc-400">
 										Live class kelompok kecil
 									</div>

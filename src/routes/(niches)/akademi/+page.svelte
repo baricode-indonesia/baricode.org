@@ -31,7 +31,7 @@
 			level: 'Pemula ke Menengah',
 			duration: '8 Minggu Intensif',
 			schedule: '2x Pertemuan Live / Minggu (Malam Hari)',
-			batchInfo: 'Batch Baru Segera Dibuka (Maks. 12 Kursi)',
+			batchInfo: 'Segera Hadir — Batch Baru Segera Dibuka (Maks. 12 Kursi)',
 			summary:
 				'Kuasai keahlian backend & fullstack web paling dibutuhkan di industri Indonesia. Dari dasar OOP, database relasional kompleks, REST API, sistem multi-role, hingga deployment VPS live.',
 			highlights: [
@@ -54,7 +54,7 @@
 			level: 'Pemula yang Paham Dasar Web',
 			duration: '6 Minggu Intensif',
 			schedule: '2x Pertemuan Live / Minggu (Malam Hari)',
-			batchInfo: 'Batch Baru Segera Dibuka (Maks. 12 Kursi)',
+			batchInfo: 'Segera Hadir — Batch Baru Segera Dibuka (Maks. 12 Kursi)',
 			summary:
 				'Bangun antarmuka web modern yang cepat, reaktif, dan ramah pengguna. Kuasai component-driven architecture, global state management, data fetching asinkron, dan styling Tailwind CSS tingkat lanjut.',
 			highlights: [
@@ -77,7 +77,7 @@
 			level: 'Pemula ke Menengah',
 			duration: '4 Minggu Praktis',
 			schedule: '2x Pertemuan Live / Minggu (Malam Hari)',
-			batchInfo: 'Batch Baru Segera Dibuka (Maks. 12 Kursi)',
+			batchInfo: 'Segera Hadir — Batch Baru Segera Dibuka (Maks. 12 Kursi)',
 			summary:
 				'Jalur tercepat untuk mulai menerima pesanan website klien (UMKM, sekolah, instansi, hingga toko online). Pelajari kustomisasi tema dari nol tanpa bloated page builder berat.',
 			highlights: [
@@ -339,7 +339,7 @@
 			class="inline-flex items-center gap-2 rounded-full border border-sky-500/30 bg-sky-500/10 px-4 py-1.5 text-xs font-semibold text-sky-600 shadow-xs backdrop-blur-md dark:border-sky-500/30 dark:bg-sky-500/15 dark:text-sky-300"
 		>
 			<span class="inline-block size-2 animate-pulse rounded-full bg-sky-500"></span>
-			<span>🎓 Live Class Interaktif • Kelompok Kecil (Maks. 12 Peserta) • Code Review 1-on-1</span>
+			<span>⏳ Program Segera Hadir • Live Class Kelompok Kecil (Maks. 12 Peserta)</span>
 		</div>
 
 		<!-- Main Heading -->
@@ -711,7 +711,7 @@
 				<span
 					class="inline-flex items-center gap-1.5 rounded-full bg-sky-500/20 px-3.5 py-1 text-xs font-semibold text-sky-300 backdrop-blur-md"
 				>
-					⚡ Kuota Terbatas Maksimal 12 Kursi per Batch
+					⚡ Segera Hadir — Kuota Terbatas Maksimal 12 Kursi per Batch
 				</span>
 				<h2 class="mt-4 text-3xl font-extrabold tracking-tight sm:text-4xl">
 					Siap Melakukan Lompatan Karier Kodingmu?

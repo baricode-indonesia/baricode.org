@@ -341,10 +341,10 @@
 	<section class="mx-auto max-w-5xl px-6 pt-6 pb-16 text-center">
 		<!-- Pill Badge -->
 		<div
-			class="inline-flex items-center gap-2 rounded-full border border-rose-500/30 bg-rose-500/10 px-4 py-1.5 text-xs font-semibold text-rose-600 shadow-xs backdrop-blur-md dark:border-rose-500/30 dark:bg-rose-500/15 dark:text-rose-300"
+			class="inline-flex items-center gap-2 rounded-full border border-amber-500/30 bg-amber-500/10 px-4 py-1.5 text-xs font-semibold text-amber-700 shadow-xs backdrop-blur-md dark:border-amber-500/30 dark:bg-amber-500/15 dark:text-amber-300"
 		>
-			<span class="inline-block size-2 animate-pulse rounded-full bg-rose-500"></span>
-			<span>🎓 Kurikulum Terarah &amp; Ramah Pemula</span>
+			<span class="inline-block size-2 animate-pulse rounded-full bg-amber-500"></span>
+			<span>⏳ Program Segera Hadir • Kurikulum Terarah &amp; Ramah Pemula</span>
 		</div>
 
 		<!-- Main Heading -->

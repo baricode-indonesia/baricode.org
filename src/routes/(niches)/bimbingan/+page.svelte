@@ -254,7 +254,7 @@
 			class="inline-flex items-center gap-2 rounded-full border border-rose-500/30 bg-rose-500/10 px-4 py-1.5 text-xs font-semibold text-rose-600 shadow-xs backdrop-blur-md dark:border-rose-500/30 dark:bg-rose-500/15 dark:text-rose-300"
 		>
 			<span class="inline-block size-2 animate-pulse rounded-full bg-rose-500"></span>
-			<span>🤝 100% Gratis • Tanpa Pertemuan Kaku • Via WhatsApp</span>
+			<span>⏳ Program Segera Hadir • 100% Gratis • Via WhatsApp</span>
 		</div>
 
 		<!-- Main Heading -->
@@ -725,7 +725,7 @@
 				<span
 					class="inline-flex items-center gap-1.5 rounded-full bg-white/20 px-3.5 py-1 text-xs font-semibold text-white backdrop-blur-md"
 				>
-					✨ Pendaftaran Batch Terbuka
+					⏳ Segera Hadir — Pendaftaran Batch Baru Akan Dibuka
 				</span>
 				<h2 class="mt-4 text-3xl font-extrabold tracking-tight sm:text-4xl">
 					Mulai Perjalanan Kodingmu Bersama Mentor Hari Ini
