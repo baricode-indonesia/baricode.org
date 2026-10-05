@@ -301,6 +301,23 @@ export const glossaryList: GlossaryItem[] = [
 		example: '{ "nama": "Ahmad", "kota": "Jombang", "status": "Santri Belajar Coding" }'
 	},
 	{
+		term: 'k6',
+		slug: 'k6',
+		abbreviation: 'Grafana k6 / Load Testing Tool',
+		category: 'tools',
+		categoryLabel: 'Tools & Git',
+		definition:
+			'Alat pengujian beban (load testing) dan performa modern open-source berbasis Go dan JavaScript untuk menguji keandalan server, API, dan sistem saat menerima lonjakan ribuan pengguna virtual secara bersamaan.',
+		analogy:
+			'Simulasi gladi resik jalan raya atau uji beban jembatan baru. Sebelum jembatan dibuka untuk umum, ratusan truk bermuatan berat dijalankan serentak untuk memastikan jembatan kokoh dan tidak runtuh saat terjadi kemacetan parah.',
+		example:
+			'Menjalankan perintah "k6 run script.js" dengan skenario 100 Virtual Users (VUs) selama 30 detik untuk menguji kecepatan respons server.',
+		relatedArticle: {
+			title: 'Contoh Penggunaan k6 Automation Tools: Panduan Performance & Load Testing Modern',
+			url: '/artikel/contoh-penggunaan-k6-automation-tools'
+		}
+	},
+	{
 		term: 'Loop',
 		slug: 'loop',
 		abbreviation: 'Perulangan',

@@ -94,7 +94,8 @@ export const tags: Tag[] = [
 	{ name: 'PHP', slug: 'php' },
 	{ name: 'k6', slug: 'k6' },
 	{ name: 'Automation', slug: 'automation' },
-	{ name: 'Testing', slug: 'testing' }
+	{ name: 'Testing', slug: 'testing' },
+	{ name: 'Tailwind CSS', slug: 'tailwindcss' }
 ];
 
 function parseFrontmatter(rawContent: string): { metadata: Record<string, any>; content: string } {
