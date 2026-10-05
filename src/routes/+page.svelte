@@ -44,6 +44,12 @@
 		>
 			Lihat Kursus &amp; Akademi
 		</a>
+		<a
+			href="/bimbingan"
+			class="rounded-full border border-slate-300/80 bg-white/90 px-6 py-3.5 text-sm font-semibold text-slate-700 shadow-sm backdrop-blur transition hover:border-rose-500/50 hover:bg-rose-50/50 hover:text-rose-700 dark:border-zinc-800 dark:bg-zinc-900/80 dark:text-zinc-300 dark:hover:border-rose-500/50 dark:hover:bg-rose-950/30 dark:hover:text-rose-400"
+		>
+			Daftar Bimbingan Gratis
+		</a>
 	</div>
 
 	<div class="mx-auto mt-16 grid max-w-3xl grid-cols-2 gap-4 sm:grid-cols-4">
@@ -269,45 +275,109 @@
 	</div>
 
 	<div class="grid gap-6 sm:grid-cols-3">
-		<div
-			class="group rounded-2xl border border-slate-200/80 bg-white/80 p-6 shadow-md backdrop-blur transition hover:-translate-y-1 hover:border-slate-300 hover:bg-white dark:border-zinc-800/80 dark:bg-zinc-900/60 dark:shadow-xl dark:hover:border-zinc-700 dark:hover:bg-zinc-900/90"
+		<!-- Kursus Card -->
+		<a
+			href="/kursus"
+			class="group flex flex-col justify-between rounded-2xl border border-slate-200/80 bg-white/80 p-6 shadow-md backdrop-blur transition hover:-translate-y-1 hover:border-amber-500/40 hover:bg-white hover:shadow-xl dark:border-zinc-800/80 dark:bg-zinc-900/60 dark:shadow-xl dark:hover:border-amber-500/40 dark:hover:bg-zinc-900/90"
+		>
+			<div>
+				<div class="flex items-center justify-between">
+					<span
+						class="flex size-12 items-center justify-center rounded-xl border border-amber-500/20 bg-amber-500/10 text-2xl text-amber-600 dark:text-amber-400"
+					>
+						📚
+					</span>
+					<span
+						class="rounded-full bg-amber-500/10 px-2.5 py-0.5 text-[11px] font-semibold text-amber-600 dark:bg-amber-500/20 dark:text-amber-400"
+					>
+						Belajar Mandiri
+					</span>
+				</div>
+				<h3 class="mt-4 text-xl font-bold text-slate-900 transition group-hover:text-amber-600 dark:text-white dark:group-hover:text-amber-400">
+					Kursus
+				</h3>
+				<p class="mt-2 text-sm leading-relaxed text-slate-600 dark:text-zinc-400">
+					Belajar mandiri dengan kurikulum terstruktur langkah demi langkah, dari dasar hingga proyek portofolio nyata. Tersedia modul gratis dan panduan komprehensif.
+				</p>
+			</div>
+			<div class="mt-6 border-t border-slate-100 pt-4 dark:border-zinc-800/80">
+				<span class="inline-flex items-center gap-1.5 text-xs font-semibold text-amber-600 transition group-hover:gap-2 dark:text-amber-400">
+					<span>Pelajari Kursus</span>
+					<span aria-hidden="true">&rarr;</span>
+				</span>
+			</div>
+		</a>
+
+		<!-- Bimbingan Card -->
+		<a
+			href="/bimbingan"
+			class="group relative flex flex-col justify-between rounded-2xl border border-rose-500/40 bg-gradient-to-b from-rose-500/5 via-white/90 to-white/90 p-6 shadow-lg shadow-rose-500/5 backdrop-blur transition hover:-translate-y-1 hover:border-rose-500 hover:shadow-xl dark:border-rose-500/40 dark:from-rose-950/20 dark:via-zinc-900/80 dark:to-zinc-900/80 dark:shadow-xl dark:hover:border-rose-500"
 		>
 			<span
-				class="flex size-12 items-center justify-center rounded-xl border border-rose-500/20 bg-rose-500/10 text-2xl text-rose-600 dark:text-rose-400"
-				>📚</span
+				class="absolute -top-3 right-6 rounded-full bg-gradient-to-r from-red-600 to-rose-600 px-3 py-0.5 text-[10px] font-bold tracking-wider text-white uppercase shadow-xs"
 			>
-			<h3 class="mt-4 text-lg font-bold text-slate-900 dark:text-white">Kursus</h3>
-			<p class="mt-2 text-sm leading-relaxed text-slate-600 dark:text-zinc-400">
-				Belajar mandiri dengan materi terstruktur, dari pemula hingga mahir. Tersedia jalur gratis
-				dan kelas premium untuk hasil belajar terbaik.
-			</p>
-		</div>
-		<div
-			class="group rounded-2xl border border-slate-200/80 bg-white/80 p-6 shadow-md backdrop-blur transition hover:-translate-y-1 hover:border-rose-500/40 hover:bg-white dark:border-zinc-800/80 dark:bg-zinc-900/60 dark:shadow-xl dark:hover:border-rose-500/40 dark:hover:bg-zinc-900/90"
+				Favorit Komunitas
+			</span>
+			<div>
+				<div class="flex items-center justify-between">
+					<span
+						class="flex size-12 items-center justify-center rounded-xl border border-rose-500/20 bg-rose-500/10 text-2xl text-rose-600 dark:text-rose-400"
+					>
+						🤝
+					</span>
+					<span
+						class="rounded-full bg-rose-500/10 px-2.5 py-0.5 text-[11px] font-semibold text-rose-600 dark:bg-rose-500/20 dark:text-rose-400"
+					>
+						100% Gratis
+					</span>
+				</div>
+				<h3 class="mt-4 text-xl font-bold text-slate-900 transition group-hover:text-rose-600 dark:text-white dark:group-hover:text-rose-400">
+					Bimbingan
+				</h3>
+				<p class="mt-2 text-sm leading-relaxed text-slate-600 dark:text-zinc-400">
+					Pendampingan belajar koding gratis via WhatsApp. Mentor memantau progresmu dan mengarahkan agar kamu tetap konsisten sampai tujuan tercapai tanpa meeting kaku.
+				</p>
+			</div>
+			<div class="mt-6 border-t border-slate-100 pt-4 dark:border-zinc-800/80">
+				<span class="inline-flex items-center gap-1.5 text-xs font-semibold text-rose-600 transition group-hover:gap-2 dark:text-rose-400">
+					<span>Daftar Bimbingan Gratis</span>
+					<span aria-hidden="true">&rarr;</span>
+				</span>
+			</div>
+		</a>
+
+		<!-- Akademi Card -->
+		<a
+			href="/akademi"
+			class="group flex flex-col justify-between rounded-2xl border border-slate-200/80 bg-white/80 p-6 shadow-md backdrop-blur transition hover:-translate-y-1 hover:border-sky-500/40 hover:bg-white hover:shadow-xl dark:border-zinc-800/80 dark:bg-zinc-900/60 dark:shadow-xl dark:hover:border-sky-500/40 dark:hover:bg-zinc-900/90"
 		>
-			<span
-				class="flex size-12 items-center justify-center rounded-xl border border-rose-500/20 bg-rose-500/10 text-2xl text-rose-600 dark:text-rose-400"
-				>🤝</span
-			>
-			<h3 class="mt-4 text-lg font-bold text-slate-900 dark:text-white">Bimbingan</h3>
-			<p class="mt-2 text-sm leading-relaxed text-slate-600 dark:text-zinc-400">
-				Pendampingan belajar koding gratis dari Baricode. Mentor memantau progresmu dan mengarahkan
-				agar kamu tetap konsisten sampai tujuan tercapai.
-			</p>
-		</div>
-		<div
-			class="group rounded-2xl border border-slate-200/80 bg-white/80 p-6 shadow-md backdrop-blur transition hover:-translate-y-1 hover:border-slate-300 hover:bg-white dark:border-zinc-800/80 dark:bg-zinc-900/60 dark:shadow-xl dark:hover:border-zinc-700 dark:hover:bg-zinc-900/90"
-		>
-			<span
-				class="flex size-12 items-center justify-center rounded-xl border border-rose-500/20 bg-rose-500/10 text-2xl text-rose-600 dark:text-rose-400"
-				>🎓</span
-			>
-			<h3 class="mt-4 text-lg font-bold text-slate-900 dark:text-white">Akademi</h3>
-			<p class="mt-2 text-sm leading-relaxed text-slate-600 dark:text-zinc-400">
-				Live class online kelompok kecil bersama instruktur. Lebih intensif, terjadwal, dan ada
-				rekaman untuk peserta.
-			</p>
-		</div>
+			<div>
+				<div class="flex items-center justify-between">
+					<span
+						class="flex size-12 items-center justify-center rounded-xl border border-sky-500/20 bg-sky-500/10 text-2xl text-sky-600 dark:text-sky-400"
+					>
+						🎓
+					</span>
+					<span
+						class="rounded-full bg-sky-500/10 px-2.5 py-0.5 text-[11px] font-semibold text-sky-600 dark:bg-sky-500/20 dark:text-sky-400"
+					>
+						Live Class Intensif
+					</span>
+				</div>
+				<h3 class="mt-4 text-xl font-bold text-slate-900 transition group-hover:text-sky-600 dark:text-white dark:group-hover:text-sky-400">
+					Akademi
+				</h3>
+				<p class="mt-2 text-sm leading-relaxed text-slate-600 dark:text-zinc-400">
+					Live class online kelompok kecil bersama instruktur praktisi. Lebih intensif, live coding, code review 1-on-1, dan rekaman seumur hidup untuk peserta.
+				</p>
+			</div>
+			<div class="mt-6 border-t border-slate-100 pt-4 dark:border-zinc-800/80">
+				<span class="inline-flex items-center gap-1.5 text-xs font-semibold text-sky-600 transition group-hover:gap-2 dark:text-sky-400">
+					<span>Lihat Program Akademi</span>
+					<span aria-hidden="true">&rarr;</span>
+				</span>
+			</div>
+		</a>
 	</div>
 </section>
 

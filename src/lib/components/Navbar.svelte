@@ -60,6 +60,8 @@
 	let isBelajarActive = $derived(
 		currentPath.startsWith('/roadmap') ||
 			currentPath.startsWith('/kursus') ||
+			currentPath.startsWith('/bimbingan') ||
+			currentPath.startsWith('/akademi') ||
 			currentPath.startsWith('/untuk-pemula') ||
 			currentPath.startsWith('/glosarium')
 	);
@@ -207,18 +209,107 @@
 									</div>
 								</a>
 
-								<!-- Kursus & Akademi -->
+								<!-- Kursus -->
 								<a
 									href="/kursus"
 									onclick={closeAll}
-									class="group flex items-start gap-3 rounded-xl p-2.5 transition hover:bg-slate-100/80 dark:hover:bg-zinc-800/60 {currentPath.startsWith(
-										'/kursus'
-									)
-										? 'bg-red-50/80 dark:bg-red-950/30'
+									class="group flex items-start gap-3 rounded-xl p-2.5 transition hover:bg-slate-100/80 dark:hover:bg-zinc-800/60 {currentPath ===
+									'/kursus'
+										? 'bg-amber-50/80 dark:bg-amber-950/30'
+										: ''}"
+								>
+									<div
+										class="mt-0.5 flex size-9 shrink-0 items-center justify-center rounded-lg bg-amber-500/10 text-amber-600 transition group-hover:bg-amber-600 group-hover:text-white dark:bg-amber-500/20 dark:text-amber-400"
+									>
+										<svg
+											class="size-5"
+											fill="none"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="currentColor"
+										>
+											<path
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"
+											/>
+										</svg>
+									</div>
+									<div class="min-w-0 flex-1">
+										<div class="flex items-center gap-2">
+											<span
+												class="text-sm font-semibold text-slate-800 transition group-hover:text-amber-600 dark:text-zinc-100 dark:group-hover:text-amber-400"
+											>
+												Kursus Mandiri
+											</span>
+											<span
+												class="rounded-full bg-amber-500/10 px-2 py-0.5 text-[10px] font-semibold text-amber-600 dark:bg-amber-500/20 dark:text-amber-400"
+											>
+												Modul
+											</span>
+										</div>
+										<p class="mt-0.5 text-xs text-slate-500 dark:text-zinc-400">
+											Katalog kurikulum belajar mandiri berbasis proyek
+										</p>
+									</div>
+								</a>
+
+								<!-- Bimbingan -->
+								<a
+									href="/bimbingan"
+									onclick={closeAll}
+									class="group flex items-start gap-3 rounded-xl p-2.5 transition hover:bg-slate-100/80 dark:hover:bg-zinc-800/60 {currentPath ===
+									'/bimbingan'
+										? 'bg-rose-50/80 dark:bg-red-950/30'
 										: ''}"
 								>
 									<div
 										class="mt-0.5 flex size-9 shrink-0 items-center justify-center rounded-lg bg-rose-500/10 text-rose-600 transition group-hover:bg-rose-600 group-hover:text-white dark:bg-rose-500/20 dark:text-rose-400"
+									>
+										<svg
+											class="size-5"
+											fill="none"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="currentColor"
+										>
+											<path
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"
+											/>
+										</svg>
+									</div>
+									<div class="min-w-0 flex-1">
+										<div class="flex items-center gap-2">
+											<span
+												class="text-sm font-semibold text-slate-800 transition group-hover:text-rose-600 dark:text-zinc-100 dark:group-hover:text-rose-400"
+											>
+												Baricode Bimbingan
+											</span>
+											<span
+												class="rounded-full bg-rose-500/10 px-2 py-0.5 text-[10px] font-semibold text-rose-600 dark:bg-rose-500/20 dark:text-rose-400"
+											>
+												Gratis
+											</span>
+										</div>
+										<p class="mt-0.5 text-xs text-slate-500 dark:text-zinc-400">
+											Pendampingan belajar koding via WhatsApp
+										</p>
+									</div>
+								</a>
+
+								<!-- Akademi -->
+								<a
+									href="/akademi"
+									onclick={closeAll}
+									class="group flex items-start gap-3 rounded-xl p-2.5 transition hover:bg-slate-100/80 dark:hover:bg-zinc-800/60 {currentPath ===
+									'/akademi'
+										? 'bg-sky-50/80 dark:bg-sky-950/30'
+										: ''}"
+								>
+									<div
+										class="mt-0.5 flex size-9 shrink-0 items-center justify-center rounded-lg bg-sky-500/10 text-sky-600 transition group-hover:bg-sky-600 group-hover:text-white dark:bg-sky-500/20 dark:text-sky-400"
 									>
 										<svg
 											class="size-5"
@@ -237,18 +328,18 @@
 									<div class="min-w-0 flex-1">
 										<div class="flex items-center gap-2">
 											<span
-												class="text-sm font-semibold text-slate-800 transition group-hover:text-rose-600 dark:text-zinc-100 dark:group-hover:text-rose-400"
+												class="text-sm font-semibold text-slate-800 transition group-hover:text-sky-600 dark:text-zinc-100 dark:group-hover:text-sky-400"
 											>
-												Kursus &amp; Akademi
+												Baricode Akademi
 											</span>
 											<span
-												class="rounded-full bg-rose-500/10 px-2 py-0.5 text-[10px] font-semibold text-rose-600 dark:bg-rose-500/20 dark:text-rose-400"
+												class="rounded-full bg-sky-500/10 px-2 py-0.5 text-[10px] font-semibold text-sky-600 dark:bg-sky-500/20 dark:text-sky-400"
 											>
-												Mentoring
+												Live Class
 											</span>
 										</div>
 										<p class="mt-0.5 text-xs text-slate-500 dark:text-zinc-400">
-											Program bimbingan intensif &amp; kurikulum terarah
+											Live class online kelompok kecil &amp; code review 1-on-1
 										</p>
 									</div>
 								</a>
@@ -761,7 +852,7 @@
 							<span>Belajar</span>
 							<span
 								class="rounded-full bg-red-500/10 px-2 py-0.5 text-[10px] font-semibold text-red-600 dark:bg-red-500/20 dark:text-red-400"
-								>4 Menu</span
+								>6 Menu</span
 							>
 						</span>
 						<svg
@@ -818,9 +909,41 @@
 							<a
 								href="/kursus"
 								onclick={closeAll}
-								class="flex items-center gap-3 rounded-lg px-3 py-2 text-xs font-medium transition hover:bg-slate-100 dark:hover:bg-zinc-800/60 {currentPath.startsWith(
-									'/kursus'
-								)
+								class="flex items-center gap-3 rounded-lg px-3 py-2 text-xs font-medium transition hover:bg-slate-100 dark:hover:bg-zinc-800/60 {currentPath ===
+								'/kursus'
+									? 'bg-amber-50 font-semibold text-amber-600 dark:bg-amber-950/30 dark:text-amber-400'
+									: 'text-slate-700 dark:text-zinc-300'}"
+							>
+								<div
+									class="flex size-7 shrink-0 items-center justify-center rounded-md bg-amber-500/10 text-amber-600 dark:bg-amber-500/20 dark:text-amber-400"
+								>
+									<svg
+										class="size-4"
+										fill="none"
+										viewBox="0 0 24 24"
+										stroke-width="1.5"
+										stroke="currentColor"
+									>
+										<path
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"
+										/>
+									</svg>
+								</div>
+								<div>
+									<div class="font-semibold">Kursus Mandiri</div>
+									<div class="text-[11px] text-slate-500 dark:text-zinc-400">
+										Modul &amp; kurikulum terarah
+									</div>
+								</div>
+							</a>
+
+							<a
+								href="/bimbingan"
+								onclick={closeAll}
+								class="flex items-center gap-3 rounded-lg px-3 py-2 text-xs font-medium transition hover:bg-slate-100 dark:hover:bg-zinc-800/60 {currentPath ===
+								'/bimbingan'
 									? 'bg-rose-50 font-semibold text-rose-600 dark:bg-rose-950/30 dark:text-rose-400'
 									: 'text-slate-700 dark:text-zinc-300'}"
 							>
@@ -837,14 +960,47 @@
 										<path
 											stroke-linecap="round"
 											stroke-linejoin="round"
+											d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"
+										/>
+									</svg>
+								</div>
+								<div>
+									<div class="font-semibold">Baricode Bimbingan</div>
+									<div class="text-[11px] text-slate-500 dark:text-zinc-400">
+										Pendampingan gratis via WA
+									</div>
+								</div>
+							</a>
+
+							<a
+								href="/akademi"
+								onclick={closeAll}
+								class="flex items-center gap-3 rounded-lg px-3 py-2 text-xs font-medium transition hover:bg-slate-100 dark:hover:bg-zinc-800/60 {currentPath ===
+								'/akademi'
+									? 'bg-sky-50 font-semibold text-sky-600 dark:bg-sky-950/30 dark:text-sky-400'
+									: 'text-slate-700 dark:text-zinc-300'}"
+							>
+								<div
+									class="flex size-7 shrink-0 items-center justify-center rounded-md bg-sky-500/10 text-sky-600 dark:bg-sky-500/20 dark:text-sky-400"
+								>
+									<svg
+										class="size-4"
+										fill="none"
+										viewBox="0 0 24 24"
+										stroke-width="1.5"
+										stroke="currentColor"
+									>
+										<path
+											stroke-linecap="round"
+											stroke-linejoin="round"
 											d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-5.25 6.557c0 1.5 2.35 2.75 5.25 2.75s5.25-1.25 5.25-2.75"
 										/>
 									</svg>
 								</div>
 								<div>
-									<div class="font-semibold">Kursus &amp; Akademi</div>
+									<div class="font-semibold">Baricode Akademi</div>
 									<div class="text-[11px] text-slate-500 dark:text-zinc-400">
-										Kelas &amp; bimbingan terarah
+										Live class kelompok kecil
 									</div>
 								</div>
 							</a>

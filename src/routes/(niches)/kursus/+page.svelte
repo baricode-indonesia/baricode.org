@@ -818,10 +818,10 @@
 					</div>
 					<div class="mt-6 border-t border-slate-100 pt-4 dark:border-zinc-800">
 						<a
-							href="/whatsapp"
+							href="/bimbingan"
 							class="inline-flex items-center gap-1.5 text-xs font-semibold text-rose-600 transition hover:gap-2 dark:text-rose-400"
 						>
-							<span>Gabung Komunitas Bimbingan</span>
+							<span>Pelajari Program Bimbingan</span>
 							<span aria-hidden="true">&rarr;</span>
 						</a>
 					</div>
@@ -840,36 +840,36 @@
 						<span
 							class="mt-4 inline-block text-[11px] font-bold tracking-wider text-sky-600 uppercase dark:text-sky-400"
 						>
-							Kurikulum Intensif
+							Live Class Intensif
 						</span>
 						<h3 class="mt-1 text-lg font-bold text-slate-900 dark:text-white">
-							Kursus &amp; Akademi Terstruktur
+							Baricode Akademi (Small Cohort)
 						</h3>
 						<p class="mt-2 text-xs leading-relaxed text-slate-600 sm:text-sm dark:text-zinc-400">
-							Modul pembelajaran mendalam dari hulu ke hilir dengan penugasan terarah, code review
-							langsung oleh praktisi, dan persiapan portofolio siap kerja.
+							Live class online kelompok kecil bersama praktisi. Dilengkapi code review 1-on-1,
+							kurikulum terarah, dan portofolio siap kerja.
 						</p>
 						<ul class="mt-4 space-y-2 text-xs text-slate-600 dark:text-zinc-300">
 							<li class="flex items-center gap-2">
 								<span class="size-1.5 rounded-full bg-sky-500"></span>
-								<span>Kurikulum terstruktur berbasis proyek riil</span>
+								<span>Maksimal 12 peserta per kelas (eksklusif &amp; terpantau)</span>
 							</li>
 							<li class="flex items-center gap-2">
 								<span class="size-1.5 rounded-full bg-sky-500"></span>
-								<span>Review tugas &amp; feedback perbaikan kode</span>
+								<span>Live coding dua arah &amp; personal code review</span>
 							</li>
 							<li class="flex items-center gap-2">
 								<span class="size-1.5 rounded-full bg-sky-500"></span>
-								<span>Fokus portofolio yang meyakinkan klien &amp; tim IT</span>
+								<span>Akses rekaman seumur hidup &amp; portofolio produksi</span>
 							</li>
 						</ul>
 					</div>
 					<div class="mt-6 border-t border-slate-100 pt-4 dark:border-zinc-800">
 						<a
-							href="/kontak"
+							href="/akademi"
 							class="inline-flex items-center gap-1.5 text-xs font-semibold text-sky-600 transition hover:gap-2 dark:text-sky-400"
 						>
-							<span>Konsultasi Program Intensif</span>
+							<span>Lihat Baricode Akademi</span>
 							<span aria-hidden="true">&rarr;</span>
 						</a>
 					</div>

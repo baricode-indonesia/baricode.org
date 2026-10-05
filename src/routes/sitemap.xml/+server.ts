@@ -22,6 +22,8 @@ export const GET: RequestHandler = async () => {
 		{ loc: '/roadmap', priority: 0.9, changefreq: 'weekly', lastmod: today },
 		{ loc: '/artikel', priority: 0.9, changefreq: 'daily', lastmod: today },
 		{ loc: '/kursus', priority: 0.9, changefreq: 'weekly', lastmod: today },
+		{ loc: '/bimbingan', priority: 0.9, changefreq: 'weekly', lastmod: today },
+		{ loc: '/akademi', priority: 0.9, changefreq: 'weekly', lastmod: today },
 		{ loc: '/untuk-pemula', priority: 0.8, changefreq: 'weekly', lastmod: today },
 		{ loc: '/tentang', priority: 0.7, changefreq: 'monthly', lastmod: today },
 		{ loc: '/faq', priority: 0.7, changefreq: 'monthly', lastmod: today },
