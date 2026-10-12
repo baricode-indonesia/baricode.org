@@ -1,0 +1,276 @@
+{
+	"slug": "belajar-dunia-osint",
+	"order": 6,
+	"title": "Roadmap Belajar Dunia OSINT",
+	"badge": "Cyber Security",
+	"tagline": "Seni Investigasi Digital, Pengumpulan Intelijen Sumber Terbuka & Analisis Data Publik",
+	"description": "Panduan terstruktur dan praktis untuk memahami Open Source Intelligence (OSINT) dari dasar secara etis dan legal. Mulai dari metodologi investigasi, operational security (OpSec), teknik advanced Google dorking, investigasi identitas digital & username, analisis media sosial (SOCMINT), metadata & geolokasi gambar (IMINT/GEOINT), DNS & infrastruktur web, hingga otomatisasi dengan tool open source.",
+	"difficulty": "Pemula",
+	"estimatedWeeks": "8 - 10 Minggu",
+	"category": "Cyber Security & Investigasi",
+	"iconName": "osint",
+	"updatedAt": "2026-10-12",
+	"phases": [
+		{
+			"id": "osint-phase-1",
+			"phaseNumber": 1,
+			"title": "Fondasi OSINT, Etika Hukum & Operational Security (OpSec)",
+			"subtitle": "Memahami konsep intelijen sumber terbuka dan melindungi jejak diri saat investigasi.",
+			"description": "Sebelum memulai investigasi digital, sangat penting memahami batasan hukum, privasi, serta membangun identitas riset yang aman agar investigasi tidak membahayakan diri sendiri.",
+			"topics": [
+				{
+					"id": "osint-fundamentals",
+					"title": "Pengenalan OSINT & Intelligence Lifecycle",
+					"description": "Memahami apa itu OSINT, sumber data legal vs ilegal, dan tahapan siklus intelijen: Planning, Collection, Processing, Analysis, dan Dissemination.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Definisi Open Source Intelligence: informasi yang dapat diakses secara publik dan legal",
+						"Siklus Intelijen (Intelligence Lifecycle): dari merumuskan pertanyaan investigasi hingga pelaporan",
+						"Batasan etika, privasi, UU ITE, dan aturan hukum investigasi digital"
+					]
+				},
+				{
+					"id": "osint-opsec",
+					"title": "Operational Security (OpSec) & Burner Identity",
+					"description": "Menjaga anonimitas dan keamanan investigator menggunakan akun riset (sock puppet), VPN/Tor, dan lingkungan isolasi.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Konsep Sock Puppets: membuat akun riset terpisah dari identitas asli",
+						"Browser fingerprinting, pembersihan cookies, dan proteksi DNS leak",
+						"Penggunaan VPN, browser isolasi (Brave/Firefox khusus), dan Virtual Machine (VMware/VirtualBox)"
+					]
+				},
+				{
+					"id": "osint-workspace-setup",
+					"title": "Setup Lingkungan Riset & Manajemen Catatan",
+					"description": "Menyiapkan OS khusus (seperti CSI Linux, Kali Linux, atau VM khusus) dan tool dokumentasi investigasi.",
+					"priority": "direkomendasikan",
+					"keyPoints": [
+						"Manajemen bukti digital: timestamping, hashing berkas, dan screenshot otomatis",
+						"Tool dokumentasi & mind-mapping visual (Obsidian, Maltego, Notion)",
+						"Pengarsipan halaman web (Wayback Machine, Archive.today) untuk mencegah bukti hilang"
+					]
+				}
+			]
+		},
+		{
+			"id": "osint-phase-2",
+			"phaseNumber": 2,
+			"title": "Search Engine Intelligence (Google Dorking & Navigasi Web)",
+			"subtitle": "Memanfaatkan mesin pencari tingkat lanjut untuk menemukan data tersembunyi yang terindeks publik.",
+			"description": "Mayoritas informasi penting sudah terindeks oleh mesin pencari. Pelajari operator tingkat lanjut dan mesin pencari alternatif untuk menggali dokumen sensitif dan direktori terbuka.",
+			"topics": [
+				{
+					"id": "osint-google-dorking",
+					"title": "Advanced Google Dorking / Search Operators",
+					"description": "Menggunakan operator pencarian presisi seperti site:, filetype:, inurl:, intitle:, dan cache: untuk menemukan data spesifik.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Pencarian dokumen terbuka (filetype:pdf, filetype:xlsx, filetype:env)",
+						"Menemukan direktori terbuka (intitle:\"index of /\") dan dashboard admin yang tidak terproteksi",
+						"Katalog Google Hacking Database (GHDB) dari Exploit-DB"
+					]
+				},
+				{
+					"id": "osint-alternative-search",
+					"title": "Mesin Pencari Alternatif & Arsip Internet",
+					"description": "Menggunakan mesin pencari selain Google yang memiliki indeksasi berbeda atau menyajikan data historis web.",
+					"priority": "direkomendasikan",
+					"keyPoints": [
+						"Pencarian regional & privasi: DuckDuckGo, Yandex, Bing",
+						"Meneliti jejak historis situs: Wayback Machine (web.archive.org) dan Archive.today",
+						"Pencarian kode sumber publik: GitHub Search, GitLab, Pastebin Dorks"
+					]
+				}
+			]
+		},
+		{
+			"id": "osint-phase-3",
+			"phaseNumber": 3,
+			"title": "Investigasi Identitas Digital, Username, Email & Telepon",
+			"subtitle": "Melacak korelasi jejak digital dari username, alamat email, atau nomor telepon.",
+			"description": "Seseorang sering kali menggunakan pola username atau alamat email yang sama di berbagai platform. Pelajari teknik reverse lookup dan verifikasi akun.",
+			"topics": [
+				{
+					"id": "osint-username-lookup",
+					"title": "Username Enumeration & Reverse Search",
+					"description": "Mencari keberadaan username di ratusan platform media sosial dan forum daring secara serentak.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Tool otomatisasi username: WhatsMyName.app, Sherlock, Blackbird",
+						"Analisis pola alias (nama panggilan, variasi angka, gaya penamaan)",
+						"Verifikasi manual profil yang ditemukan untuk mencegah false-positive"
+					]
+				},
+				{
+					"id": "osint-email-investigation",
+					"title": "Email Intelligence & Data Breach Analysis",
+					"description": "Mengecek keabsahan email, reputasi domain, linked profile, dan riwayat kebocoran data (data breach).",
+					"priority": "wajib",
+					"keyPoints": [
+						"Pengecekan akun terdaftar (Epieos, Holehe, Hunter.io)",
+						"Analisis header email untuk melacak IP asal pengirim",
+						"Pengecekan riwayat kebocoran data: Have I Been Pwned, DeHashed (secara etis)"
+					]
+				},
+				{
+					"id": "osint-phone-investigation",
+					"title": "Phone Number Intelligence & Reverse Caller",
+					"description": "Menganalisis kode area, operator telekomunikasi, nama publik pemilik nomor, dan akun pesan instan terkait.",
+					"priority": "direkomendasikan",
+					"keyPoints": [
+						"Format penomoran internasional (E.164) dan lookup HLR/carrier",
+						"Aplikasi crowdsourced caller ID (Getcontact, Truecaller) dan implikasi privasinya",
+						"Pengecekan profil WhatsApp, Telegram, dan aplikasi perpesanan lain"
+					]
+				}
+			]
+		},
+		{
+			"id": "osint-phase-4",
+			"phaseNumber": 4,
+			"title": "Social Media Intelligence (SOCMINT)",
+			"subtitle": "Menggali informasi, interaksi sosial, dan jejak digital di berbagai jejaring sosial.",
+			"description": "Media sosial adalah sumber data terbuka terbesar. Pelajari cara menganalisis jaringan pertemanan, linimasa posting, tag, dan grup publik.",
+			"topics": [
+				{
+					"id": "osint-socmint-platforms",
+					"title": "Investigasi Platform Media Sosial Populer",
+					"description": "Teknik pencarian mendalam di X (Twitter), Instagram, Facebook, LinkedIn, dan TikTok.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Pencarian lanjutan X (Twitter Advanced Search): operator since, until, from, to",
+						"Analisis profil profesional LinkedIn dan struktur organisasi perusahaan",
+						"Meneliti tag lokasi, mentions, hashtag, dan histori komentar di Facebook & Instagram"
+					]
+				},
+				{
+					"id": "osint-telegram-messaging",
+					"title": "Investigasi Telegram & Forum Komunitas",
+					"description": "Mencari channel publik, grup diskusi, bot interaktif, dan forum terbuka tempat diskusi komunitas.",
+					"priority": "direkomendasikan",
+					"keyPoints": [
+						"Mesin pencari Telegram publik (TGStat, Telemetr, Lyzem)",
+						"Ekstraksi metadata pengguna, ID numerik unik pengguna Telegram",
+						"Mengeksplorasi forum diskusi teknis (Reddit, Discord server publik, Quora)"
+					]
+				}
+			]
+		},
+		{
+			"id": "osint-phase-5",
+			"phaseNumber": 5,
+			"title": "Analisis Gambar (IMINT) & Geolokasi (GEOINT)",
+			"subtitle": "Membongkar rahasia di balik foto: metadata EXIF, reverse image search, dan penentuan lokasi geografis.",
+			"description": "Foto menyimpan petunjuk visual yang kaya. Pelajari cara mengekstrak data kamera tersembunyi, mencari sumber asli gambar, dan mencocokkan lanskap foto dengan peta satelit dunia nyata.",
+			"topics": [
+				{
+					"id": "osint-exif-metadata",
+					"title": "Ekstraksi Metadata Foto & Dokumen (EXIF)",
+					"description": "Membaca data tersembunyi pada file seperti tipe kamera, koordinat GPS, timestamp, software pengedit, dan informasi author berkas.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Tool ekstraksi metadata: ExifTool, Jeffrey's Image Metadata Viewer",
+						"Alasan platform sosial menghapus EXIF dan cara mengantisipasinya",
+						"Analisis metadata berkas PDF/Office (FOCA, pdfinfo)"
+					]
+				},
+				{
+					"id": "osint-reverse-image",
+					"title": "Reverse Image Search & Face Recognition",
+					"description": "Mencari kemunculan gambar serupa di internet untuk memverifikasi keaslian atau menemukan konteks aslinya.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Mesin pencari gambar: Google Lens, Yandex Images, Bing Visual Search, TinEye",
+						"Pencarian crop bagian tertentu foto untuk mengisolasi objek spesifik",
+						"Verifikasi hoaks/misinformasi visual lewat perbandingan tanggal unggah pertama"
+					]
+				},
+				{
+					"id": "osint-geoint-basics",
+					"title": "Dasar Geolokasi Gambar (GEOINT)",
+					"description": "Menganalisis petunjuk visual pada foto untuk memperkirakan lokasi geografis pengambilan gambar.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Petunjuk visual: marka jalan, plat kendaraan, tiang listrik, bahasa papan nama, arsitektur gedung",
+						"Analisis bayangan dan posisi matahari (SunCalc, Shadow Calculator)",
+						"Pencocokan lanskap dengan Google Earth Pro, Google Street View, dan OpenStreetMap"
+					]
+				}
+			]
+		},
+		{
+			"id": "osint-phase-6",
+			"phaseNumber": 6,
+			"title": "Infrastruktur Web, Domain & Network Intelligence",
+			"subtitle": "Memetakan kepemilikan website, DNS records, server hosting, dan sertifikat SSL.",
+			"description": "Mengungkap identitas di balik sebuah website atau domain web: siapa pengelolanya, di mana servernya berada, dan domain lain apa saja yang berada di server yang sama.",
+			"topics": [
+				{
+					"id": "osint-whois-dns",
+					"title": "WHOIS Lookup & DNS Record Enumeration",
+					"description": "Mengetahui registrar domain, data kontak historis WHOIS, name server, mail server (MX), dan IP address host.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Perintah command line: whois, dig, nslookup, host",
+						"Riwayat histori WHOIS & DNS: SecurityTrails, ViewDNS.info, WhoisXML",
+						"Mendeteksi proteksi Cloudflare vs IP server asli (origin IP discovery)"
+					]
+				},
+				{
+					"id": "osint-subdomains-cert",
+					"title": "Subdomain Discovery & Certificate Transparency",
+					"description": "Menemukan subdomain tersembunyi yang sering kali menjadi pintu masuk atau lingkungan staging tidak terproteksi.",
+					"priority": "direkomendasikan",
+					"keyPoints": [
+						"Certificate Transparency Logs (crt.sh) untuk mencari seluruh subdomain terdaftar",
+						"Tool pencari subdomain: Sublist3r, Amass, Findomain",
+						"Analisis sertifikat SSL/TLS untuk menemukan domain terkait dalam satu organisasi"
+					]
+				},
+				{
+					"id": "osint-tech-stack-iot",
+					"title": "Tech Stack Identification & IoT Search Engines",
+					"description": "Mendeteksi teknologi website (CMS, framework, server web) dan menjelajahi perangkat yang terhubung ke internet.",
+					"priority": "direkomendasikan",
+					"keyPoints": [
+						"Deteksi teknologi: Wappalyzer, BuiltWith, HTTP header analysis",
+						"Mesin pencari perangkat & port internet: Shodan, Censys, FOFA",
+						"Memahami etika akses dan batasan hukum pemindaian port"
+					]
+				}
+			]
+		},
+		{
+			"id": "osint-phase-7",
+			"phaseNumber": 7,
+			"title": "Framework Investigasi, Otomatisasi & Penyusunan Laporan",
+			"subtitle": "Menyatukan semua potongan puzzle menjadi kesimpulan terstruktur, valid, dan dapat dipertanggungjawabkan.",
+			"description": "Investigasi OSINT yang baik berakhir pada analisis objektif dan laporan profesional, bukan sekadar tumpukan data mentah tanpa verifikasi silang.",
+			"topics": [
+				{
+					"id": "osint-frameworks-tools",
+					"title": "Framework Tool OSINT & Ekosistem Otomatisasi",
+					"description": "Mengenal kerangka kerja komprehensif seperti OSINT Framework dan tool otomatisasi pengumpulan data skala menengah.",
+					"priority": "direkomendasikan",
+					"keyPoints": [
+						"Navigasi direktori OSINTFramework.com",
+						"Pengenalan framework otomasi: SpiderFoot, theHarvester, Maltego",
+						"Scripting sederhana dengan Python (BeautifulSoup, Requests, Tweepy) untuk otomasi pengumpulan data"
+					]
+				},
+				{
+					"id": "osint-verification-reporting",
+					"title": "Verifikasi Silang Data, Fact-Checking & Pelaporan Akhir",
+					"description": "Menghindari bias konfirmasi, memverifikasi ulang setiap temuan dari minimal 2 sumber independen, dan menyusun laporan investigasi.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Prinsip verifikasi silang (Cross-referencing) dan mencegah bias kognitif",
+						"Chain of Custody bukti digital: menjaga integritas bukti (hash MD5/SHA256, screenshot ber-timestamp)",
+						"Format penulisan laporan intelijen profesional: Executive Summary, Metodologi, Temuan Kunci, Analisis, dan Rekomendasi"
+					]
+				}
+			]
+		}
+	]
+}

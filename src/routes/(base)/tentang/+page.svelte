@@ -70,7 +70,7 @@
 				url: 'https://www.baricode.org',
 				logo: 'https://www.baricode.org/og-image.jpg',
 				email: siteConfig.contactEmail,
-				sameAs: [siteConfig.socials.youtube],
+				sameAs: Object.values(siteConfig.socials),
 				description:
 					'Akademi dan kursus online IT yang membumi. Kami pun memulai semuanya dari kondisi paling terbatas sekalipun.'
 			}

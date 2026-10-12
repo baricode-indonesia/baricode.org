@@ -42,7 +42,11 @@ export const siteConfig = {
 	description:
 		'Akademi dan kursus online IT yang membumi. Kami pun memulai semuanya dari kondisi paling terbatas sekalipun.',
 	socials: {
-		youtube: 'https://www.youtube.com/@baricode_org'
+		instagram: 'https://www.instagram.com/baricode_org',
+		youtube: 'https://www.youtube.com/@baricode_org',
+		threads: 'https://www.threads.net/@baricode_org',
+		x: 'https://x.com/baricode_org',
+		tiktok: 'https://www.tiktok.com/@baricode_org'
 	}
 };
 

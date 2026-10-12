@@ -136,6 +136,10 @@ Daftar kategori dan tag yang tersedia dapat dilihat dan dikelola melalui [`src/l
 - 🌐 **Situs Web**: [baricode.org](https://baricode.org)
 - 💬 **Grup Komunitas WhatsApp**: [Gabung Baricode di WhatsApp](https://chat.whatsapp.com/CQj0TKasRia7c2vw6MHgjs)
 - 📺 **YouTube**: [@baricode_org](https://www.youtube.com/@baricode_org)
+- 📷 **Instagram**: [@baricode_org](https://www.instagram.com/baricode_org)
+- 🧵 **Threads**: [@baricode_org](https://www.threads.net/@baricode_org)
+- ✖️ **X (Twitter)**: [@baricode_org](https://x.com/baricode_org)
+- 🎵 **TikTok**: [@baricode_org](https://www.tiktok.com/@baricode_org)
 - ✉️ **Email Kontak**: [halo@baricode.org](mailto:halo@baricode.org)
 
 ---
