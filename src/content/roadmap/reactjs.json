@@ -1,0 +1,556 @@
+{
+	"slug": "reactjs",
+	"order": 7,
+	"title": "Roadmap Belajar React.js",
+	"badge": "Frontend Populer",
+	"tagline": "Dari Fondasi Modern JavaScript (ES6+), Komponen Komprehensif, Hooks, Manajemen State, hingga Ekosistem Next.js",
+	"description": "Panduan terstruktur dan praktis untuk menguasai React.js dari tingkat dasar hingga mahir: mulai dari fondasi JavaScript modern (ES6+), arsitektur komponen & JSX, React Hooks mendalam, penanganan formulir & validasi, pengambilan data dengan TanStack Query, client-side routing, manajemen state global, styling modern dengan Tailwind CSS, automated testing, hingga fondasi fullstack menggunakan Next.js App Router.",
+	"status": "tersedia",
+	"difficulty": "Pemula",
+	"estimatedWeeks": "12 - 16 Minggu",
+	"category": "Frontend Web Development",
+	"iconName": "react",
+	"updatedAt": "2026-10-14",
+	"phases": [
+		{
+			"id": "react-phase-1",
+			"phaseNumber": 1,
+			"title": "Fondasi JavaScript Modern (ES6+), Web APIs & Lingkungan Node.js",
+			"subtitle": "Kuasai fitur esensial JavaScript modern sebelum mempelajari paradigma React.",
+			"description": "React adalah pustaka (library) berbasis JavaScript murni. Sebagian besar kebingungan pemula di React bukan disebabkan oleh React itu sendiri, melainkan konsep ES6+, operasi asinkron, atau modul yang belum matang.",
+			"topics": [
+				{
+					"id": "react-es6-essentials",
+					"title": "Fitur Esensial JavaScript Modern (ES6+)",
+					"description": "Fitur sintaks JavaScript yang paling sering digunakan dalam penulisan komponen dan pemrosesan data React.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Arrow Functions, lexical this, dan implicit return",
+						"Destructuring assignment pada Object dan Array untuk mengekstrak props/state",
+						"Rest parameter dan Spread operator (...) untuk manipulasi objek dan array secara immutable",
+						"Template Literals dan modul sistem (import default vs named export)",
+						"Metode array deklaratif penting: map(), filter(), reduce(), find(), dan some()"
+					],
+					"resources": [
+						{
+							"title": "Mengenal Perbedaan Statement dan Expression",
+							"url": "/artikel/mengenal-perbedaan-statement-dan-expression-dalam-pemrograman",
+							"isInternal": true
+						},
+						{
+							"title": "Mengenal Function dalam Bahasa Sederhana",
+							"url": "/artikel/function-artinya-dalam-bahasa-bayi",
+							"isInternal": true
+						}
+					]
+				},
+				{
+					"id": "react-async-web-api",
+					"title": "JavaScript Asinkron & Dasar Komunikasi Web API",
+					"description": "Memahami alur asinkronus browser untuk persiapan integrasi data backend ke komponen frontend.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Konsep Promise, alur resolve dan reject",
+						"Sintaks async/await dan penanganan error dengan blok try...catch",
+						"Penggunaan native Fetch API untuk request HTTP (GET, POST, PUT, DELETE)",
+						"Format pertukaran data JSON: JSON.stringify() dan JSON.parse()"
+					]
+				},
+				{
+					"id": "react-node-environment",
+					"title": "Lingkungan Node.js, NVM & Package Managers",
+					"description": "Menyiapkan runtime dan manajer paket untuk mengelola dependensi proyek React modern.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Instalasi Node.js LTS dan pengelolaan multi-versi dengan NVM (Node Version Manager)",
+						"Package manager: NPM, Yarn, PNPM, atau Bun",
+						"Struktur file package.json, package-lock.json / bun.lock, dan direktori node_modules",
+						"Eksekusi script baris perintah: npm run dev, npm run build, npx"
+					],
+					"resources": [
+						{
+							"title": "Mengenal Apa Itu NVM (Node Version Manager) & Fungsinya",
+							"url": "/artikel/nvm-artinya",
+							"isInternal": true
+						}
+					]
+				},
+				{
+					"id": "react-vite-tooling",
+					"title": "Tooling Modern & Bundler Proyek dengan Vite",
+					"description": "Membangun scaffolding proyek React menggunakan Vite yang super cepat sebagai pengganti Create React App yang usang.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Inisialisasi proyek: npm create vite@latest dengan template react",
+						"Hot Module Replacement (HMR) untuk pembaruan instan kode di browser",
+						"Konfigurasi file vite.config.ts / vite.config.js dan path alias (@/)",
+						"Variabel lingkungan (.env) di Vite dengan prefix VITE_"
+					]
+				}
+			]
+		},
+		{
+			"id": "react-phase-2",
+			"phaseNumber": 2,
+			"title": "Anatomi Inti React, JSX & Arsitektur Komponen",
+			"subtitle": "Memahami paradigma deklaratif, Virtual DOM, dan pemecahan UI menjadi komponen modular.",
+			"description": "React mengubah cara berpikir pengembang: dari manipulasi DOM manual yang imperatif menjadi perancangan antarmuka deklaratif berbasis komponen mandiri.",
+			"topics": [
+				{
+					"id": "react-core-paradigm",
+					"title": "Paradigma Deklaratif & Cara Kerja Virtual DOM",
+					"description": "Konsep inti di balik kecepatan React: render pohon elemen maya dan rekonsiliasi DOM.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Perbedaan imperatif (vanilla JS) vs deklaratif (React)",
+						"Virtual DOM (VDOM) dan algoritma diffing rekonsiliasi",
+						"Fungsi ReactDOM.createRoot() dan mounting aplikasi ke root HTML"
+					]
+				},
+				{
+					"id": "react-jsx-syntax",
+					"title": "Sintaks JSX & Rendering Bersyarat (Conditional Rendering)",
+					"description": "Ekstensi sintaks mirip HTML dalam JavaScript dan cara menampilkan elemen berdasarkan kondisi logika.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Aturan JSX: penutupan tag tunggal, className, camelCase attribute",
+						"Penyisipan JavaScript Expression di dalam kurung kurawal {}",
+						"React Fragment (<>...</> atau <React.Fragment>) untuk membungkus elemen tanpa node tambahan di DOM",
+						"Conditional rendering: Ternary operator (? :), logical AND (&&), dan return guard clause"
+					],
+					"resources": [
+						{
+							"title": "Panduan Lengkap Memahami HTML dan CSS untuk Pemula",
+							"url": "/artikel/panduan-lengkap-memahami-html-dan-css-untuk-pemula",
+							"isInternal": true
+						}
+					]
+				},
+				{
+					"id": "react-components-props",
+					"title": "Komponen Fungsional & Penerusan Data (Props)",
+					"description": "Membangun blok bangunan UI yang dapat digunakan kembali dan mengalirkan data searah (one-way data flow).",
+					"priority": "wajib",
+					"keyPoints": [
+						"Deklarasi Functional Component sebagai fungsi murni (pure function)",
+						"Menerima dan melakukan destructuring properti (props)",
+						"Props khusus: children untuk komposisi layout dan komponen pembungkus",
+						"Default values props dan aturan kekekalan (props bersifat read-only / immutable)"
+					]
+				},
+				{
+					"id": "react-lists-keys",
+					"title": "Rendering Daftar (Lists) & Aturan Kunci Unik (Keys)",
+					"description": "Menampilkan sekumpulan data array ke dalam elemen UI menggunakan perulangan fungsional.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Transformasi array objek menjadi JSX menggunakan method array.map()",
+						"Pentingnya prop key untuk optimasi rekonsiliasi Virtual DOM React",
+						"Mengapa dilarang menggunakan index array sebagai key pada data dinamis yang bisa diurutkan atau dihapus"
+					]
+				}
+			]
+		},
+		{
+			"id": "react-phase-3",
+			"phaseNumber": 3,
+			"title": "Interaktivitas, React Hooks & Pengelolaan State Lokal",
+			"subtitle": "Menghidupkan antarmuka dinamis dan menguasai hook bawaan React paling mendasar.",
+			"description": "State adalah memori dari sebuah komponen. Dengan memahami Hooks, kamu bisa mengontrol kapan komponen harus memperbarui dirinya dan bagaimana efek samping dieksekusi.",
+			"topics": [
+				{
+					"id": "react-use-state",
+					"title": "useState Hook & Penanganan Event (Synthetic Events)",
+					"description": "Menyimpan nilai dinamis pada komponen dan merespons interaksi pengguna seperti klik, input, atau hover.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Anatomi const [state, setState] = useState(initialValue)",
+						"Synthetic Events di React (onClick, onChange, onSubmit)",
+						"Prinsip immutability: tidak boleh mengubah state langsung (state.push() dilarang)",
+						"Functional state update: setState(prev => prev + 1) untuk update berantai yang aman",
+						"State batching di React 18+ untuk optimasi render"
+					]
+				},
+				{
+					"id": "react-use-effect",
+					"title": "useEffect Hook & Sinkronisasi Efek Samping",
+					"description": "Menjalankan kode efek samping seperti fetch data, timer, manipulasi title halaman, atau langganan event browser.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Anatomi useEffect(callback, [dependencies])",
+						"Variasi array dependensi: tanpa array, array kosong ([]), dan dengan dependensi variabel",
+						"Fungsi pembersihan (cleanup function) untuk mencegah memory leak pada subscription atau interval",
+						"Alur eksekusi pada React Strict Mode (efek dijalankan dua kali di lingkungan dev)"
+					]
+				},
+				{
+					"id": "react-use-ref",
+					"title": "useRef Hook & Akses Node DOM Langsung",
+					"description": "Menyimpan nilai mutable yang tidak memicu re-render dan mereferensikan elemen DOM fisik secara langsung.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Perbedaan mendasar antara useState (memicu render) vs useRef (tidak memicu render)",
+						"Menyimpan referensi ke input text untuk fokus otomatis (inputRef.current.focus())",
+						"Menyimpan nilai persisten seperti timer ID atau nilai sebelumnya (previous value)"
+					]
+				},
+				{
+					"id": "react-memo-performance",
+					"title": "useMemo, useCallback & Prinsip Optimasi Re-Render",
+					"description": "Menghindari komputasi berat yang berulang dan menjaga stabilitas referensi fungsi antar siklus render.",
+					"priority": "direkomendasikan",
+					"keyPoints": [
+						"Penyebab re-render di React (perubahan state, re-render parent, perubahan context)",
+						"useMemo untuk meng-cache hasil perhitungan kalkulasi berat",
+						"useCallback untuk meng-cache definisi fungsi agar referensinya stabil",
+						"Komponen pembungkus React.memo() dan kapan sebaiknya tidak melakukan optimasi berlebihan"
+					]
+				},
+				{
+					"id": "react-custom-hooks",
+					"title": "Membuat Custom Hooks untuk Logika Stateful Reusable",
+					"description": "Mengekstraksi logika bisnis komponen ke dalam fungsi kustom yang dapat dipakai ulang di berbagai tempat.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Aturan penamaan hook kustom dengan awalan 'use' (contoh: useDebounce, useWindowSize)",
+						"Membungkus kombinasi useState dan useEffect ke dalam hook independen",
+						"Pemisahan tanggung jawab antara logika data (hooks) dan presentasi tampilan (komponen JSX)"
+					]
+				}
+			]
+		},
+		{
+			"id": "react-phase-4",
+			"phaseNumber": 4,
+			"title": "Formulir, Komponen Terkontrol & Validasi Skema",
+			"subtitle": "Mengelola formulir pengguna yang aman, responsif, dan mudah divalidasi.",
+			"description": "Formulir adalah pintu masuk utama input pengguna dalam aplikasi web. Memahami teknik form handling modern menghindarkan dari bug dan kode boilerplate yang menumpuk.",
+			"topics": [
+				{
+					"id": "react-controlled-components",
+					"title": "Controlled vs Uncontrolled Components",
+					"description": "Dua pendekatan menangani nilai formulir di React: dikendalikan oleh state React atau dikendalikan oleh DOM fisik.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Controlled Components: mengikat value ke state dan mendengarkan onChange",
+						"Uncontrolled Components: menggunakan useRef atau FormData API",
+						"Menangani beragam input: text, textarea, checkbox, radio button, dan select option"
+					]
+				},
+				{
+					"id": "react-hook-form",
+					"title": "Form Handling Skala Produksi: React Hook Form",
+					"description": "Pustaka formulir terpopuler yang minim re-render dan memiliki performa tinggi.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Inisialisasi useForm(), register, handleSubmit, dan watch",
+						"Isolasi re-render pada level field tanpa menyebabkan seluruh halaman me-render ulang",
+						"Menangani status form: isSubmitting, isValid, isDirty, dan errors"
+					]
+				},
+				{
+					"id": "react-zod-validation",
+					"title": "Validasi Skema Tipe Data dengan Zod",
+					"description": "Mendefinisikan aturan validasi form berbasis skema deklaratif yang type-safe dan mudah dibaca.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Membuat skema z.object({ email: z.string().email(), password: z.string().min(8) })",
+						"Integrasi Zod dengan React Hook Form menggunakan @hookform/resolvers/zod",
+						"Penerjemahan pesan error kustom bahasa Indonesia yang ramah pengguna"
+					]
+				}
+			]
+		},
+		{
+			"id": "react-phase-5",
+			"phaseNumber": 5,
+			"title": "Styling Modern, Tailwind CSS & Desain Sistem Antarmuka",
+			"subtitle": "Menata gaya antarmuka yang estetis, responsif, konsisten, dan mudah dirawat.",
+			"description": "Ekosistem frontend modern telah beralih ke pola utility-first dan komponen headless yang memberikan fleksibilitas penuh terhadap styling tanpa terikat CSS kaku.",
+			"topics": [
+				{
+					"id": "react-tailwind-styling",
+					"title": "Tailwind CSS & Helper Utilitas (clsx / tailwind-merge)",
+					"description": "Menggabungkan utilitas Tailwind CSS ke dalam komponen React dengan variasi props dinamis.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Setup Tailwind CSS di proyek Vite + React",
+						"Penggunaan helper clsx dan twMerge (cn utility) untuk menghindari konflik kelas Tailwind",
+						"Variasi komponen menggunakan Class Variance Authority (CVA) untuk tombol, badge, dan kartu"
+					],
+					"resources": [
+						{
+							"title": "Rekomendasi Code Editor & Ekstensi Tailwind CSS Gratis",
+							"url": "/artikel/code-editor-tailwindcss-gratis",
+							"isInternal": true
+						}
+					]
+				},
+				{
+					"id": "react-ui-components",
+					"title": "Komponen Headless & Pola UI Modern (Shadcn UI Pattern)",
+					"description": "Memanfaatkan komponen antarmuka yang aksesibel (WAI-ARIA compliant) dengan kepemilikan kode penuh.",
+					"priority": "direkomendasikan",
+					"keyPoints": [
+						"Konsep Headless UI: komponen yang menyediakan fungsi dan aksesibilitas tanpa styling baku (Radix UI / React Aria)",
+						"Pola Shadcn UI: menyalin komponen langsung ke direktori proyek daripada memasang pustaka monolitik",
+						"Pustaka ikon modern: Lucide Icons untuk React"
+					]
+				},
+				{
+					"id": "react-css-modules",
+					"title": "CSS Modules & Scoped Styles",
+					"description": "Alternatif penataan gaya terisolasi per file komponen untuk mencegah benturan nama kelas CSS global.",
+					"priority": "opsional",
+					"keyPoints": [
+						"Penamaan file Komponen.module.css",
+						"Import style dari file modul dan aplikasi class secara modular",
+						"Mengenal CSS-in-JS (Styled Components / Emotion) pada proyek-proyek warisan (legacy)"
+					]
+				}
+			]
+		},
+		{
+			"id": "react-phase-6",
+			"phaseNumber": 6,
+			"title": "Navigasi, Client-Side Routing & Single Page Application (SPA)",
+			"subtitle": "Membangun navigasi multi-halaman tanpa memicu reload penuh browser.",
+			"description": "Single Page Application (SPA) memerlukan routing sisi klien untuk mengelola URL browser, riwayat kunjungan, dan rendering halaman yang cepat.",
+			"topics": [
+				{
+					"id": "react-router-basics",
+					"title": "React Router v6+ Fondasi & Layout Bersarang (Nested Routes)",
+					"description": "Konfigurasi rute halaman, link navigasi, dan tata letak hierarkis yang rapi.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Komponen inti: createBrowserRouter, RouterProvider, Routes, Route",
+						"Navigasi deklaratif: <Link to=\"...\"> dan <NavLink> (indikator rute aktif)",
+						"Layout bersama dengan komponen <Outlet /> untuk navbar dan sidebar persisten"
+					]
+				},
+				{
+					"id": "react-router-params",
+					"title": "Parameter URL Dinamis & Manajemen Query String",
+					"description": "Membaca ID dari URL dan mengelola status filter halaman pencarian lewat search params.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Dynamic route segments (/produk/:id) dan hook useParams()",
+						"Membaca dan memperbarui query string (?kategori=buku&page=2) via useSearchParams()",
+						"Navigasi programatis menggunakan hook useNavigate()"
+					]
+				},
+				{
+					"id": "react-protected-routes",
+					"title": "Rute Terproteksi (Protected Routes) & Alur Autentikasi",
+					"description": "Membatasi akses halaman tertentu hanya untuk pengguna yang telah memiliki token atau status login.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Pola komponen pembungkus <ProtectedRoute> atau layout guard",
+						"Pengecekan status login dan pengalihan otomatis via <Navigate to=\"/login\" replace />",
+						"Menyimpan referensi URL asal agar pengguna kembali ke halaman semula setelah login berhasil"
+					]
+				}
+			]
+		},
+		{
+			"id": "react-phase-7",
+			"phaseNumber": 7,
+			"title": "Data Fetching, Cache Server & REST API Integration",
+			"subtitle": "Mengambil data backend, sinkronisasi cache otomatis, dan penanganan mutasi data.",
+			"description": "Daripada menulis useEffect manual yang rentan terhadap race condition dan duplikasi request, standar industri modern menggunakan server-state manager seperti TanStack Query.",
+			"topics": [
+				{
+					"id": "react-tanstack-query",
+					"title": "TanStack Query (React Query) untuk Server-State",
+					"description": "Mengelola status loading, error, caching otomatis, refetch saat window fokus, dan deduplikasi request.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Konfigurasi QueryClient dan QueryClientProvider",
+						"Hook useQuery dengan konfigurasi queryKey dan queryFn",
+						"Status query bawaan: isPending, isError, data, error",
+						"Stale-while-revalidate: waktu staleTime dan gcTime (garbage collection cache)"
+					]
+				},
+				{
+					"id": "react-tanstack-mutations",
+					"title": "Mutasi Data & Invalidation Cache (useMutation)",
+					"description": "Mengirimkan data baru (POST, PUT, DELETE) ke server dan memperbarui cache tampilan secara otomatis.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Hook useMutation untuk operasi pengubahan data backend",
+						"Callback onSuccess, onError, dan onSettled",
+						"Memperbarui data antarmuka instan via queryClient.invalidateQueries({ queryKey })",
+						"Pola Optimistic Updates untuk antarmuka yang merespons seketika sebelum respon server tiba"
+					]
+				},
+				{
+					"id": "react-api-client-architecture",
+					"title": "Arsitektur Klien HTTP & Interceptors (Axios / Fetch Wrapper)",
+					"description": "Membangun modul pemanggilan API yang terpusat, konsisten, dan aman.",
+					"priority": "direkomendasikan",
+					"keyPoints": [
+						"Inisialisasi instance kustom dengan baseURL dan timeout",
+						"Request Interceptor untuk menyematkan Authorization Bearer Token otomatis",
+						"Response Interceptor untuk penanganan global error status (401 Unauthorized, 403, 500)",
+						"Refresh token rotation pattern untuk memperbarui token kedaluwarsa secara diam-diam"
+					]
+				},
+				{
+					"id": "react-error-boundaries",
+					"title": "Error Boundaries & Indikator Loading Modern",
+					"description": "Mencegah aplikasi mengalami layar putih total (white screen of death) saat terjadi error runtime.",
+					"priority": "direkomendasikan",
+					"keyPoints": [
+						"Komponen React Error Boundary untuk menangkap crash di pohon komponen",
+						"Pola Skeleton Screens pengganti spinner putar biasa untuk pengalaman pengguna yang nyaman",
+						"Toast notifications (Sonner / React Hot Toast) untuk feedback aksi berhasil atau gagal"
+					]
+				}
+			]
+		},
+		{
+			"id": "react-phase-8",
+			"phaseNumber": 8,
+			"title": "State Management Global Skala Menengah & Enterprise",
+			"subtitle": "Berbagi data ke banyak komponen tanpa perlu mengoper props bertingkat (prop drilling).",
+			"description": "Ketahui kapan kamu cukup menggunakan Context API bawaan React dan kapan proyekmu memerlukan state store terpusat seperti Zustand atau Redux Toolkit.",
+			"topics": [
+				{
+					"id": "react-context-api",
+					"title": "React Context API & useReducer",
+					"description": "Solusi bawaan React untuk state global sederhana seperti preferensi tema (dark/light) atau sesi pengguna.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Membuat context dengan createContext() dan membungkus dengan <Context.Provider>",
+						"Mengkonsumsi data dengan hook useContext() atau custom context hook",
+						"Menggabungkan useReducer dengan Context untuk state yang memiliki alur aksi kompleks",
+						"Kelemahan Context: semua komponen konsumen akan re-render saat nilai context berubah"
+					]
+				},
+				{
+					"id": "react-zustand-store",
+					"title": "Zustand: State Management Modern & Ringan",
+					"description": "Library state store terfavorit di ekosistem React modern berkat sintaks yang ringkas tanpa boilerplate berlebih.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Membuat store: create((set) => ({ count: 0, inc: () => set(state => ...) }))",
+						"Atomic selectors: hanya me-render komponen jika bagian state spesifik yang dipilih berubah",
+						"Middleware bawaan Zustand: persist (menyimpan store otomatis ke localStorage) dan devtools"
+					]
+				},
+				{
+					"id": "react-redux-toolkit",
+					"title": "Redux Toolkit (RTK) untuk Arsitektur Enterprise",
+					"description": "Standar industri pada perusahaan skala besar dengan kontrol alur data satu arah yang sangat terprediksi.",
+					"priority": "opsional",
+					"keyPoints": [
+						"Konsep Store, Actions, Reducers, dan Dispatch",
+						"Membuat slice terisolasi dengan createSlice()",
+						"Redux DevTools Extension untuk time-travel debugging",
+						"Kapan proyek membutuhkan Redux vs kapan Zustand atau TanStack Query sudah lebih dari cukup"
+					]
+				}
+			]
+		},
+		{
+			"id": "react-phase-9",
+			"phaseNumber": 9,
+			"title": "TypeScript di React, Automated Testing & Kualitas Kode",
+			"subtitle": "Membangun aplikasi yang tahan banting, type-safe, dan bebas dari regresi saat refactor.",
+			"description": "Menulis kode yang berjalan adalah langkah awal; menulis kode yang teruji dan bebas dari kesalahan tipe data adalah standar engineer profesional.",
+			"topics": [
+				{
+					"id": "react-typescript-integration",
+					"title": "TypeScript untuk Komponen & Hooks React",
+					"description": "Memberikan keamanan tipe data pada props, state, event handlers, dan ref.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Mendefinisikan tipe props dengan interface atau type (React.ReactNode, CSSProperties)",
+						"Mengetikkan state generic: useState<User | null>(null)",
+						"Tipe event bawaan: React.MouseEvent<HTMLButtonElement>, React.ChangeEvent<HTMLInputElement>",
+						"Menghindari penggunaan tipe any yang merusak manfaat TypeScript"
+					]
+				},
+				{
+					"id": "react-testing-library",
+					"title": "Unit & Component Testing (Vitest + React Testing Library)",
+					"description": "Menguji komponen dari sudut pandang interaksi pengguna, bukan menguji detail implementasi internal.",
+					"priority": "direkomendasikan",
+					"keyPoints": [
+						"Konfigurasi Vitest dan jsdom di lingkungan Vite",
+						"Filosofi React Testing Library: render(), screen, dan expect()",
+						"Pencarian elemen berbasis aksesibilitas: getByRole, getByLabelText, getByText",
+						"Simulasi aksi pengguna nyata dengan library @testing-library/user-event",
+						"Mocking pemanggilan API backend dengan Mock Service Worker (MSW)"
+					]
+				},
+				{
+					"id": "react-linting-formatting",
+					"title": "ESLint, Prettier & Konvensi Koding Tim",
+					"description": "Menstandarisasi gaya penulisan kode dan mendeteksi kesalahan umum otomatis sebelum commit.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Plugin eslint-plugin-react-hooks untuk mencegah pelanggaran aturan Hooks",
+						"Format kode otomatis menggunakan Prettier",
+						"Git hooks dengan Husky dan lint-staged untuk validasi otomatis sebelum commit"
+					]
+				}
+			]
+		},
+		{
+			"id": "react-phase-10",
+			"phaseNumber": 10,
+			"title": "Pengenalan Fullstack React: Next.js & Server Components",
+			"subtitle": "Melangkah dari Single Page App murni menuju arsitektur web modern fullstack.",
+			"description": "React telah berevolusi menjadi arsitektur yang menjangkau sisi server. Next.js adalah framework produksi terdepan yang mengadopsi standar React Server Components secara penuh.",
+			"topics": [
+				{
+					"id": "react-ssr-ssg-concept",
+					"title": "Konsep Rendering: CSR, SSR, SSG, dan ISR",
+					"description": "Memahami trade-off strategi rendering web untuk kebutuhan performa Core Web Vitals dan optimasi mesin pencari (SEO).",
+					"priority": "wajib",
+					"keyPoints": [
+						"Client-Side Rendering (CSR): kelebihan dan tantangan pada SEO serta first contentful paint",
+						"Server-Side Rendering (SSR): merender HTML dinamis per request pengguna di server",
+						"Static Site Generation (SSG) & Incremental Static Regeneration (ISR): halaman statis super cepat dengan update bertahap"
+					]
+				},
+				{
+					"id": "react-nextjs-app-router",
+					"title": "Next.js App Router & React Server Components (RSC)",
+					"description": "Arsitektur direktori app/, pemisahan komponen server dan client, serta tata kelola file konvensi.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Struktur berkas berbasis konvensi: page.tsx, layout.tsx, loading.tsx, error.tsx, not-found.tsx",
+						"Perbedaan mendasar Server Components (default) vs Client Components ('use client')",
+						"Kapan harus menggunakan 'use client': hook interaktif, event listener, browser APIs",
+						"Keuntungan Server Components: ukuran bundle klien 0kb untuk pustaka yang hanya jalan di server"
+					]
+				},
+				{
+					"id": "react-nextjs-server-actions",
+					"title": "Server Actions & Pengambilan Data di Sisi Server",
+					"description": "Mengambil data dan melakukan mutasi database langsung dari fungsi server tanpa endpoint API terpisah.",
+					"priority": "direkomendasikan",
+					"keyPoints": [
+						"Fetch data langsung di Server Component dengan async/await tanpa useEffect",
+						"Direktif 'use server' untuk membuat Server Actions yang aman",
+						"Revalidasi data cache dengan revalidatePath() dan revalidateTag()"
+					]
+				},
+				{
+					"id": "react-deployment-production",
+					"title": "Optimasi Produksi, Analisis Bundle & Deployment",
+					"description": "Menyiapkan aplikasi React / Next.js agar siap diluncurkan ke internet dengan kecepatan optimal.",
+					"priority": "wajib",
+					"keyPoints": [
+						"Optimasi bundle dengan Code Splitting dan React.lazy() / Suspense",
+						"Analisis ukuran bundle JavaScript menggunakan visualizer plugin",
+						"Deployment mudah SPA di static hosting (Cloudflare Pages, Netlify, Vercel)",
+						"Deployment aplikasi fullstack Next.js di platform Vercel atau VPS dengan Docker container"
+					]
+				}
+			]
+		}
+	]
+}
